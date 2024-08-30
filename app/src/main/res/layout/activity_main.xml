@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="br.com.pokemon_center.ui.views.MainActivity">
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/settings"
+        android:src="@drawable/app_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/pocketmonk"
+        android:text="@string/main_title_text"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/main_search_layout"
+        style="?attr/textInputFilledStyle"
+        app:boxStrokeWidth="0dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:hint="@string/main_searchbar_text"
+        app:boxStrokeWidthFocused="0dp"
+        app:boxCornerRadiusBottomEnd="50dp"
+        app:boxCornerRadiusBottomStart="50dp"
+        app:boxCornerRadiusTopEnd="50dp"
+        app:boxCornerRadiusTopStart="50dp"
+        app:endIconDrawable="@drawable/search_icon"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tv_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/main_text_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/main_pokemon_button"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#FF0000"
+        android:fontFamily="@font/pocketmonk"
+        android:gravity="bottom"
+        android:paddingBottom="15dp"
+        android:text="@string/main_button_pokemon"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_search_layout" />
+
+    <Button
+        android:id="@+id/main_types_button"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/pocketmonk"
+        android:backgroundTint="#6495ED"
+        android:gravity="bottom"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:text="@string/main_button_types"
+        android:textSize="25sp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_pokemon_button" />
+
+    <Button
+        android:id="@+id/main_moves_button"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:gravity="bottom"
+        android:paddingBottom="15dp"
+        android:backgroundTint="#00BFFF"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textSize="24sp"
+        android:textColor="?android:attr/textColorPrimary"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/pocketmonk"
+        android:text="@string/main_button_moves"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_pokemon_button" />
+
+    <Button
+        android:id="@+id/main_items_button"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/pocketmonk"
+        android:gravity="bottom"
+        android:backgroundTint="#458B00"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textSize="24sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="@string/main_button_items"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_types_button" />
+
+    <Button
+        android:id="@+id/main_games_button"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:fontFamily="@font/pocketmonk"
+        android:backgroundTint="#DAA520"
+        android:gravity="bottom"
+        android:paddingBottom="15dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textSize="24sp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:text="@string/main_games_button"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_moves_button" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:constraint_referenced_ids="main_types_button, main_moves_button, main_items_button, main_games_button"
+        app:flow_horizontalStyle="spread"
+        app:flow_verticalStyle="spread"
+        app:flow_wrapMode="chain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_pokemon_button"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
