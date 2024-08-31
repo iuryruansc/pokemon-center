@@ -33,6 +33,11 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -50,6 +55,8 @@ dependencies {
     implementation(libs.coroutine.android)
     implementation(libs.fragment)
     implementation(libs.lifecycle.viewmodel)
+    implementation(libs.androidx.espresso.contrib)
+    implementation(libs.coil)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

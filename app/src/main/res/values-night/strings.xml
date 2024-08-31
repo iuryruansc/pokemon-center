@@ -9,4 +9,13 @@
     <string name="main_button_types">Types</string>
     <string name="main_button_moves">Moves</string>
     <string name="main_button_items">Items</string>
+    <string name="id">Id</string>
+    <string name="genera">Genera</string>
+    <string name="name">Name</string>
+    <string name="Type_1">type 1</string>
+    <string name="type_2">type 2</string>
+    <string name="info">info</string>
+    <string name="stats">stats</string>
+    <string name="moves">moves</string>
+    <string name="pokemon_sprite">Pokemon sprite</string>
 </resources>
