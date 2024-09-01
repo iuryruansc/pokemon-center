@@ -1,12 +1,10 @@
 package br.com.pokemon_center.ui.viewmodels
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.*
 import br.com.pokemon_center.data.repository.PokemonDetailsRepository
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 
 class PokemonDetailsViewModel: ViewModel() {
 
@@ -27,8 +25,11 @@ class PokemonDetailsViewModel: ViewModel() {
     private var _pokemonType2 = MutableLiveData<String>()
     val pokemonType2: LiveData<String> get() = _pokemonType2
 
+    private val _isLoading = MutableStateFlow<Boolean>(true)
+    val isLoading: StateFlow<Boolean> get() = _isLoading
+
     fun pokemonDetails(pokemon: String) {
-        CoroutineScope(Dispatchers.IO).launch {
+        viewModelScope.launch {
             val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
             if (response.success) {
                 val details = response.data!!
@@ -39,7 +40,12 @@ class PokemonDetailsViewModel: ViewModel() {
                 if (details.types.size > 1) {
                     _pokemonType2.postValue(details.types[1].type.name)
                 }
+                _isLoading.value = false
+            } else {
+                //TODO: Handle error
+                _isLoading.value = true
             }
+
         }
     }
 }

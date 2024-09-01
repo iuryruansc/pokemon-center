@@ -1,4 +1,4 @@
-package br.com.pokemon_center.data.api.models.PokemonByNameData
+package br.com.pokemon_center.data.api.models.pokemonbynamedata
 
 import br.com.pokemon_center.data.api.models.nestedmodels.Type
 
