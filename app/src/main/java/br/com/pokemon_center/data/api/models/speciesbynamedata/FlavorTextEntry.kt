@@ -1,4 +1,4 @@
-package br.com.pokemon_center.data.api.models.PokemonByIdData
+package br.com.pokemon_center.data.api.models.speciesbynamedata
 
 import br.com.pokemon_center.data.api.models.nestedmodels.Language
 import com.google.gson.annotations.SerializedName
