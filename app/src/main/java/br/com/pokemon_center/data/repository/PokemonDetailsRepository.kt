@@ -1,7 +1,7 @@
 package br.com.pokemon_center.data.repository
 
-import br.com.pokemon_center.commom.util.EspressoIdlingResourceHelper
-import br.com.pokemon_center.commom.util.IdlingResourceHelper
+import br.com.pokemon_center.commom.util.testing.EspressoIdlingResourceHelper
+import br.com.pokemon_center.commom.util.testing.IdlingResourceHelper
 import br.com.pokemon_center.data.api.models.PokemonByNameResponse
 import br.com.pokemon_center.data.network.PokemonDetailsDataSource
 

@@ -1,4 +1,4 @@
-package br.com.pokemon_center.commom.util
+package br.com.pokemon_center.commom.util.testing
 
 import br.com.pokemon_center.commom.idling.ApiIdlingResource
 

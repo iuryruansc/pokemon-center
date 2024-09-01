@@ -61,4 +61,17 @@
     <color name="md_theme_dark_surfaceTint">#7FDA99</color>
     <color name="md_theme_dark_outlineVariant">#414941</color>
     <color name="md_theme_dark_scrim">#000000</color>
+    <color name="electric">#FFD700</color>
+    <color name="psychic">#FF69B4</color>
+    <color name="fighting">#FF4500</color>
+    <color name="ghost">#800080</color>
+    <color name="fairy">#FFC0CB</color>
+    <color name="steel">#A9A9A9</color>
+    <color name="flying">#ADD8E6</color>
+    <color name="poison">#9370DB</color>
+    <color name="rock">#808080</color>
+    <color name="bug">#006400</color>
+    <color name="ice">#00FFFF</color>
+    <color name="dragon">#00008B</color>
+    <color name="ground">#A52A2A</color>
 </resources>
