@@ -36,4 +36,14 @@
     <string name="ultraball_icon">Ultraball icon</string>
     <string name="cry_play_button">Cry Play</string>
     <string name="cry_sound">Cry Sound</string>
+    <string name="hp">HP</string>
+    <string name="stat_example">100</string>
+    <string name="atk">ATK</string>
+    <string name="def">DEF</string>
+    <string name="satk">SATK</string>
+    <string name="sdef">SDEF</string>
+    <string name="spd">SPD</string>
+    <string name="enter_level">Enter Level</string>
+    <string name="calculate_stats">Calculate Stats</string>
+    <string name="disclaimer_note">Please note that this is a beta version of the stat calculator and does not include the effects of natures or abilities.</string>
 </resources>

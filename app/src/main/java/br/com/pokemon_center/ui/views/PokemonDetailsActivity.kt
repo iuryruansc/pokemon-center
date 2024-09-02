@@ -16,6 +16,7 @@ import br.com.pokemon_center.commom.util.buttontypestyles.typesStyles
 import br.com.pokemon_center.commom.util.capitalizedName
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
 import br.com.pokemon_center.ui.fragments.InfoFragment
+import br.com.pokemon_center.ui.fragments.StatsFragment
 import br.com.pokemon_center.ui.viewmodels.PokemonDetailsViewModel
 import coil.load
 import com.google.android.material.button.MaterialButton
@@ -89,6 +90,24 @@ class PokemonDetailsActivity : AppCompatActivity() {
                     }
                 }
             }
+        }
+
+        binding.detailsTabLayout.getTabAt(0)?.view?.setOnClickListener {
+            val infoFragment = InfoFragment()
+            infoFragment.arguments = bundle
+
+            supportFragmentManager.beginTransaction()
+                .replace(binding.fragmentContainerView.id, infoFragment)
+                .commit()
+        }
+
+        binding.detailsTabLayout.getTabAt(1)?.view?.setOnClickListener {
+            val statsFragment = StatsFragment()
+            statsFragment.arguments = bundle
+
+            supportFragmentManager.beginTransaction()
+                .replace(binding.fragmentContainerView.id, statsFragment)
+                .commit()
         }
     }
 
