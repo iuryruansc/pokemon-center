@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import br.com.pokemon_center.commom.util.capitalizedName
+import br.com.pokemon_center.commom.util.textformat.capitalizedName
 import br.com.pokemon_center.databinding.FragmentInfoBinding
 import br.com.pokemon_center.ui.viewmodels.InfoFragmentViewModel
 
@@ -73,21 +73,21 @@ class InfoFragment : Fragment() {
             }
 
             binding.cryPlayButton.setOnClickListener {
-                if (mediaPlayer?.isPlaying == true) {
-                    mediaPlayer?.pause()
-                } else {
-                    cryUrl?.let { url ->
-                        mediaPlayer = MediaPlayer()
-                            .apply {
-                                setDataSource(url)
-                                prepareAsync()
-                                setOnPreparedListener {
-                                    start()
+                    if (mediaPlayer?.isPlaying == true) {
+                        mediaPlayer?.pause()
+                    } else {
+                        cryUrl?.let { url ->
+                            mediaPlayer = MediaPlayer()
+                                .apply {
+                                    setDataSource(url)
+                                    prepareAsync()
+                                    setOnPreparedListener {
+                                        start()
+                                    }
                                 }
-                            }
+                        }
                     }
                 }
-            }
         }
     }
 

@@ -46,4 +46,9 @@
     <string name="enter_level">Enter Level</string>
     <string name="calculate_stats">Calculate Stats</string>
     <string name="disclaimer_note">Please note that this is a beta version of the stat calculator and does not include the effects of natures or abilities.</string>
+    <string name="effectiveness">Defense Effectiveness</string>
+    <string name="type_mult">"      Type"</string>
+    <string name="multiplier"><u>x1.0</u></string>
+    <string name="reminder_text">*Formula = <b><small>(ATK Type Multiplier  x  DEF Type 1 Multiplier x  DEF Type 2 Multiplier (if applicable))</small></b>"</string>
+    <string name="multipliers_explanation">*Tap the items for a quick explanation.</string>
 </resources>

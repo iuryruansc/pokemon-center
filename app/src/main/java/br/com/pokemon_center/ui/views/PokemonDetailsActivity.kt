@@ -1,27 +1,26 @@
 package br.com.pokemon_center.ui.views
 
-import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintSet
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import br.com.pokemon_center.commom.util.buttontypestyles.TypeStyle
-import br.com.pokemon_center.commom.util.buttontypestyles.typesStyles
-import br.com.pokemon_center.commom.util.capitalizedName
+import br.com.pokemon_center.commom.util.typesStyles
+import br.com.pokemon_center.commom.util.textformat.capitalizedName
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
+import br.com.pokemon_center.ui.fragments.EffectivenessFragment
 import br.com.pokemon_center.ui.fragments.InfoFragment
 import br.com.pokemon_center.ui.fragments.StatsFragment
 import br.com.pokemon_center.ui.viewmodels.PokemonDetailsViewModel
 import coil.load
-import com.google.android.material.button.MaterialButton
 import kotlinx.coroutines.launch
+import java.util.Locale
 
 class PokemonDetailsActivity : AppCompatActivity() {
 
@@ -38,16 +37,19 @@ class PokemonDetailsActivity : AppCompatActivity() {
         viewModel.pokemonDetails(pokemonName!!)
 
         val fragment = InfoFragment()
-        val bundle = Bundle()
-        bundle.putString("pokemonName", pokemonName)
-        fragment.arguments = bundle
+        val bundlePokeName = Bundle()
+        bundlePokeName.putString("pokemonName", pokemonName)
+
+        val bundleTypes = Bundle()
+
+        fragment.arguments = bundlePokeName
 
         supportFragmentManager.beginTransaction()
             .replace(binding.fragmentContainerView.id, fragment)
             .commit()
 
         viewModel.pokemonId.observe(this) { id ->
-            binding.id.text = "#$id"
+            binding.id.text = String.format(Locale.ROOT, "#%03d", id)
         }
 
         viewModel.pokemonName.observe(this) { name ->
@@ -60,21 +62,22 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         viewModel.pokemonType1.observe(this) { type ->
             val style = typesStyles(type)
+            bundleTypes.putString("type1", type)
+
             if (style != null) {
                 applyTypeStyle(binding.type1, style)
             }
-            binding.type1.text = capitalizedName(type)
         }
 
         viewModel.pokemonType2.observe(this) { type ->
             binding.type2.visibility = View.VISIBLE
             updateType1Constraints()
+            bundleTypes.putString("type2", type)
 
             val style = typesStyles(type)
             if (style != null) {
                 applyTypeStyle(binding.type2, style)
             }
-            binding.type2.text = capitalizedName(type)
         }
 
         lifecycleScope.launch {
@@ -99,7 +102,7 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         binding.detailsTabLayout.getTabAt(0)?.view?.setOnClickListener {
             val infoFragment = InfoFragment()
-            infoFragment.arguments = bundle
+            infoFragment.arguments = bundlePokeName
 
             supportFragmentManager.beginTransaction()
                 .replace(binding.fragmentContainerView.id, infoFragment)
@@ -108,10 +111,19 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         binding.detailsTabLayout.getTabAt(1)?.view?.setOnClickListener {
             val statsFragment = StatsFragment()
-            statsFragment.arguments = bundle
+            statsFragment.arguments = bundlePokeName
 
             supportFragmentManager.beginTransaction()
                 .replace(binding.fragmentContainerView.id, statsFragment)
+                .commit()
+        }
+
+        binding.detailsTabLayout.getTabAt(2)?.view?.setOnClickListener {
+            val effectivenessFragment = EffectivenessFragment()
+            effectivenessFragment.arguments = bundleTypes
+
+            supportFragmentManager.beginTransaction()
+                .replace(binding.fragmentContainerView.id, effectivenessFragment)
                 .commit()
         }
     }
@@ -123,7 +135,7 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         if (binding.type2.visibility == View.VISIBLE) {
             // If type2 is visible, constrain type1 to the start of the parent
-            constraintSet.setHorizontalBias(binding.type1.id, 0.275f)
+            constraintSet.setHorizontalBias(binding.type1.id, 0.35f)
         } else {
             // If type2 is gone, constrain type1 to the center of the parent
             constraintSet.setHorizontalBias(binding.type1.id, 0.5f)
@@ -132,10 +144,7 @@ class PokemonDetailsActivity : AppCompatActivity() {
     }
 
     // Apply the type style to the button
-    private fun applyTypeStyle(button: MaterialButton, style: TypeStyle) {
-        val color = ContextCompat.getColor(this, style.color)
-        button.setIconResource(style.icon)
-        button.setTextColor(color)
-        button.strokeColor = ColorStateList.valueOf(color)
+    private fun applyTypeStyle(image: ImageView, src: Int) {
+        image.load(src)
     }
 }

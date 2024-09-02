@@ -7,7 +7,7 @@
 
     <style name="ValueTextStyle" parent="android:Widget.TextView">
         <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/steel</item>
+        <item name="android:textColor">@color/grey</item>
     </style>
 
     <style name="DescriptionTextStyle" parent="android:Widget.TextView">
