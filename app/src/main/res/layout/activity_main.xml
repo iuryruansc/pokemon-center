@@ -61,6 +61,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/main_text_search"
             android:layout_width="match_parent"
+            android:inputType="text"
+            android:maxLines="1"
             android:layout_height="wrap_content" />
 
     </com.google.android.material.textfield.TextInputLayout>

@@ -26,7 +26,6 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.mainSearchLayout.setEndIconOnClickListener {
-
             val pokemon = binding.mainTextSearch.text.toString().lowercase(Locale.ROOT)
             val intent = Intent(this, PokemonDetailsActivity::class.java)
             intent.putExtra("pokemon", pokemon)

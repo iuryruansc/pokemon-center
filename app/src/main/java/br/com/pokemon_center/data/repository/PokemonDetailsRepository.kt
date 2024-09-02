@@ -6,11 +6,12 @@ import br.com.pokemon_center.data.api.models.PokemonByNameResponse
 import br.com.pokemon_center.data.api.models.SpeciesByNameResponse
 import br.com.pokemon_center.data.network.PokemonDetailsDataSource
 
-class PokemonDetailsRepository(private val mPokemonDetailsDataSource: PokemonDetailsDataSource = PokemonDetailsDataSource(),
-                               private val mIdlingResource: IdlingResourceHelper = EspressoIdlingResourceHelper()
-){
+class PokemonDetailsRepository(
+    private val mPokemonDetailsDataSource: PokemonDetailsDataSource = PokemonDetailsDataSource(),
+    private val mIdlingResource: IdlingResourceHelper = EspressoIdlingResourceHelper()
+) {
 
-    suspend fun getPokemonDetails(pokemon: String) : PokemonReturn<PokemonByNameResponse> {
+    suspend fun getPokemonDetails(pokemon: String): PokemonReturn<PokemonByNameResponse> {
         try {
             mIdlingResource.increment()
             val result = mPokemonDetailsDataSource.fetchPokemonDetails(pokemon)
@@ -25,7 +26,7 @@ class PokemonDetailsRepository(private val mPokemonDetailsDataSource: PokemonDet
         return PokemonReturn(false, "Unknown error", null)
     }
 
-    suspend fun getPokemonSpecies(pokemon: String) : PokemonReturn<SpeciesByNameResponse> {
+    suspend fun getPokemonSpecies(pokemon: String): PokemonReturn<SpeciesByNameResponse> {
         try {
             mIdlingResource.increment()
             val result = mPokemonDetailsDataSource.fetchSpeciesDetails(pokemon)

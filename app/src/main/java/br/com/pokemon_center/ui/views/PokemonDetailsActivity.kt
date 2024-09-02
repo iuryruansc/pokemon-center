@@ -3,6 +3,7 @@ package br.com.pokemon_center.ui.views
 import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -83,6 +84,10 @@ class PokemonDetailsActivity : AppCompatActivity() {
                         binding.detailsConstraintLayout.visibility = View.GONE
                         binding.detailsLinearLayout.visibility = View.GONE
                         binding.progressIndicator.visibility = View.VISIBLE
+                        viewModel.errorMessage.observe(this@PokemonDetailsActivity) { message ->
+                            Toast.makeText(this@PokemonDetailsActivity, message, Toast.LENGTH_SHORT).show()
+                            finish()
+                        }
                     } else {
                         binding.progressIndicator.visibility = View.GONE
                         binding.detailsConstraintLayout.visibility = View.VISIBLE

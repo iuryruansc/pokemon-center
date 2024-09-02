@@ -9,7 +9,16 @@ class PokemonDetailsDataSource(private val apiService: ApiService = ApiServiceCl
 
     suspend fun fetchPokemonDetails(pokemon: String): PokemonByNameResponse? {
         val pokemonDetailsResponse = apiService.getPokemonByName(pokemon)
-        return pokemonDetailsResponse.body()
+        return if(pokemonDetailsResponse.isSuccessful) {
+            pokemonDetailsResponse.body()
+        } else {
+            when(pokemonDetailsResponse.code()){
+                404 -> throw Exception("Pokemon not found.")
+                else -> {
+                    throw Exception("An error has ocurred.")
+                }
+            }
+        }
     }
 
     suspend fun fetchSpeciesDetails(pokemon: String): SpeciesByNameResponse? {
