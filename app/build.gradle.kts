@@ -57,6 +57,8 @@ dependencies {
     implementation(libs.lifecycle.viewmodel)
     implementation(libs.androidx.espresso.contrib)
     implementation(libs.coil)
+    implementation(libs.kotlinx.serialization)
+    implementation(libs.ballon)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

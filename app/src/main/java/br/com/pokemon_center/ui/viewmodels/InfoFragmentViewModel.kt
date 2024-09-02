@@ -3,8 +3,8 @@ package br.com.pokemon_center.ui.viewmodels
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import br.com.pokemon_center.commom.util.formatHeight
-import br.com.pokemon_center.commom.util.formatWeight
+import br.com.pokemon_center.commom.util.textformat.formatHeight
+import br.com.pokemon_center.commom.util.textformat.formatWeight
 import br.com.pokemon_center.data.repository.PokemonDetailsRepository
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
