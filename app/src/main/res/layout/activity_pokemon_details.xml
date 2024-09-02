@@ -70,6 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
             android:text="@string/Type_1"
+            android:clickable="false"
             app:icon="@android:drawable/ic_input_add"
             app:iconSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,6 +86,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="84dp"
             android:text="@string/type_2"
+            android:clickable="false"
             android:visibility="gone"
             app:icon="@drawable/ic_launcher_foreground"
             app:iconSize="20dp"
@@ -123,17 +125,14 @@
                 android:layout_height="wrap_content"
                 android:text="@string/stats" />
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/moves" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/evolutions" />
-
         </com.google.android.material.tabs.TabLayout>
+
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
 
         <androidx.core.widget.NestedScrollView
             android:id="@+id/details_nested_view"
@@ -149,7 +148,5 @@
         </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
