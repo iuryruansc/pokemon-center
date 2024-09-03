@@ -7,16 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.pokemon_center.R
+import br.com.pokemon_center.commom.util.hofs.general.createBalloon
+import br.com.pokemon_center.commom.util.hofs.general.readJson
+import br.com.pokemon_center.commom.util.hofs.types.getCombinedTypeEffectivenessDef
+import br.com.pokemon_center.commom.util.hofs.types.parseTypeEffectiveness
 import br.com.pokemon_center.commom.util.listeners.FragmentEffectListener
-import br.com.pokemon_center.commom.util.readJson
-import br.com.pokemon_center.commom.util.typechart.getCombinedTypeEffectivenessDef
-import br.com.pokemon_center.commom.util.typechart.parseTypeEffectiveness
 import br.com.pokemon_center.databinding.FragmentEffectivenessBinding
 import br.com.pokemon_center.ui.adapters.TypeEffectivenessAdapter
-import com.skydoves.balloon.ArrowPositionRules
-import com.skydoves.balloon.Balloon
-import com.skydoves.balloon.BalloonAnimation
-import com.skydoves.balloon.BalloonSizeSpec
 
 class EffectivenessFragment : Fragment(), FragmentEffectListener {
 
@@ -61,7 +58,7 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
             defenseRecyclerView.adapter = adapter
 
         } else {
-            //TODO
+            //TODO handle null json
         }
     }
 
@@ -73,7 +70,6 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
     override fun onItemClick(view: View, position: Int, mult: CharSequence) {
         var text = ""
         var color = 0
-
 
         when (mult) {
             "x4.0" -> {
@@ -95,27 +91,14 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
                 text = "This pokémon takes 0.25x damage from this type."
                 color = R.color.quadrupleResist
             }
+
             "x0.0" -> {
                 text = "This type has no effect on this pokémon."
                 color = R.color.noEffect
             }
         }
 
-        val balloon = Balloon.Builder(requireContext())
-            .setWidthRatio(1.0f)
-            .setHeight(BalloonSizeSpec.WRAP)
-            .setText(text)
-            .setTextColorResource(R.color.md_theme_light_onPrimary)
-            .setTextSize(15f)
-            .setArrowPositionRules(ArrowPositionRules.ALIGN_ANCHOR)
-            .setArrowSize(10)
-            .setArrowPosition(0.5f)
-            .setPadding(12)
-            .setCornerRadius(8f)
-            .setBackgroundColorResource(color)
-            .setBalloonAnimation(BalloonAnimation.ELASTIC)
-            .setLifecycleOwner(this)
-            .build()
+        val balloon = createBalloon(requireContext(), this, text, color)
 
         balloon.showAlignTop(view)
     }

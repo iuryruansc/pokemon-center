@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import br.com.pokemon_center.commom.util.calculateStatAtLevel
+import br.com.pokemon_center.commom.util.hofs.general.calculateStatAtLevel
 import br.com.pokemon_center.databinding.FragmentStatsBinding
 import br.com.pokemon_center.ui.viewmodels.StatsFragmentViewModel
 
@@ -64,15 +64,18 @@ class StatsFragment : Fragment() {
                 binding.defAtLvl.text = def.toString()
                 binding.defAtLvl.visibility = View.VISIBLE
 
-                val satk = calculateStatAtLevel(binding.statValueSatk.text.toString().toInt(), level)
+                val satk =
+                    calculateStatAtLevel(binding.statValueSatk.text.toString().toInt(), level)
                 binding.satkAtLvl.text = satk.toString()
                 binding.satkAtLvl.visibility = View.VISIBLE
 
-                val sdef = calculateStatAtLevel(binding.statValueSdef.text.toString().toInt(), level)
+                val sdef =
+                    calculateStatAtLevel(binding.statValueSdef.text.toString().toInt(), level)
                 binding.sdefAtLvl.text = sdef.toString()
                 binding.sdefAtLvl.visibility = View.VISIBLE
 
-                val spd = calculateStatAtLevel(binding.statValueSpeed.text.toString().toInt(), level)
+                val spd =
+                    calculateStatAtLevel(binding.statValueSpeed.text.toString().toInt(), level)
                 binding.spdAtLvl.text = spd.toString()
                 binding.spdAtLvl.visibility = View.VISIBLE
 

@@ -1,17 +1,22 @@
 package br.com.pokemon_center.ui.viewmodels
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import br.com.pokemon_center.data.repository.PokemonDetailsRepository
+import br.com.pokemon_center.local.db.AppDatabase
+import br.com.pokemon_center.local.entity.PokemonByNameEntity
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
-class PokemonDetailsViewModel: ViewModel() {
+class PokemonDetailsViewModel(application: Application) : AndroidViewModel(application) {
 
     private val mPokemonDetailsRepository = PokemonDetailsRepository()
+    private val database = AppDatabase.getInstance(application)
+    private val pokemonDao = database.pokemonDao()
 
     private var _pokemonId = MutableLiveData<Int>()
     val pokemonId: LiveData<Int> get() = _pokemonId
@@ -36,20 +41,53 @@ class PokemonDetailsViewModel: ViewModel() {
 
     fun pokemonDetails(pokemon: String) {
         viewModelScope.launch {
-            val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
-            if (response.success) {
-                val details = response.data!!
-                _pokemonId.postValue(details.id)
-                _pokemonName.postValue(details.name)
-                _pokemonImage.postValue(details.sprites.frontDefault)
-                _pokemonType1.postValue(details.types[0].type.name)
-                if (details.types.size > 1) {
-                    _pokemonType2.postValue(details.types[1].type.name)
+            val pokemonByName = pokemonDao.getPokemonByName(pokemon)
+            if (pokemonByName != null) {
+                _pokemonId.postValue(pokemonByName.id)
+                _pokemonName.postValue(pokemonByName.name)
+                _pokemonImage.postValue(pokemonByName.sprites.frontDefault)
+                _pokemonType1.postValue(pokemonByName.types[0].type.name)
+                if (pokemonByName.types.size > 1) {
+                    _pokemonType2.postValue(pokemonByName.types[1].type.name)
                 }
                 _isLoading.value = false
             } else {
-                _isLoading.value = true
-                _errorMessage.postValue(response.message)
+                val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
+                if (response.success) {
+                    val details = response.data
+                    if (details != null) {
+                        _pokemonId.postValue(details.id)
+                        _pokemonName.postValue(details.name)
+                        _pokemonImage.postValue(details.sprites.frontDefault)
+                        _pokemonType1.postValue(details.types[0].type.name)
+                        if (details.types.size > 1) {
+                            _pokemonType2.postValue(details.types[1].type.name)
+                        }
+                        _isLoading.value = false
+
+                        val pokemonEntity = PokemonByNameEntity(
+                            id = details.id,
+                            name = details.name,
+                            sprites = details.sprites,
+                            height = details.height,
+                            weight = details.weight,
+                            baseExperience = details.baseExperience,
+                            abilities = details.abilities,
+                            moves = details.moves,
+                            stats = details.stats,
+                            types = details.types,
+                            cries = details.cries
+                        )
+
+                        pokemonDao.insertPokemon(pokemonEntity)
+                    } else {
+                        _isLoading.value = true
+                        _errorMessage.postValue("Couldn't retrieve data, try again later")
+                    }
+                } else {
+                    _isLoading.value = true
+                    _errorMessage.postValue(response.message)
+                }
             }
         }
     }

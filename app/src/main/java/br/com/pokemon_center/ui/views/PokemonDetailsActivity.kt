@@ -11,13 +11,14 @@ import androidx.constraintlayout.widget.ConstraintSet
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import br.com.pokemon_center.commom.util.typesStyles
-import br.com.pokemon_center.commom.util.textformat.capitalizedName
+import br.com.pokemon_center.commom.util.hofs.textformat.capitalizedName
+import br.com.pokemon_center.commom.util.hofs.types.typesStyles
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
 import br.com.pokemon_center.ui.fragments.EffectivenessFragment
 import br.com.pokemon_center.ui.fragments.InfoFragment
 import br.com.pokemon_center.ui.fragments.StatsFragment
 import br.com.pokemon_center.ui.viewmodels.PokemonDetailsViewModel
+import br.com.pokemon_center.ui.viewmodels.ViewModelFactory
 import coil.load
 import kotlinx.coroutines.launch
 import java.util.Locale
@@ -25,7 +26,7 @@ import java.util.Locale
 class PokemonDetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPokemonDetailsBinding
-    private val viewModel: PokemonDetailsViewModel by viewModels()
+    private val viewModel: PokemonDetailsViewModel by viewModels { ViewModelFactory(application) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -88,7 +89,8 @@ class PokemonDetailsActivity : AppCompatActivity() {
                         binding.detailsLinearLayout.visibility = View.GONE
                         binding.progressIndicator.visibility = View.VISIBLE
                         viewModel.errorMessage.observe(this@PokemonDetailsActivity) { message ->
-                            Toast.makeText(this@PokemonDetailsActivity, message, Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@PokemonDetailsActivity, message, Toast.LENGTH_SHORT)
+                                .show()
                             finish()
                         }
                     } else {

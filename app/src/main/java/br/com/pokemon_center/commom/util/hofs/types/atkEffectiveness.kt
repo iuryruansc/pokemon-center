@@ -1,4 +1,4 @@
-package br.com.pokemon_center.commom.util.typechart
+package br.com.pokemon_center.commom.util.hofs.types
 
 fun getCombinedTypeEffectivenessAtk(
     type1: String,
