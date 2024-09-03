@@ -140,7 +140,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragmentContainerView"
-                android:name="br.com.pokemon_center.ui.fragments.InfoFragment"
+                android:name="br.com.pokemoncenter.ui.fragments.InfoFragment"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:layout="@layout/fragment_info" />
