@@ -1,4 +1,4 @@
-package br.com.pokemon_center.commom.util
+package br.com.pokemon_center.commom.util.hofs.general
 
 import android.content.Context
 

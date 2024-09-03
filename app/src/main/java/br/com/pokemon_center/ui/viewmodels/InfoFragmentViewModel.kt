@@ -1,18 +1,24 @@
 package br.com.pokemon_center.ui.viewmodels
 
+import android.app.Application
+import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
-import br.com.pokemon_center.commom.util.textformat.formatHeight
-import br.com.pokemon_center.commom.util.textformat.formatWeight
+import br.com.pokemon_center.commom.util.hofs.textformat.findDescription
+import br.com.pokemon_center.commom.util.hofs.textformat.formatHeight
+import br.com.pokemon_center.commom.util.hofs.textformat.formatWeight
 import br.com.pokemon_center.data.repository.PokemonDetailsRepository
+import br.com.pokemon_center.local.db.AppDatabase
+import br.com.pokemon_center.local.entity.SpeciesByNameEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class InfoFragmentViewModel : ViewModel() {
+class InfoFragmentViewModel(application: Application) : AndroidViewModel(application) {
 
     private val mPokemonDetailsRepository = PokemonDetailsRepository()
+    private val database = AppDatabase.getInstance(application)
+    private val pokemonDao = database.pokemonDao()
 
     private var _pokemonDescription = MutableLiveData<String>()
     val pokemonDescription: LiveData<String> get() = _pokemonDescription
@@ -40,28 +46,68 @@ class InfoFragmentViewModel : ViewModel() {
 
     fun pokemonSpecies(pokemon: String) {
         CoroutineScope(Dispatchers.IO).launch {
-            val response = mPokemonDetailsRepository.getPokemonSpecies(pokemon)
-            if (response.success) {
-                val species = response.data!!
-                val englishDescription = species.flavorTextEntries.find { it.language.name == "en" }
-                val formattedDescription = englishDescription!!.flavorText.replace("\n", " ")
+            val pokemonByName = pokemonDao.getSpeciesByName(pokemon)
+            if (pokemonByName != null) {
+                val formattedDescription = findDescription(pokemonByName.flavorTextEntries)
                 _pokemonDescription.postValue(formattedDescription)
-                _captureRate.postValue(species.captureRate.toString())
-                _genera.postValue(species.genera.find { it.language.name == "en" }!!.genus)
-                _generationDebut.postValue(species.generation.name)
+                _captureRate.postValue(pokemonByName.captureRate.toString())
+                _genera.postValue(pokemonByName.genera.find { it.language.name == "en" }!!.genus)
+                _generationDebut.postValue(pokemonByName.generation.name)
+            } else {
+                val response = mPokemonDetailsRepository.getPokemonSpecies(pokemon)
+                if (response.success) {
+                    val species = response.data
+                    if (species != null) {
+                        val formattedDescription = findDescription(species.flavorTextEntries)
+                        _pokemonDescription.postValue(formattedDescription)
+                        _captureRate.postValue(species.captureRate.toString())
+                        _genera.postValue(species.genera.find { it.language.name == "en" }!!.genus)
+                        _generationDebut.postValue(species.generation.name)
+
+                        val speciesEntity = SpeciesByNameEntity(
+                            pokemonId = species.id,
+                            pokemonName = species.name,
+                            evolvesFromSpecies = species.evolvesFromSpecies,
+                            generation = species.generation,
+                            captureRate = species.captureRate,
+                            flavorTextEntries = species.flavorTextEntries,
+                            genera = species.genera
+                        )
+
+                        pokemonDao.insertSpecies(speciesEntity)
+                    } else {
+                        //TODO handle null
+                    }
+                } else {
+                    //TODO handle error
+                }
             }
         }
     }
 
     fun pokemonDetails(pokemon: String) {
         CoroutineScope(Dispatchers.IO).launch {
-            val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
-            if (response.success) {
-                val details = response.data!!
-                _pokemonWeight.postValue(formatWeight(details.weight))
-                _pokemonHeight.postValue(formatHeight(details.height))
-                _baseExperience.postValue(details.baseExperience.toString())
-                _cries.postValue(details.cries.latest)
+            val pokemonByName = pokemonDao.getPokemonByName(pokemon)
+            if (pokemonByName != null) {
+                _pokemonWeight.postValue(formatWeight(pokemonByName.weight))
+                _pokemonHeight.postValue(formatHeight(pokemonByName.height))
+                _baseExperience.postValue(pokemonByName.baseExperience.toString())
+                _cries.postValue(pokemonByName.cries.toString())
+            } else {
+                val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
+                if (response.success) {
+                    val pokemonDetails = response.data
+                    if (pokemonDetails != null) {
+                        _pokemonWeight.postValue(formatWeight(pokemonDetails.weight))
+                        _pokemonHeight.postValue(formatHeight(pokemonDetails.height))
+                        _baseExperience.postValue(pokemonDetails.baseExperience.toString())
+                        _cries.postValue(pokemonDetails.cries.toString())
+                    } else {
+                        // TODO handle null
+                    }
+                } else {
+                    // TODO handle error
+                }
             }
         }
     }
