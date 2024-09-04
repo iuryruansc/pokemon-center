@@ -1,5 +1,6 @@
 package br.com.pokemoncenter.data.api
 
+import br.com.pokemoncenter.data.api.models.MoveDetailsResponse
 import br.com.pokemoncenter.data.api.models.PokemonByNameResponse
 import br.com.pokemoncenter.data.api.models.SpeciesByNameResponse
 import retrofit2.Response
@@ -13,4 +14,7 @@ interface ApiService {
 
     @GET("pokemon-species/{name}")
     suspend fun getSpeciesById(@Path("name") name: String): Response<SpeciesByNameResponse>
+
+    @GET("move/{name}")
+    suspend fun getMoveByName(@Path("name") name: String): Response<MoveDetailsResponse>
 }

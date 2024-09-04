@@ -45,9 +45,6 @@ class InfoFragmentViewModel(application: Application) : AndroidViewModel(applica
     private var _generationDebut = MutableLiveData<String>()
     val generationDebut: LiveData<String> get() = _generationDebut
 
-    private var _cries = MutableLiveData<String>()
-    val cries: LiveData<String> get() = _cries
-
     fun pokemonSpecies(pokemon: String) {
         viewModelScope.launch {
             val pokemonByName = pokemonDao.getSpeciesByName(pokemon)
@@ -96,7 +93,6 @@ class InfoFragmentViewModel(application: Application) : AndroidViewModel(applica
                 _pokemonWeight.postValue(formatWeight(pokemonByName.weight))
                 _pokemonHeight.postValue(formatHeight(pokemonByName.height))
                 _baseExperience.postValue(pokemonByName.baseExperience.toString())
-                _cries.postValue(pokemonByName.cries.toString())
             } else {
                 val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
                 if (response.success) {
@@ -105,7 +101,6 @@ class InfoFragmentViewModel(application: Application) : AndroidViewModel(applica
                         _pokemonWeight.postValue(formatWeight(pokemonDetails.weight))
                         _pokemonHeight.postValue(formatHeight(pokemonDetails.height))
                         _baseExperience.postValue(pokemonDetails.baseExperience.toString())
-                        _cries.postValue(pokemonDetails.cries.toString())
                     } else {
                         // TODO handle null
                     }

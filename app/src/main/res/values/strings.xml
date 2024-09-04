@@ -16,7 +16,7 @@
     <string name="info">Info</string>
     <string name="stats">Stats</string>
     <string name="moves">Moves</string>
-    <string name="pokemon_sprite">Pokemon sprite</string>
+    <string name="pokemon_sprite">Pokemon sprite to play cry sound</string>
     <string name="evolutions">Evolutions</string>
     <string name="description">Description</string>
     <string name="weight">Weight</string>
@@ -44,7 +44,7 @@
     <string name="spd">SPD</string>
     <string name="enter_level">Enter Level</string>
     <string name="calculate_stats">Calculate Stats</string>
-    <string name="disclaimer_note">Please note that this is a beta version of the stat calculator and does not include the effects of natures or abilities.</string>
+    <string name="disclaimer_note">*Please note that this is a beta version and does not include the effects of natures or abilities.</string>
     <string name="effectiveness">Defense Effectiveness</string>
     <string name="type">Type</string>
     <string name="multiplier"><u>x1.0</u></string>

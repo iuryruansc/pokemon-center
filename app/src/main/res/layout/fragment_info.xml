@@ -222,29 +222,4 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.5" />
 
-    <TextView
-        android:id="@+id/cry_title"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="25dp"
-        android:text="@string/cry_sound"
-        style="@style/LabelTextStyle"
-        app:layout_constraintTop_toBottomOf="@id/generation_text"
-        app:layout_constraintStart_toEndOf="@id/cry_play_button"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/cry_play_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="?attr/colorPrimary"
-        android:contentDescription="@string/cry_play_button"
-        android:elevation="15dp"
-        android:src="@drawable/cry_icon"
-        app:layout_constraintStart_toEndOf="@id/guideline"
-        app:layout_constraintTop_toBottomOf="@id/generation_text" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
