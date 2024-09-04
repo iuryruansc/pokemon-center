@@ -37,7 +37,7 @@
             android:layout_width="60dp"
             android:layout_height="25dp"
             android:layout_weight="1"
-            android:background="@color/grey"/>
+            android:background="@color/noEffect"/>
 
     </LinearLayout>
 

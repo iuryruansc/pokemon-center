@@ -54,7 +54,7 @@ class TypeEffectivenessAdapter(private val typeEffectiveness: Map<String, Double
             }
 
             2.0 -> {
-                holder.tvEffectBar.setBackgroundResource(R.color.doubleEffective)
+                holder.tvEffectBar.setBackgroundResource(R.color.theme_dark_double_effective)
                 holder.tvEffectiveness.text = String.format(Locale.ROOT, "x%.1f", effectiveness)
             }
 

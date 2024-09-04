@@ -26,7 +26,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.25"
-            android:textColor="#FF0000"
+            style="@style/DoubleEffectivenessStyle"
             android:text="@string/stat_example"
             android:visibility="gone" />
 
@@ -35,9 +35,9 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textColor="#FF0000"
             android:layout_weight="1.25"
-            android:text="@string/stat_example" />
+            android:text="@string/stat_example"
+            style="@style/DoubleEffectivenessStyle"/>
 
         <ProgressBar
             android:id="@+id/stat_progress_hp"
@@ -71,7 +71,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.25"
-            android:textColor="#FFA500"
+            style="@style/AtkStatStyle"
             android:text="@string/stat_example"
             android:visibility="gone" />
 
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1.25"
-            android:textColor="#FFA500"
+            style="@style/AtkStatStyle"
             android:text="@string/stat_example" />
 
         <ProgressBar
@@ -116,7 +116,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.25"
-            android:textColor="#0000FF"
+            style="@style/DefStatStyle"
             android:text="@string/stat_example"
             android:visibility="gone" />
 
@@ -125,7 +125,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:textColor="#0000FF"
+            style="@style/DefStatStyle"
             android:layout_weight="1.25"
             android:text="@string/stat_example" />
 
@@ -251,14 +251,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1.25"
-            android:textColor="#FFFF00"
+            style="@style/SpeedStatTextStyle"
             android:text="@string/stat_example"
             android:visibility="gone" />
 
         <TextView
             android:id="@+id/stat_value_speed"
             android:layout_width="0dp"
-            android:textColor="#FFFF00"
+            style="@style/SpeedStatTextStyle"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_weight="1.25"

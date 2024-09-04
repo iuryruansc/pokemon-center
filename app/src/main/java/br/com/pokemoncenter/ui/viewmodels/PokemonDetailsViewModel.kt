@@ -4,15 +4,20 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.viewModelScope
 import br.com.pokemoncenter.data.repository.PokemonDetailsRepository
 import br.com.pokemoncenter.local.db.AppDatabase
 import br.com.pokemoncenter.local.entity.PokemonByNameEntity
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class PokemonDetailsViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val viewModelJob = SupervisorJob()
+    private val viewModelScope = CoroutineScope(Dispatchers.IO + viewModelJob)
 
     private val mPokemonDetailsRepository = PokemonDetailsRepository()
     private val database = AppDatabase.getInstance(application)
@@ -90,5 +95,10 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
                 }
             }
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        viewModelJob.cancel()
     }
 }

@@ -12,9 +12,13 @@ import br.com.pokemoncenter.local.db.AppDatabase
 import br.com.pokemoncenter.local.entity.SpeciesByNameEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
 
 class InfoFragmentViewModel(application: Application) : AndroidViewModel(application) {
+
+    private val viewModelJob = SupervisorJob()
+    private val viewModelScope = CoroutineScope(Dispatchers.IO + viewModelJob)
 
     private val mPokemonDetailsRepository = PokemonDetailsRepository()
     private val database = AppDatabase.getInstance(application)
@@ -45,7 +49,7 @@ class InfoFragmentViewModel(application: Application) : AndroidViewModel(applica
     val cries: LiveData<String> get() = _cries
 
     fun pokemonSpecies(pokemon: String) {
-        CoroutineScope(Dispatchers.IO).launch {
+        viewModelScope.launch {
             val pokemonByName = pokemonDao.getSpeciesByName(pokemon)
             if (pokemonByName != null) {
                 val formattedDescription = findDescription(pokemonByName.flavorTextEntries)
@@ -86,7 +90,7 @@ class InfoFragmentViewModel(application: Application) : AndroidViewModel(applica
     }
 
     fun pokemonDetails(pokemon: String) {
-        CoroutineScope(Dispatchers.IO).launch {
+        viewModelScope.launch {
             val pokemonByName = pokemonDao.getPokemonByName(pokemon)
             if (pokemonByName != null) {
                 _pokemonWeight.postValue(formatWeight(pokemonByName.weight))
@@ -110,5 +114,10 @@ class InfoFragmentViewModel(application: Application) : AndroidViewModel(applica
                 }
             }
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        viewModelJob.cancel()
     }
 }

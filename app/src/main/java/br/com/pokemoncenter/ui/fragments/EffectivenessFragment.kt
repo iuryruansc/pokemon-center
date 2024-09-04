@@ -78,7 +78,7 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
 
             "x2.0" -> {
                 text = "This pokémon takes double damage from this type."
-                color = R.color.doubleEffective
+                color = R.color.theme_dark_double_effective
             }
 
             "x0.5" -> {
