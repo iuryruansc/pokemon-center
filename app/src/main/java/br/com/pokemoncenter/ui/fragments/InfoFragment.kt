@@ -1,6 +1,5 @@
 package br.com.pokemoncenter.ui.fragments
 
-import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,9 +15,6 @@ class InfoFragment : Fragment() {
     private val viewModel: InfoFragmentViewModel by viewModels()
     private var _binding: FragmentInfoBinding? = null
     private val binding get() = _binding!!
-
-    private var cryUrl: String? = null
-    private var mediaPlayer: MediaPlayer? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -68,28 +64,8 @@ class InfoFragment : Fragment() {
                 binding.generationText.text = capitalizedName(it)
             }
 
-            viewModel.cries.observe(viewLifecycleOwner) {
-                cryUrl = it
-            }
-
-            binding.cryPlayButton.setOnClickListener {
-                if (mediaPlayer?.isPlaying == true) {
-                    mediaPlayer?.pause()
-                } else {
-                    cryUrl?.let { url ->
-                        mediaPlayer = MediaPlayer()
-                            .apply {
-                                setDataSource(url)
-                                prepareAsync()
-                                setOnPreparedListener {
-                                    start()
-                                }
-                            }
-                    }
-                }
             }
         }
-    }
 
     override fun onDestroyView() {
         super.onDestroyView()

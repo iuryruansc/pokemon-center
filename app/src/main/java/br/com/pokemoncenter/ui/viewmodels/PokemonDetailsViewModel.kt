@@ -35,6 +35,9 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
     private var _pokemonType1 = MutableLiveData<String>()
     val pokemonType1: LiveData<String> get() = _pokemonType1
 
+    private var _cries = MutableLiveData<String>()
+    val cries: LiveData<String> get() = _cries
+
     private var _pokemonType2 = MutableLiveData<String>()
     val pokemonType2: LiveData<String> get() = _pokemonType2
 
@@ -50,6 +53,7 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
             if (pokemonByName != null) {
                 _pokemonId.postValue(pokemonByName.id)
                 _pokemonName.postValue(pokemonByName.name)
+                _cries.postValue(pokemonByName.cries.latest)
                 _pokemonImage.postValue(pokemonByName.sprites.frontDefault)
                 _pokemonType1.postValue(pokemonByName.types[0].type.name)
                 if (pokemonByName.types.size > 1) {
@@ -63,6 +67,7 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
                     if (details != null) {
                         _pokemonId.postValue(details.id)
                         _pokemonName.postValue(details.name)
+                        _cries.postValue(details.cries.latest)
                         _pokemonImage.postValue(details.sprites.frontDefault)
                         _pokemonType1.postValue(details.types[0].type.name)
                         if (details.types.size > 1) {
@@ -83,7 +88,6 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
                             types = details.types,
                             cries = details.cries
                         )
-
                         pokemonDao.insertPokemon(pokemonEntity)
                     } else {
                         _isLoading.value = true

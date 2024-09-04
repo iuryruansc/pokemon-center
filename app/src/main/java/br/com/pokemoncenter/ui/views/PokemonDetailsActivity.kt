@@ -1,7 +1,11 @@
 package br.com.pokemoncenter.ui.views
 
+import android.media.MediaPlayer
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -11,11 +15,13 @@ import androidx.constraintlayout.widget.ConstraintSet
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
 import br.com.pokemoncenter.commom.util.hofs.textformat.capitalizedName
 import br.com.pokemoncenter.commom.util.hofs.types.typesStyles
 import br.com.pokemoncenter.ui.fragments.EffectivenessFragment
 import br.com.pokemoncenter.ui.fragments.InfoFragment
+import br.com.pokemoncenter.ui.fragments.MovesFragment
 import br.com.pokemoncenter.ui.fragments.StatsFragment
 import br.com.pokemoncenter.ui.viewmodels.PokemonDetailsViewModel
 import br.com.pokemoncenter.ui.viewmodels.ViewModelFactory
@@ -27,6 +33,7 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPokemonDetailsBinding
     private val viewModel: PokemonDetailsViewModel by viewModels { ViewModelFactory(application) }
+    private var mediaPlayer: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +43,8 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         val pokemonName = intent.getStringExtra("pokemon")
         viewModel.pokemonDetails(pokemonName!!)
+
+        var cryUrl: String? = null
 
         val fragment = InfoFragment()
         val bundlePokeName = Bundle()
@@ -59,6 +68,10 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         viewModel.pokemonImage.observe(this) { image ->
             binding.sprite.load(image)
+        }
+
+        viewModel.cries.observe(this) {
+            cryUrl = it
         }
 
         viewModel.pokemonType1.observe(this) { type ->
@@ -102,6 +115,30 @@ class PokemonDetailsActivity : AppCompatActivity() {
             }
         }
 
+        binding.sprite.setOnClickListener {
+            if (mediaPlayer?.isPlaying == true) {
+                mediaPlayer?.pause()
+                binding.sprite.clearAnimation()
+            } else {
+                cryUrl?.let { url ->
+                    mediaPlayer = MediaPlayer().apply {
+                        setDataSource(url)
+                        prepareAsync()
+                        setOnPreparedListener {
+                            val duration = this.duration
+                            start()
+                            val pulseAnimation = AnimationUtils
+                                .loadAnimation(this@PokemonDetailsActivity, R.anim.pulse)
+                            binding.sprite.startAnimation(pulseAnimation)
+
+                            Handler(Looper.getMainLooper())
+                                .postDelayed({ binding.sprite.clearAnimation() }, duration.toLong())
+                        }
+                    }
+                }
+            }
+        }
+
         binding.detailsTabLayout.getTabAt(0)?.view?.setOnClickListener {
             val infoFragment = InfoFragment()
             infoFragment.arguments = bundlePokeName
@@ -128,6 +165,15 @@ class PokemonDetailsActivity : AppCompatActivity() {
                 .replace(binding.fragmentContainerView.id, effectivenessFragment)
                 .commit()
         }
+
+        binding.detailsTabLayout.getTabAt(3)?.view?.setOnClickListener {
+            val movesFragment = MovesFragment()
+            movesFragment.arguments = bundlePokeName
+
+            supportFragmentManager.beginTransaction()
+                .replace(binding.fragmentContainerView.id, movesFragment)
+                .commit()
+        }
     }
 
     // Update the constraints based on the visibility of type2
@@ -145,8 +191,19 @@ class PokemonDetailsActivity : AppCompatActivity() {
         constraintSet.applyTo(binding.detailsConstraintLayout)
     }
 
-    // Apply the type style to the button
     private fun applyTypeStyle(image: ImageView, src: Int) {
         image.load(src)
+    }
+
+    override fun onStop() {
+        super.onStop()
+        mediaPlayer?.release()
+        mediaPlayer = null
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mediaPlayer?.release()
+        mediaPlayer = null
     }
 }
