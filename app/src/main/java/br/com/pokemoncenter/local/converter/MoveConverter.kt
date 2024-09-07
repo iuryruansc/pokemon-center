@@ -33,25 +33,24 @@ class MoveConverter {
     }
 
     @TypeConverter
-    fun fromTargetDetail (targetDetail: TargetDetail): String {
+    fun fromTargetDetail(targetDetail: TargetDetail): String {
         return Gson().toJson(targetDetail)
     }
 
     @TypeConverter
-    fun toTargetDetail (targetDetailString: String): TargetDetail {
+    fun toTargetDetail(targetDetailString: String): TargetDetail {
         val type = object : TypeToken<TargetDetail>() {}.type
         return Gson().fromJson(targetDetailString, type)
     }
 
     @TypeConverter
-    fun fromDamageClass (damageClass: Damage): String {
+    fun fromDamageClass(damageClass: Damage): String {
         return Gson().toJson(damageClass)
     }
 
     @TypeConverter
-    fun toDamageClass (damageClassString: String): Damage {
+    fun toDamageClass(damageClassString: String): Damage {
         val type = object : TypeToken<Damage>() {}.type
         return Gson().fromJson(damageClassString, type)
     }
-
 }

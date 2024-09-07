@@ -9,6 +9,8 @@ import br.com.pokemoncenter.local.db.AppDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class StatsFragmentViewModel(application: Application) : AndroidViewModel(application) {
@@ -22,10 +24,22 @@ class StatsFragmentViewModel(application: Application) : AndroidViewModel(applic
     private var _stats = MutableLiveData<List<Stats>>()
     val stats: LiveData<List<Stats>> get() = _stats
 
+    private var _errorMessage = MutableLiveData<String>()
+    val errorMessage: LiveData<String> get() = _errorMessage
+
+    private var _isLoading = MutableStateFlow(true)
+    val isLoading: StateFlow<Boolean> get() = _isLoading
+
     fun pokemonStats(pokemon: String) {
-       viewModelScope.launch {
+        viewModelScope.launch {
             val pokemonStats = pokemonDao.getPokemonByName(pokemon)
-            _stats.postValue(pokemonStats!!.stats)
+            if (pokemonStats != null) {
+                _stats.postValue(pokemonStats.stats)
+                _isLoading.value = false
+            } else {
+                _errorMessage.postValue("Couldn't retrieve data, try again later")
+                _isLoading.value = true
+            }
         }
     }
 

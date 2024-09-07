@@ -7,9 +7,13 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import br.com.pokemon_center.databinding.FragmentStatsBinding
 import br.com.pokemoncenter.commom.util.hofs.general.calculateStatAtLevel
 import br.com.pokemoncenter.ui.viewmodels.StatsFragmentViewModel
+import kotlinx.coroutines.launch
 
 class StatsFragment : Fragment() {
 
@@ -29,6 +33,9 @@ class StatsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.linearContainer.visibility = View.GONE
+        binding.statsLoading.visibility = View.VISIBLE
+
         val pokemonName = arguments?.getString("pokemonName")
         if (pokemonName != null) {
             viewModel.pokemonStats(pokemonName)
@@ -46,6 +53,24 @@ class StatsFragment : Fragment() {
                 binding.statProgressSdef.progress = it[4].baseStat
                 binding.statValueSpeed.text = it[5].baseStat.toString()
                 binding.statProgressSpeed.progress = it[5].baseStat
+            }
+        }
+
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.isLoading.collect {
+                    if (it) {
+                        binding.statsLoading.visibility = View.VISIBLE
+                        binding.linearContainer.visibility = View.GONE
+                        viewModel.errorMessage.observe(viewLifecycleOwner) { message ->
+                            Toast.makeText(context, message, Toast.LENGTH_SHORT)
+                                .show()
+                        }
+                    } else {
+                        binding.statsLoading.visibility = View.GONE
+                        binding.linearContainer.visibility = View.VISIBLE
+                    }
+                }
             }
         }
 

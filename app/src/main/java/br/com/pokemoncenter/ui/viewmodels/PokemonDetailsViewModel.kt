@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import br.com.pokemoncenter.data.api.models.PokemonByNameResponse
 import br.com.pokemoncenter.data.repository.PokemonDetailsRepository
 import br.com.pokemoncenter.local.db.AppDatabase
 import br.com.pokemoncenter.local.entity.PokemonByNameEntity
@@ -23,58 +24,26 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
     private val database = AppDatabase.getInstance(application)
     private val pokemonDao = database.pokemonDao()
 
-    private var _pokemonId = MutableLiveData<Int>()
-    val pokemonId: LiveData<Int> get() = _pokemonId
-
-    private var _pokemonName = MutableLiveData<String>()
-    val pokemonName: LiveData<String> get() = _pokemonName
-
-    private var _pokemonImage = MutableLiveData<String>()
-    val pokemonImage: LiveData<String> get() = _pokemonImage
-
-    private var _pokemonType1 = MutableLiveData<String>()
-    val pokemonType1: LiveData<String> get() = _pokemonType1
-
-    private var _cries = MutableLiveData<String>()
-    val cries: LiveData<String> get() = _cries
-
-    private var _pokemonType2 = MutableLiveData<String>()
-    val pokemonType2: LiveData<String> get() = _pokemonType2
-
     private var _errorMessage = MutableLiveData<String>()
     val errorMessage: LiveData<String> get() = _errorMessage
 
     private val _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> get() = _isLoading
 
+    private val _pokemon = MutableStateFlow<PokemonByNameResponse?>(null)
+    val pokemon: StateFlow<PokemonByNameResponse?> get() = _pokemon
+
     fun pokemonDetails(pokemon: String) {
         viewModelScope.launch {
             val pokemonByName = pokemonDao.getPokemonByName(pokemon)
             if (pokemonByName != null) {
-                _pokemonId.postValue(pokemonByName.id)
-                _pokemonName.postValue(pokemonByName.name)
-                _cries.postValue(pokemonByName.cries.latest)
-                _pokemonImage.postValue(pokemonByName.sprites.frontDefault)
-                _pokemonType1.postValue(pokemonByName.types[0].type.name)
-                if (pokemonByName.types.size > 1) {
-                    _pokemonType2.postValue(pokemonByName.types[1].type.name)
-                }
                 _isLoading.value = false
             } else {
                 val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
                 if (response.success) {
                     val details = response.data
                     if (details != null) {
-                        _pokemonId.postValue(details.id)
-                        _pokemonName.postValue(details.name)
-                        _cries.postValue(details.cries.latest)
-                        _pokemonImage.postValue(details.sprites.frontDefault)
-                        _pokemonType1.postValue(details.types[0].type.name)
-                        if (details.types.size > 1) {
-                            _pokemonType2.postValue(details.types[1].type.name)
-                        }
                         _isLoading.value = false
-
                         val pokemonEntity = PokemonByNameEntity(
                             id = details.id,
                             name = details.name,
@@ -89,6 +58,7 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
                             cries = details.cries
                         )
                         pokemonDao.insertPokemon(pokemonEntity)
+                        _pokemon.value = details
                     } else {
                         _isLoading.value = true
                         _errorMessage.postValue("Couldn't retrieve data, try again later")

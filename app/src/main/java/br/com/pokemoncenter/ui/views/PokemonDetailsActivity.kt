@@ -6,19 +6,19 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintSet
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
 import br.com.pokemoncenter.commom.util.hofs.textformat.capitalizedName
-import br.com.pokemoncenter.commom.util.hofs.types.typesStyles
+import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
 import br.com.pokemoncenter.ui.fragments.EffectivenessFragment
 import br.com.pokemoncenter.ui.fragments.InfoFragment
 import br.com.pokemoncenter.ui.fragments.MovesFragment
@@ -26,6 +26,7 @@ import br.com.pokemoncenter.ui.fragments.StatsFragment
 import br.com.pokemoncenter.ui.viewmodels.PokemonDetailsViewModel
 import br.com.pokemoncenter.ui.viewmodels.ViewModelFactory
 import coil.load
+import com.google.android.material.tabs.TabLayout
 import kotlinx.coroutines.launch
 import java.util.Locale
 
@@ -34,6 +35,7 @@ class PokemonDetailsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPokemonDetailsBinding
     private val viewModel: PokemonDetailsViewModel by viewModels { ViewModelFactory(application) }
     private var mediaPlayer: MediaPlayer? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,70 +48,42 @@ class PokemonDetailsActivity : AppCompatActivity() {
 
         var cryUrl: String? = null
 
-        val fragment = InfoFragment()
-        val bundlePokeName = Bundle()
-        bundlePokeName.putString("pokemonName", pokemonName)
+        val fragmentArgs = Bundle().apply { putString("pokemonName", pokemonName) }
+        replaceFragment(InfoFragment(), fragmentArgs)
 
-        val bundleTypes = Bundle()
-
-        fragment.arguments = bundlePokeName
-
-        supportFragmentManager.beginTransaction()
-            .replace(binding.fragmentContainerView.id, fragment)
-            .commit()
-
-        viewModel.pokemonId.observe(this) { id ->
-            binding.id.text = String.format(Locale.ROOT, "#%03d", id)
-        }
-
-        viewModel.pokemonName.observe(this) { name ->
-            binding.name.text = capitalizedName(name)
-        }
-
-        viewModel.pokemonImage.observe(this) { image ->
-            binding.sprite.load(image)
-        }
-
-        viewModel.cries.observe(this) {
-            cryUrl = it
-        }
-
-        viewModel.pokemonType1.observe(this) { type ->
-            val style = typesStyles(type)
-            bundleTypes.putString("type1", type)
-
-            if (style != null) {
-                applyTypeStyle(binding.type1, style)
-            }
-        }
-
-        viewModel.pokemonType2.observe(this) { type ->
-            binding.type2.visibility = View.VISIBLE
-            updateType1Constraints()
-            bundleTypes.putString("type2", type)
-
-            val style = typesStyles(type)
-            if (style != null) {
-                applyTypeStyle(binding.type2, style)
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                viewModel.pokemon.collect { pokemon ->
+                    if (pokemon != null) {
+                        binding.id.text = String.format(Locale.ROOT, "#%03d", pokemon.id)
+                        binding.name.text = capitalizedName(pokemon.name)
+                        binding.sprite.load(pokemon.sprites.frontDefault)
+                        binding.type1.load(typeStyle(pokemon.types[0].type.name))
+                        fragmentArgs.putString("type1", pokemon.types[0].type.name)
+                        if (pokemon.types.size > 1) {
+                            updateType1Constraints()
+                            binding.type2.load(typeStyle(pokemon.types[1].type.name))
+                            fragmentArgs.putString("type2", pokemon.types[1].type.name)
+                        }
+                        cryUrl = pokemon.cries.latest
+                    }
+                }
             }
         }
 
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
-                viewModel.isLoading.collect {
-                    if (it) {
-                        binding.detailsConstraintLayout.visibility = View.GONE
-                        binding.detailsLinearLayout.visibility = View.GONE
-                        binding.progressIndicator.visibility = View.VISIBLE
-                        viewModel.errorMessage.observe(this@PokemonDetailsActivity) { message ->
-                            Toast.makeText(this@PokemonDetailsActivity, message, Toast.LENGTH_SHORT)
-                                .show()
-                            finish()
-                        }
-                    } else {
-                        binding.progressIndicator.visibility = View.GONE
-                        binding.detailsConstraintLayout.visibility = View.VISIBLE
-                        binding.detailsLinearLayout.visibility = View.VISIBLE
+                viewModel.isLoading.collect { isLoading ->
+                    binding.detailsConstraintLayout.visibility =
+                        if (isLoading) View.GONE else View.VISIBLE
+                    binding.detailsLinearLayout.visibility =
+                        if (isLoading) View.GONE else View.VISIBLE
+                    binding.progressIndicator.visibility =
+                        if (isLoading) View.VISIBLE else View.GONE
+                    viewModel.errorMessage.observe(this@PokemonDetailsActivity) { message ->
+                        Toast.makeText(this@PokemonDetailsActivity, message, Toast.LENGTH_SHORT)
+                            .show()
+                        finish()
                     }
                 }
             }
@@ -139,44 +113,24 @@ class PokemonDetailsActivity : AppCompatActivity() {
             }
         }
 
-        binding.detailsTabLayout.getTabAt(0)?.view?.setOnClickListener {
-            val infoFragment = InfoFragment()
-            infoFragment.arguments = bundlePokeName
+        binding.detailsTabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                when (tab?.position) {
+                    0 -> replaceFragment(InfoFragment(), fragmentArgs)
+                    1 -> replaceFragment(StatsFragment(), fragmentArgs)
+                    2 -> replaceFragment(EffectivenessFragment(), fragmentArgs)
+                    3 -> replaceFragment(MovesFragment(), fragmentArgs)
+                }
+            }
 
-            supportFragmentManager.beginTransaction()
-                .replace(binding.fragmentContainerView.id, infoFragment)
-                .commit()
-        }
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+            }
 
-        binding.detailsTabLayout.getTabAt(1)?.view?.setOnClickListener {
-            val statsFragment = StatsFragment()
-            statsFragment.arguments = bundlePokeName
-
-            supportFragmentManager.beginTransaction()
-                .replace(binding.fragmentContainerView.id, statsFragment)
-                .commit()
-        }
-
-        binding.detailsTabLayout.getTabAt(2)?.view?.setOnClickListener {
-            val effectivenessFragment = EffectivenessFragment()
-            effectivenessFragment.arguments = bundleTypes
-
-            supportFragmentManager.beginTransaction()
-                .replace(binding.fragmentContainerView.id, effectivenessFragment)
-                .commit()
-        }
-
-        binding.detailsTabLayout.getTabAt(3)?.view?.setOnClickListener {
-            val movesFragment = MovesFragment()
-            movesFragment.arguments = bundlePokeName
-
-            supportFragmentManager.beginTransaction()
-                .replace(binding.fragmentContainerView.id, movesFragment)
-                .commit()
-        }
+            override fun onTabReselected(tab: TabLayout.Tab?) {
+            }
+        })
     }
 
-    // Update the constraints based on the visibility of type2
     private fun updateType1Constraints() {
         val constraintSet = ConstraintSet()
         constraintSet.clone(binding.detailsConstraintLayout)
@@ -191,8 +145,11 @@ class PokemonDetailsActivity : AppCompatActivity() {
         constraintSet.applyTo(binding.detailsConstraintLayout)
     }
 
-    private fun applyTypeStyle(image: ImageView, src: Int) {
-        image.load(src)
+    private fun replaceFragment(fragment: Fragment, args: Bundle) {
+        fragment.arguments = args
+        supportFragmentManager.beginTransaction()
+            .replace(binding.fragmentContainerView.id, fragment)
+            .commit()
     }
 
     override fun onStop() {

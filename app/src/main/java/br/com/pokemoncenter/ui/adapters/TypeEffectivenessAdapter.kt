@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.pokemon_center.R
-import br.com.pokemoncenter.commom.util.hofs.types.typesStyles
+import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
 import br.com.pokemoncenter.commom.util.listeners.FragmentEffectListener
 import java.util.Locale
 
@@ -45,7 +45,7 @@ class TypeEffectivenessAdapter(private val typeEffectiveness: Map<String, Double
     override fun onBindViewHolder(holder: TypeViewHolder, position: Int) {
         val type = typeEffectiveness.keys.elementAt(position)
 
-        holder.tvType.setImageResource(typesStyles(type)!!)
+        holder.tvType.setImageResource(typeStyle(type)!!)
 
         when (val effectiveness = typeEffectiveness[type]) {
             4.0 -> {

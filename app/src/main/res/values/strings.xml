@@ -51,4 +51,8 @@
     <string name="type_mult">"      Type"</string>
     <string name="reminder_text">*Formula = <b><small>(ATK Type Multiplier x DEF Type 1 Multiplier x ; DEF Type 2 Multiplier (if applicable))</small></b>"</string>
     <string name="multipliers_explanation">*Tap the items for a quick explanation.</string>
+    <string name="list_explanation">*This list includes every move this pokemon can learn by any method.</string>
+    <string name="list_sort">*This list doesn\'t have any sort method.</string>
+    <string name="pp_text">PP</string>
+    <string name="move_name">Move Name</string>
 </resources>

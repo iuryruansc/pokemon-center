@@ -9,7 +9,7 @@ import br.com.pokemoncenter.data.api.models.nestedmodels.Type
 import br.com.pokemoncenter.data.api.models.speciesbynamedata.FlavorTextEntry
 
 @Entity(tableName = "move_details")
-data class MoveEntity (
+data class MoveEntity(
     @PrimaryKey
     val name: String,
     val accuracy: Int,

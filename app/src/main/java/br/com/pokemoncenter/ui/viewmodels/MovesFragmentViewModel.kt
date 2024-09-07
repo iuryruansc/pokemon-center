@@ -2,15 +2,19 @@ package br.com.pokemoncenter.ui.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import br.com.pokemon_center.R
+import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
+import br.com.pokemoncenter.commom.util.hofs.types.typeStyleBackground
 import br.com.pokemoncenter.data.api.models.pokemonbynamedata.Moves
 import br.com.pokemoncenter.data.repository.PokemonDetailsRepository
 import br.com.pokemoncenter.local.db.AppDatabase
 import br.com.pokemoncenter.local.entity.MoveEntity
+import br.com.pokemoncenter.ui.adapters.MoveObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class MovesFragmentViewModel(application: Application) : AndroidViewModel(application) {
@@ -22,10 +26,9 @@ class MovesFragmentViewModel(application: Application) : AndroidViewModel(applic
     private val database = AppDatabase.getInstance(application)
     private val pokemonDao = database.pokemonDao()
 
-    private var _finalMovesList = MutableLiveData<List<Moves>>()
-    val finalMovesList: LiveData<List<Moves>>
-        get() = _finalMovesList
-
+    private val _moveObjects = MutableStateFlow<List<MoveObject>>(emptyList())
+    val moveObjects: StateFlow<List<MoveObject>>
+        get() = _moveObjects
 
     fun pokemonMoves(name: String) {
         viewModelScope.launch {
@@ -61,7 +64,39 @@ class MovesFragmentViewModel(application: Application) : AndroidViewModel(applic
                     }
                 }
             }
-            _finalMovesList.postValue(pokemonMoves)
+            fetchMoveObjects(pokemonMoves)
+        }
+    }
+
+    private fun fetchMoveObjects(moveList: List<Moves>) {
+        viewModelScope.launch {
+            val allMoves = pokemonDao.getAllMoves()
+            val moveDetailsMap = allMoves.associateBy { it.name }
+
+            val moveObjectsList = moveList.map { move ->
+                val moveDetail = moveDetailsMap[move.move.name]
+                if (moveDetail != null) {
+                    val typeImage = typeStyle(moveDetail.type.name)
+                    val typeBackground = typeStyleBackground(moveDetail.type.name)
+                    MoveObject(
+                        name = moveDetail.name,
+                        pp = moveDetail.pp,
+                        type = moveDetail.type,
+                        typeImage = typeImage!!,
+                        typeBackground = typeBackground!!
+
+                    )
+                } else {
+                    MoveObject(
+                        name = move.move.name,
+                        pp = 0,
+                        type = null,
+                        typeImage = R.drawable.type_unknown,
+                        typeBackground = R.drawable.type_unknown_background
+                    )
+                }
+            }
+            _moveObjects.value = moveObjectsList
         }
     }
 }

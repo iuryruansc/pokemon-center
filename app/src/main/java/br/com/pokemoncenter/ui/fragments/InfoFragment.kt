@@ -63,9 +63,8 @@ class InfoFragment : Fragment() {
             viewModel.generationDebut.observe(viewLifecycleOwner) {
                 binding.generationText.text = capitalizedName(it)
             }
-
-            }
         }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()

@@ -33,6 +33,9 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.effectivenessContainer.visibility = View.GONE
+        binding.effectivenessLoading.visibility = View.VISIBLE
+
         val jsonString = readJson(requireContext(), "all_types.json")
         val type1 = arguments?.getString("type1")
         val type2 = arguments?.getString("type2")
@@ -59,11 +62,9 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
         } else {
             // TODO handle null json
         }
-    }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null
+        binding.effectivenessContainer.visibility = View.VISIBLE
+        binding.effectivenessLoading.visibility = View.GONE
     }
 
     override fun onItemClick(view: View, position: Int, mult: CharSequence) {
@@ -100,5 +101,10 @@ class EffectivenessFragment : Fragment(), FragmentEffectListener {
         val balloon = createBalloon(requireContext(), this, text, color)
 
         balloon.showAlignTop(view)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
