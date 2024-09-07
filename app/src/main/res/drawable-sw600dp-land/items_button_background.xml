@@ -4,17 +4,17 @@
         <shape android:shape="rectangle">
             <gradient
                 android:angle="0"
-                android:startColor="#FF0000"
-                android:endColor="#FFD700" />
+                android:endColor="#D27D2D"
+                android:startColor="#9C5333" />
             <corners android:radius="10dp" />
-            <stroke android:width="2dp" android:color="@color/black" />
+            <stroke android:width="3dp" android:color="@color/black" />
             <padding android:left="15dp" android:bottom="10dp" />
         </shape>
     </item>
-    <item android:drawable="@drawable/games_button_image"
-        android:width="140dp"
-        android:height="140dp"
+    <item android:drawable="@drawable/items_button_image"
+        android:width="220dp"
+        android:height="220dp"
         android:gravity="right"
-        android:right="-45dp"
-        android:top="-25dp"/>
+        android:right="-75dp"
+        android:top="-45dp"/>
 </layer-list>

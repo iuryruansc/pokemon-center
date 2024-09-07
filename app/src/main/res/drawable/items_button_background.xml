@@ -7,7 +7,7 @@
                 android:endColor="#D27D2D"
                 android:startColor="#9C5333" />
             <corners android:radius="10dp" />
-            <stroke android:width="2dp" android:color="?android:attr/textColorPrimary" />
+            <stroke android:width="2dp" android:color="@color/black" />
             <padding android:left="15dp" android:bottom="10dp" />
         </shape>
     </item>

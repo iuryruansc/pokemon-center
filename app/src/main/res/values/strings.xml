@@ -55,4 +55,6 @@
     <string name="list_sort">*This list doesn\'t have any sort method.</string>
     <string name="pp_text">PP</string>
     <string name="move_name">Move Name</string>
+    <string name="types_chart">Types Chart</string>
+    <string name="credit_text">Chart by u/ConfusedFlareon</string>
 </resources>

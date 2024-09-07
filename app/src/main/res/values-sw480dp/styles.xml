@@ -38,9 +38,9 @@
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:textAlignment">center</item>
         <item name="android:shadowColor">@color/black</item>
-        <item name="android:shadowDx">15</item>
-        <item name="android:shadowDy">15</item>
-        <item name="android:shadowRadius">15</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
     <style name="MainPokedexButtonTextStyle" parent="Widget.AppCompat.Button">

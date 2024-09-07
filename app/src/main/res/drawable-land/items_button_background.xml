@@ -3,17 +3,18 @@
     <item>
         <shape android:shape="rectangle">
             <gradient
-                android:angle="-45"
-                android:endColor="#808080"
-                android:startColor="#D3D3D3" />
+                android:angle="0"
+                android:endColor="#D27D2D"
+                android:startColor="#9C5333" />
             <corners android:radius="10dp" />
             <stroke android:width="2dp" android:color="@color/black" />
             <padding android:left="15dp" android:bottom="10dp" />
         </shape>
     </item>
-    <item android:drawable="@drawable/types_button_image"
-        android:width="100dp"
-        android:height="100dp"
+    <item android:drawable="@drawable/items_button_image"
+        android:width="130dp"
+        android:height="130dp"
         android:gravity="right"
-        android:right="-25dp"/>
+        android:right="-45dp"
+        android:top="-25dp"/>
 </layer-list>

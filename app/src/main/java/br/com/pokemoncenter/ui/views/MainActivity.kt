@@ -2,6 +2,7 @@ package br.com.pokemoncenter.ui.views
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,7 +11,7 @@ import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityMainBinding
 import java.util.Locale
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding
 
@@ -31,6 +32,17 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, PokemonDetailsActivity::class.java)
             intent.putExtra("pokemon", pokemon)
             startActivity(intent)
+        }
+
+        binding.mainTypesButton.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            binding.mainTypesButton.id -> {
+                val intent = Intent(this, TypesActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
