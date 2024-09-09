@@ -38,6 +38,7 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
             val pokemonByName = pokemonDao.getPokemonByName(pokemon)
             if (pokemonByName != null) {
                 _isLoading.value = false
+                _pokemon.value = pokemonByName.toPokemonByNameResponse()
             } else {
                 val response = mPokemonDetailsRepository.getPokemonDetails(pokemon)
                 if (response.success) {
@@ -69,6 +70,22 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
                 }
             }
         }
+    }
+
+    private fun PokemonByNameEntity.toPokemonByNameResponse(): PokemonByNameResponse {
+        return PokemonByNameResponse(
+            id = id,
+            name = name,
+            sprites = sprites,
+            height = height,
+            weight = weight,
+            baseExperience = baseExperience,
+            abilities = abilities,
+            moves = moves,
+            stats = stats,
+            types = types,
+            cries = cries
+        )
     }
 
     override fun onCleared() {

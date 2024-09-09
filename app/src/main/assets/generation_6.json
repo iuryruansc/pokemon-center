@@ -1,0 +1,153 @@
+{
+  "general": {
+    "generationName": "Generation VI",
+    "region": "Kalos",
+    "introducedPokemon": "72",
+    "startDexNumber": "650",
+    "endDexNumber": "721",
+    "games": "X, Y, Omega Ruby (Ruby Remake), Alpha Sapphire (Sapphire Remake)",
+    "releaseYear": "2013"
+  },
+  "features": [
+    "Introduced 72 new Pokémon.",
+    "First games to feature the Kalos region.",
+    "Introduced Mega Evolution and Fairy type.",
+    "Added character customization.",
+    "Introduced Pokémon-Amie.",
+    "Remakes of Generation III: Omega Ruby and Alpha Sapphire."
+  ],
+  "starters": [
+    {
+      "name": "Chespin",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png"
+    },
+    {
+      "name": "Fennekin",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png"
+    },
+    {
+      "name": "Froakie",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Xerneas",
+      "type": "Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png"
+    },
+    {
+      "name": "Yveltal",
+      "type": "Dark/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png"
+    },
+    {
+      "name": "Zygarde",
+      "type": "Dragon/Ground",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png"
+    },
+    {
+      "name": "Diancie",
+      "type": "Rock/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png"
+    },
+    {
+      "name": "Hoopa",
+      "type": "Psychic/Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png"
+    },
+    {
+      "name": "Volcanion",
+      "type": "Fire/Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Sycamore",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/c3/Professor_Sycamore_OD.png/100px-Professor_Sycamore_OD.png"
+    },
+    {
+      "name": "Calem",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/cb/Calem_XY_OD.png/100px-Calem_XY_OD.png"
+    },
+    {
+      "name": "Serena",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/44/Serena_XY_OD.png/100px-Serena_XY_OD.png"
+    },
+    {
+      "name": "Shauna",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/9/9b/Shauna_XY_OD.png/100px-Shauna_XY_OD.png"
+    },
+    {
+      "name": "Tierno",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/45/Tierno_XY_OD.png/100px-Tierno_XY_OD.png"
+    },
+    {
+      "name": "Trevor",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/3a/Trevor_XY_OD.png/100px-Trevor_XY_OD.png"
+    },
+    {
+      "name": "Diantha",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/dc/Diantha_XY_OD.png/100px-Diantha_XY_OD.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Viola",
+      "type": "Bug",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/viola.jpg"
+    },
+    {
+      "name": "Grant",
+      "type": "Rock",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/grant.jpg"
+    },
+    {
+      "name": "Korrina",
+      "type": "Fighting",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/korrina.jpg"
+    },
+    {
+      "name": "Ramos",
+      "type": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/ramos.jpg"
+    },
+    {
+      "name": "Clemont",
+      "type": "Electric",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/clemont.jpg"
+    },
+    {
+      "name": "Valerie",
+      "type": "Fairy",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/valerie.jpg"
+    },
+    {
+      "name": "Olympia",
+      "type": "Psychic",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/olympia.jpg"
+    },
+    {
+      "name": "Wulfric",
+      "type": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/x-y/wulfric.jpg"
+    }
+  ],
+  "mechanics": [
+    "Mega Evolution: A temporary transformation that grants Pokémon increased power and sometimes a different typing.",
+    "Fairy type: A new type introduced to balance the type chart, particularly against Dragon types.",
+    "Character Customization: Players can customize their character's appearance.",
+    "Pokémon-Amie: A feature allowing players to interact and play with their Pokémon."
+  ]
+}

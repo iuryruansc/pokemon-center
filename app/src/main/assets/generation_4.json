@@ -1,0 +1,182 @@
+{
+  "general": {
+    "generationName": "Generation IV",
+    "region": "Sinnoh",
+    "introducedPokemon": "107",
+    "startDexNumber": "387",
+    "endDexNumber": "493",
+    "games": "Diamond, Pearl, Platinum, HeartGold (Gold Remake), SoulSilver (Silver Remake)",
+    "releaseYear": "2006"
+  },
+  "features": [
+    "Introduced 107 new Pokémon.",
+    "First games to feature the Sinnoh region.",
+    "Introduced the Physical/Special split for moves.",
+    "Added the Global Trade System (GTS).",
+    "Introduced the Pokétch.",
+    "Remakes of Generation II: HeartGold and SoulSilver."
+  ],
+  "starters": [
+    {
+      "name": "Turtwig",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png"
+    },
+    {
+      "name": "Chimchar",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png"
+    },
+    {
+      "name": "Piplup",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Uxie",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png"
+    },
+    {
+      "name": "Mesprit",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png"
+    },
+    {
+      "name": "Azelf",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png"
+    },
+    {
+      "name": "Dialga",
+      "type": "Steel/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png"
+    },
+    {
+      "name": "Palkia",
+      "type": "Water/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png"
+    },
+    {
+      "name": "Heatran",
+      "type": "Fire/Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png"
+    },
+    {
+      "name": "Regigigas",
+      "type": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png"
+    },
+    {
+      "name": "Giratina",
+      "type": "Ghost/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png"
+    },
+    {
+      "name": "Cresselia",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png"
+    },
+    {
+      "name": "Phione",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png"
+    },
+    {
+      "name": "Manaphy",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png"
+    },
+    {
+      "name": "Darkrai",
+      "type": "Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png"
+    },
+    {
+      "name": "Shaymin",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png"
+    },
+    {
+      "name": "Arceus",
+      "type": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Rowan",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d8/Spr_DP_Rowan.png"
+    },
+    {
+      "name": "Lucas",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/9/9d/Spr_DP_Lucas.png"
+    },
+    {
+      "name": "Dawn",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/0/00/Spr_DP_Dawn.png"
+    },
+    {
+      "name": "Barry",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/3/32/Spr_DP_Barry.png"
+    },
+    {
+      "name": "Cynthia",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2f/Spr_DP_Cynthia.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Roark",
+      "type": "Fire",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/roark.png"
+    },
+    {
+      "name": "Gardenia",
+      "type": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/gardenia.png"
+    },
+    {
+      "name": "Maylene",
+      "type": "Fighting",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/maylene.png"
+    },
+    {
+      "name": "Crasher Wake",
+      "type": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/crasher-wake.png"
+    },
+    {
+      "name": "Fantina",
+      "type": "Ghost",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/fantina.png"
+    },
+    {
+      "name": "Byron",
+      "type": "Steel",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/byron.png"
+    },
+    {
+      "name": "Candice",
+      "type": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/candice.png"
+    },
+    {
+      "name": "Volkner",
+      "type": "Electric",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/volkner.png"
+    }
+  ],
+  "mechanics": [
+    "Physical/Special split: Moves are now categorized as physical or special based on their individual properties, not just the type.",
+    "Pokétch: A multi-function device worn by the player with various apps.",
+    "Global Trade System (GTS): Allows players to trade Pokémon with others around the world."
+  ]
+}

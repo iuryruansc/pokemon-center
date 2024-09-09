@@ -46,7 +46,6 @@
     <style name="MainPokedexButtonTextStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/md_theme_light_onPrimary</item>
         <item name="android:textSize">34sp</item>
-        <item name="android:textStyle">bold</item>
         <item name="android:text">@string/main_button_pokemon</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>

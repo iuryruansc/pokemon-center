@@ -32,7 +32,7 @@
 
     <style name="MainTitleTextStyle" parent="android:Widget.TextView">
         <item name="android:textColor">@color/md_theme_light_onPrimary</item>
-        <item name="android:textSize">40sp</item>
+        <item name="android:textSize">50sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:text">@string/main_title_text</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>

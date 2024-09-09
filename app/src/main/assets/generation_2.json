@@ -1,0 +1,141 @@
+{
+  "general": {
+    "generationName": "Generation II",
+    "region": "Johto",
+    "introducedPokemon": "100",
+    "startDexNumber": "152",
+    "endDexNumber": "251",
+    "games": "Gold, Silver and Crystal",
+    "releaseYear": "1999"
+  },
+  "features": [
+    "Introduced 100 new Pokémon.",
+    "First games to feature the Johto region.",
+    "Introduced new Pokémon types: Dark and Steel.",
+    "Added breeding and held items.",
+    "Introduced Shiny Pokémon."
+  ],
+  "starters": [
+    {
+      "name": "Chikorita",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png"
+    },
+    {
+      "name": "Cyndaquil",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png"
+    },
+    {
+      "name": "Totodile",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Raikou",
+      "type": "Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png"
+    },
+    {
+      "name": "Entei",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png"
+    },
+    {
+      "name": "Suicune",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png"
+    },
+    {
+      "name": "Ho-Oh",
+      "type": "Fire/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png"
+    },
+    {
+      "name": "Lugia",
+      "type": "Psychic/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png"
+    },
+    {
+      "name": "Celebi",
+      "type": "Psychic/Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Elm",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/a/ad/Elm_OD.png"
+    },
+    {
+      "name": "Ethan/Kris",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/3/31/Spr_GS_Ethan.png"
+    },
+    {
+      "name": "Kris",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/9/9e/Spr_C_Kris.png"
+    },
+    {
+      "name": "Silver",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/1/11/Spr_GS_Silver_1.png"
+    },
+    {
+      "name": "Lance",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/e/eb/Spr_RG_Lance.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Falker",
+      "type": "Fly",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/falkner.png"
+    },
+    {
+      "name": "Bugsy",
+      "type": "Bug",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/bugsy.png"
+    },
+    {
+      "name": "Whitney",
+      "type": "Normal",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/whitney.png"
+    },
+    {
+      "name": "Morty",
+      "type": "Ghost",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/morty.png"
+    },
+    {
+      "name": "Chuck",
+      "type": "Fighting",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/chuck.png"
+    },
+    {
+      "name": "Jasmine",
+      "type": "Steel",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/jasmine.png"
+    },
+    {
+      "name": "Pryce",
+      "type": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/pryce.png"
+    },
+    {
+      "name": "Clair",
+      "type": "Dragon",
+      "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/clair.png"
+    }
+  ],
+  "mechanics": [
+    "Introduced the Special Attack and Special Defense stats, splitting the Special stat.",
+    "Added new moves and abilities.",
+    "Introduced a day-night cycle and real-time clock."
+  ]
+}

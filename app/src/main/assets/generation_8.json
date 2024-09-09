@@ -1,0 +1,182 @@
+{
+  "general": {
+    "generationName": "Generation VIII",
+    "region": "Galar",
+    "introducedPokemon": "96",
+    "startDexNumber": "810",
+    "endDexNumber": "905",
+    "games": "Sword, Shield, Brilliant Diamond (Diamond Remake), Shining Pearl (Pearl Remake), Legends: Arceus",
+    "releaseYear": "2019"
+  },
+  "features": [
+    "Introduced 96 new Pokémon.",
+    "First games to feature the Galar region.",
+    "Introduced Dynamax and Gigantamax forms.",
+    "Added the Wild Area and Max Raid Battles.",
+    "Remakes of Generation IV: Brilliant Diamond and Shining Pearl.",
+    "Introduced open-world gameplay in Legends: Arceus."
+  ],
+  "starters": [
+    {
+      "name": "Grookey",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png"
+    },
+    {
+      "name": "Scorbunny",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png"
+    },
+    {
+      "name": "Sobble",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Zacian",
+      "type": "Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png"
+    },
+    {
+      "name": "Zamazenta",
+      "type": "Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png"
+    },
+    {
+      "name": "Eternatus",
+      "type": "Poison/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png"
+    },
+    {
+      "name": "Kubfu",
+      "type": "Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png"
+    },
+    {
+      "name": "Urshifu",
+      "type": "Fighting/Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png"
+    },
+    {
+      "name": "Calyrex",
+      "type": "Psychic/Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png"
+    },
+    {
+      "name": "Regieleki",
+      "type": "Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png"
+    },
+    {
+      "name": "Regidrago",
+      "type": "Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png"
+    },
+    {
+      "name": "Glastrier",
+      "type": "Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png"
+    },
+    {
+      "name": "Spectrier",
+      "type": "Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Magnolia",
+      "role": "Professor"
+    },
+    {
+      "name": "Victor",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/1/13/Victor_Icon_SWSH-1.png/150px-Victor_Icon_SWSH-1.png"
+    },
+    {
+      "name": "Gloria",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/a/a7/Gloria_Icon_SWSH-4.png/150px-Gloria_Icon_SWSH-4.png"
+    },
+    {
+      "name": "Hop",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2d/GST_Hop_icon.png/100px-GST_Hop_icon.png"
+    },
+    {
+      "name": "Marnie",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/07/GST_Marnie_icon.png/100px-GST_Marnie_icon.png"
+    },
+    {
+      "name": "Bede",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/33/GST_Bede_icon.png/100px-GST_Bede_icon.png"
+    },
+    {
+      "name": "Leon",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2c/GST_Leon_icon.png/100px-GST_Leon_icon.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Milo",
+      "type": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/milo.jpg"
+    },
+    {
+      "name": "Nessa",
+      "type": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/nessa.jpg"
+    },
+    {
+      "name": "Kabu",
+      "type": "Fire",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/kabu.jpg"
+    },
+    {
+      "name": "Bea",
+      "type": "Fighting",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/bea.jpg"
+    },
+    {
+      "name": "Allister",
+      "type": "Ghost",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/allister.jpg"
+    },
+    {
+      "name": "Opal",
+      "type": "Fairy",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/opal.jpg"
+    },
+    {
+      "name": "Gordie",
+      "type": "Rock",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/gordie.jpg"
+    },
+    {
+      "name": "Melony",
+      "type": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/melony.jpg"
+    },
+    {
+      "name": "Piers",
+      "type": "Dark",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/piers.jpg"
+    },
+    {
+      "name": "Raihan",
+      "type": "Dragon",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/raihan.jpg"
+    }
+  ],
+  "mechanics": [
+    "Dynamax: A temporary transformation that increases a Pokémon's size and power.",
+    "Gigantamax: A special type of Dynamax that also changes the Pokémon's appearance and grants it a G-Max Move.",
+    "Wild Area: A large, open area where players can encounter a variety of Pokémon.",
+    "Max Raid Battles: Cooperative battles against Dynamaxed Pokémon."
+  ]
+}
