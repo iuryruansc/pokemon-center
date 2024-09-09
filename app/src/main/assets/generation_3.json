@@ -1,0 +1,162 @@
+{
+  "general": {
+    "generationName": "Generation III",
+    "region": "Hoenn",
+    "introducedPokemon": "135",
+    "startDexNumber": "252",
+    "endDexNumber": "386",
+    "games": "Ruby, Sapphire, Emerald, FireRed (Red Remake), LeafGreen (Green Remake)",
+    "releaseYear": "2002"
+  },
+  "features": [
+    "Introduced 135 new Pokémon.",
+    "First games to feature the Hoenn region.",
+    "Introduced Abilities and Natures.",
+    "Added Double Battles.",
+    "Introduced Pokémon Contests.",
+    "Remakes of Generation I: FireRed and LeafGreen."
+  ],
+  "starters": [
+    {
+      "name": "Treecko",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png"
+    },
+    {
+      "name": "Torchic",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
+    },
+    {
+      "name": "Mudkip",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Regirock",
+      "type": "Rock",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png"
+    },
+    {
+      "name": "Regice",
+      "type": "Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png"
+    },
+    {
+      "name": "Registeel",
+      "type": "Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png"
+    },
+    {
+      "name": "Latias",
+      "type": "Dragon/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png"
+    },
+    {
+      "name": "Latios",
+      "type": "Dragon/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png"
+    },
+    {
+      "name": "Kyogre",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png"
+    },
+    {
+      "name": "Groudon",
+      "type": "Ground",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png"
+    },
+    {
+      "name": "Rayquaza",
+      "type": "Dragon/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png"
+    },
+    {
+      "name": "Jirachi",
+      "type": "Steel/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png"
+    },
+    {
+      "name": "Deoxys",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Birch",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/7/75/Spr_RS_Birch.png"
+    },
+    {
+      "name": "Brendan",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/6/68/Spr_RS_Brendan.png"
+    },
+    {
+      "name": "May",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/3/38/Spr_RS_May.png"
+    },
+    {
+      "name": "Wally",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/Spr_RS_Wally.png"
+    },
+    {
+      "name": "Steven Stone",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/a/ad/Spr_RS_Steven.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Roxanne",
+      "type": "Rock",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/roxanne.png"
+    },
+    {
+      "name": "Brawly",
+      "type": "Fighting",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/brawly.png"
+    },
+    {
+      "name": "Wattson",
+      "type": "Electric",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/wattson.png"
+    },
+    {
+      "name": "Flannery",
+      "type": "Fire",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/flannery.png"
+    },
+    {
+      "name": "Norman",
+      "type": "Normal",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/norman.png"
+    },
+    {
+      "name": "Winona",
+      "type": "Flying",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/winona.png"
+    },
+    {
+      "name": "Tate and Liza",
+      "type": "Psychic",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/tate-liza.png"
+    },
+    {
+      "name": "Wallace",
+      "type": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/wallace.png"
+    }
+  ],
+  "mechanics": [
+    "Introduced Abilities, which give Pokémon passive effects.",
+    "Introduced Natures, which influence stat growth.",
+    "Added Double Battles, allowing for 2 vs. 2 Pokémon battles."
+  ]
+}

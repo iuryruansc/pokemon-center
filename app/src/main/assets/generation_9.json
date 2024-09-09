@@ -1,0 +1,157 @@
+{
+  "general": {
+    "generationName": "Generation IX",
+    "region": "Paldea",
+    "introducedPokemon": "103",
+    "startDexNumber": "906",
+    "endDexNumber": "1008",
+    "games": "Scarlet, Violet",
+    "releaseYear": "2022"
+  },
+  "features": [
+    "Introduced 103 new Pokémon.",
+    "First games to feature the Paldea region.",
+    "Introduced the Terastal phenomenon.",
+    "Features a fully open world.",
+    "Introduced the Let's Go feature for following Pokémon.",
+    "Added the TM Machine for crafting TMs."
+  ],
+  "starters": [
+    {
+      "name": "Sprigatito",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png"
+    },
+    {
+      "name": "Fuecoco",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png"
+    },
+    {
+      "name": "Quaxly",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Koraidon",
+      "type": "Fighting/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png"
+    },
+    {
+      "name": "Miraidon",
+      "type": "Electric/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png"
+    },
+    {
+      "name": "Wo-Chien",
+      "type": "Dark/Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png"
+    },
+    {
+      "name": "Chien-Pao",
+      "type": "Dark/Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png"
+    },
+    {
+      "name": "Ting-Lu",
+      "type": "Dark/Ground",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png"
+    },
+    {
+      "name": "Chi-Yu",
+      "type": "Dark/Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Sada (Violet)",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/0d/Scarlet_Sada.png/200px-Scarlet_Sada.png"
+    },
+    {
+      "name": "Professor Turo (Scarlet)",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/86/Violet_Turo.png/175px-Violet_Turo.png"
+    },
+    {
+      "name": "Florian",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/c6/Florian_Icon_SV_Scarlet-1.png/100px-Florian_Icon_SV_Scarlet-1.png"
+    },
+    {
+      "name": "Juliana",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/a/ab/Juliana_Icon_SV_Scarlet-4.png/100px-Juliana_Icon_SV_Scarlet-4.png"
+    },
+    {
+      "name": "Nemona",
+      "role": "Rival/Friend",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/a/ae/LCR_Nemona_icon_V.png/150px-LCR_Nemona_icon_V.png"
+    },
+    {
+      "name": "Arven",
+      "role": "Friend",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d5/LCR_Arven_icon_S.png/150px-LCR_Arven_icon_S.png"
+    },
+    {
+      "name": "Penny",
+      "role": "Friend/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d8/LCR_Penny_icon_large.png/108px-LCR_Penny_icon_large.png"
+    },
+    {
+      "name": "Geeta",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/1/18/LCR_Geeta_icon.png/100px-LCR_Geeta_icon.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Katy",
+      "type": "Bug",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/katy.jpg"
+    },
+    {
+      "name": "Brassius",
+      "type": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/brassius.jpg"
+    },
+    {
+      "name": "Iono",
+      "type": "Electric",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/iono.jpg"
+    },
+    {
+      "name": "Kofu",
+      "type": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/kofu.jpg"
+    },
+    {
+      "name": "Larry",
+      "type": "Normal",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/larry.jpg"
+    },
+    {
+      "name": "Ryme",
+      "type": "Ghost",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/ryme.jpg"
+    },
+    {
+      "name": "Tulip",
+      "type": "Psychic",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/tulip.jpg"
+    },
+    {
+      "name": "Grusha",
+      "type": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/grusha.jpg"
+    }
+  ],
+  "mechanics": [
+    "Terastal Phenomenon: Pokémon can Terastallize, changing their type to their Tera Type and boosting the power of moves of that type.",
+    "Open World: Paldea is a fully open world, allowing players to explore freely.",
+    "Let's Go: Pokémon can follow the player outside of their Poké Ball and be sent out to gather items or auto-battle."
+  ]
+}

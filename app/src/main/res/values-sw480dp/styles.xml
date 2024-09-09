@@ -50,9 +50,9 @@
         <item name="android:text">@string/main_button_pokemon</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
-        <item name="android:shadowDx">10</item>
-        <item name="android:shadowDy">10</item>
-        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
     <style name="MainTypesButtonTextStyle" parent="Widget.AppCompat.Button">
@@ -61,9 +61,9 @@
         <item name="android:text">@string/main_button_types</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
-        <item name="android:shadowDx">10</item>
-        <item name="android:shadowDy">10</item>
-        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
     <style name="MainItemsButtonTextStyle" parent="Widget.AppCompat.Button">
@@ -72,9 +72,9 @@
         <item name="android:text">@string/main_button_items</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
-        <item name="android:shadowDx">10</item>
-        <item name="android:shadowDy">10</item>
-        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
     <style name="MainMovesButtonTextStyle" parent="Widget.AppCompat.Button">
@@ -83,9 +83,9 @@
         <item name="android:text">@string/main_button_moves</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
-        <item name="android:shadowDx">10</item>
-        <item name="android:shadowDy">10</item>
-        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
     <style name="MainGamesButtonTextStyle" parent="Widget.AppCompat.Button">
@@ -94,9 +94,9 @@
         <item name="android:text">@string/main_games_button</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
-        <item name="android:shadowDx">10</item>
-        <item name="android:shadowDy">10</item>
-        <item name="android:shadowRadius">10</item>
+        <item name="android:shadowDx">5</item>
+        <item name="android:shadowDy">5</item>
+        <item name="android:shadowRadius">5</item>
     </style>
 
 </resources>

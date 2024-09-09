@@ -1,0 +1,139 @@
+{
+  "general": {
+    "generationName": "Generation I",
+    "region": "Kanto",
+    "introducedPokemon": "151",
+    "startDexNumber": "1",
+    "endDexNumber": "151",
+    "games": "Red, Green, Blue and Yellow",
+    "releaseYear": "1996"
+  },
+  "features": [
+    "Introduced the original 151 Pokémon.",
+    "Established the core gameplay mechanics.",
+    "First games to feature the Kanto region.",
+    "Introduced the type chart and status effects."
+  ],
+  "starters": [
+    {
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    {
+      "name": "Charmander",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    },
+    {
+      "name": "Squirtle",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Articuno",
+      "type": "Ice/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
+    },
+    {
+      "name": "Zapdos",
+      "type": "Electric/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+    },
+    {
+      "name": "Moltres",
+      "type": "Fire/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
+    },
+    {
+      "name": "Mewtwo",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+    },
+    {
+      "name": "Mew",
+      "type": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Oak",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/1/1e/Spr_RG_Oak.png"
+    },
+    {
+      "name": "Brock",
+      "role": "Gym Leader",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png"
+    },
+    {
+      "name": "Red",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d2/Spr_GS_Red.png"
+    },
+    {
+      "name": "Blue Oak",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/5/51/Spr_RG_Blue_3.png"
+    },
+    {
+      "name": "Giovanni",
+      "role": "Gym Leader / Team Rocket Boss",
+      "image": "https://archives.bulbagarden.net/media/upload/2/23/Spr_RG_Giovanni.png"
+    },
+    {
+      "name": "Bill",
+      "role": "Pokémon Researcher",
+      "image": "https://archives.bulbagarden.net/media/upload/d/db/Spr_FRLG_Bill.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Brock",
+      "type": "Rock",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png"
+    },
+    {
+      "name": "Misty",
+      "type": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/misty.png"
+    },
+    {
+      "name": "Lt.Surge",
+      "type": "Lightning",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/lt-surge.png"
+    },
+    {
+      "name": "Erika",
+      "type": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/erika.png"
+    },
+    {
+      "name": "Koga",
+      "type": "Ghost",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/koga.png"
+    },
+    {
+      "name": "Sabrina",
+      "type": "Psychic",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/sabrina.png"
+    },
+    {
+      "name": "Blaine",
+      "type": "Fire",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/blaine.png"
+    },
+    {
+      "name": "Giovanni",
+      "type": "Ground",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/giovanni.png"
+    }
+  ],
+  "mechanics": [
+    "Special stat was a single stat for both special attack and special defense.",
+    "Only two moves could be used per turn."
+  ]
+}

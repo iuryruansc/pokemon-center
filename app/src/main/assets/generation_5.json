@@ -1,0 +1,203 @@
+{
+  "general": {
+    "generationName": "Generation V",
+    "region": "Unova",
+    "introducedPokemon": "156",
+    "startDexNumber": "494",
+    "endDexNumber": "649",
+    "games": "Black, White, Black 2 and White 2",
+    "releaseYear": "2010"
+  },
+  "features": [
+    "Introduced 156 new Pokémon.",
+    "First games to feature the Unova region.",
+    "Introduced Triple Battles and Rotation Battles.",
+    "Introduced the Dream World and Entralink.",
+    "Featured a seasonal cycle.",
+    "First generation to have direct sequels: Black 2 & White 2."
+  ],
+  "starters": [
+    {
+      "name": "Snivy",
+      "type": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png"
+    },
+    {
+      "name": "Tepig",
+      "type": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png"
+    },
+    {
+      "name": "Oshawott",
+      "type": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Reshiram",
+      "type": "Dragon/Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png"
+    },
+    {
+      "name": "Zekrom",
+      "type": "Dragon/Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png"
+    },
+    {
+      "name": "Kyurem",
+      "type": "Dragon/Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png"
+    },
+    {
+      "name": "Landorus",
+      "type": "Ground/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png"
+    },
+    {
+      "name": "Tornadus",
+      "type": "Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png"
+    },
+    {
+      "name": "Thundurus",
+      "type": "Electric/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png"
+    },
+    {
+      "name": "Cobalion",
+      "type": "Steel/Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png"
+    },
+    {
+      "name": "Terrakion",
+      "type": "Rock/Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png"
+    },
+    {
+      "name": "Virizion",
+      "type": "Grass/Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png"
+    },
+    {
+      "name": "Keldeo",
+      "type": "Water/Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png"
+    },
+    {
+      "name": "Meloetta",
+      "type": "Normal/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png"
+    },
+    {
+      "name": "Genesect",
+      "type": "Bug/Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Juniper",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/8/85/Juniper_BW_Intro.png"
+    },
+    {
+      "name": "Hilda",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2a/Spr_BW_Hilda.png"
+    },
+    {
+      "name": "Hilbert",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/3/3c/Spr_BW_Hilbert.png"
+    },
+    {
+      "name": "Cheren",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/8/80/Spr_BW_Cheren.png"
+    },
+    {
+      "name": "Bianca",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c3/Spr_BW_Bianca.png"
+    },
+    {
+      "name": "Alder",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/3/3f/Spr_BW_Alder.png"
+    },
+    {
+      "name": "N",
+      "role": "Antagonist/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/a/a0/Spr_BW_N.png"
+    },
+    {
+      "name": "Ghetsis",
+      "role": "Antagonist",
+      "image": "https://archives.bulbagarden.net/media/upload/d/de/Spr_BW_Ghetsis.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Cilan (Oshawott as starter)",
+      "type": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/cilan.png"
+    },
+    {
+      "name": "Chili (Snivy as starter)",
+      "type": "Fire",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/chili.png"
+    },
+    {
+      "name": "Cress (Tepig as starter)",
+      "type": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/cress.png"
+    },
+    {
+      "name": "Lenora",
+      "type": "Normal",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/lenora.png"
+    },
+    {
+      "name": "Burgh",
+      "type": "Bug",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/burgh.png"
+    },
+    {
+      "name": "Elesa",
+      "type": "Electric",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/elesa.png"
+    },
+    {
+      "name": "Clay",
+      "type": "Ground",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/clay.png"
+    },
+    {
+      "name": "Skyla",
+      "type": "Flying",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/skyla.png"
+    },
+    {
+      "name": "Brycen",
+      "type": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/brycen.png"
+    },
+    {
+      "name": "Drayden",
+      "type": "Dragon",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/drayden.png"
+    },
+    {
+      "name": "Iris",
+      "type": "Dragon",
+      "image": "https://img.pokemondb.net/sprites/trainers/black-white/iris.png"
+    }
+  ],
+  "mechanics": [
+    "Triple Battles: 3 vs. 3 Pokémon battles.",
+    "Rotation Battles: A unique battle style where you can rotate your Pokémon during battle.",
+    "Dream World: An online feature where players could interact with Pokémon and obtain items.",
+    "Entralink: A local wireless feature for interacting with other players."
+  ]
+}
