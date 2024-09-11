@@ -11,57 +11,57 @@
   "features": [
     "Introduced 103 new Pokémon.",
     "First games to feature the Paldea region.",
-    "Introduced the Terastal phenomenon.",
-    "Features a fully open world.",
-    "Introduced the Let's Go feature for following Pokémon.",
-    "Added the TM Machine for crafting TMs."
+    "Added the TM Machine for crafting TMs.",
+    "Introduced Terastal Phenomenon: Pokémon can Terastallize, changing their type to their Tera Type and boosting the power of moves of that type.",
+    "Featured Open World: Paldea is a fully open world, allowing players to explore freely.",
+    "Introduced Let's Go: Pokémon can follow the player outside of their Poké Ball and be sent out to gather items or auto-battle."
   ],
   "starters": [
     {
       "name": "Sprigatito",
-      "type": "Grass",
+      "role": "Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png"
     },
     {
       "name": "Fuecoco",
-      "type": "Fire",
+      "role": "Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png"
     },
     {
       "name": "Quaxly",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png"
     }
   ],
   "legendary": [
     {
       "name": "Koraidon",
-      "type": "Fighting/Dragon",
+      "role": "Fighting/Dragon",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png"
     },
     {
       "name": "Miraidon",
-      "type": "Electric/Dragon",
+      "role": "Electric/Dragon",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png"
     },
     {
       "name": "Wo-Chien",
-      "type": "Dark/Grass",
+      "role": "Dark/Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png"
     },
     {
       "name": "Chien-Pao",
-      "type": "Dark/Ice",
+      "role": "Dark/Ice",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png"
     },
     {
       "name": "Ting-Lu",
-      "type": "Dark/Ground",
+      "role": "Dark/Ground",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png"
     },
     {
       "name": "Chi-Yu",
-      "type": "Dark/Fire",
+      "role": "Dark/Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png"
     }
   ],
@@ -104,54 +104,76 @@
     {
       "name": "Geeta",
       "role": "Champion",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/1/18/LCR_Geeta_icon.png/100px-LCR_Geeta_icon.png"
+      "image": "https://img.pokemondb.net/sprites/trainers/sv/geeta.jpg"
     }
   ],
   "gymLeaders": [
     {
-      "name": "Katy",
-      "type": "Bug",
+      "name": "Katy (1st)",
+      "role": "Bug",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/katy.jpg"
     },
     {
-      "name": "Brassius",
-      "type": "Grass",
+      "name": "Brassius (2nd)",
+      "role": "Grass",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/brassius.jpg"
     },
     {
-      "name": "Iono",
-      "type": "Electric",
+      "name": "Iono (3rd)",
+      "role": "Electric",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/iono.jpg"
     },
     {
-      "name": "Kofu",
-      "type": "Water",
+      "name": "Kofu (4th)",
+      "role": "Water",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/kofu.jpg"
     },
     {
-      "name": "Larry",
-      "type": "Normal",
+      "name": "Larry (5th)",
+      "role": "Normal",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/larry.jpg"
     },
     {
-      "name": "Ryme",
-      "type": "Ghost",
+      "name": "Ryme (6th)",
+      "role": "Ghost",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/ryme.jpg"
     },
     {
-      "name": "Tulip",
-      "type": "Psychic",
+      "name": "Tulip (7th)",
+      "role": "Psychic",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/tulip.jpg"
     },
     {
-      "name": "Grusha",
-      "type": "Ice",
+      "name": "Grusha (8th)",
+      "role": "Ice",
       "image": "https://img.pokemondb.net/sprites/trainers/sv/grusha.jpg"
     }
   ],
-  "mechanics": [
-    "Terastal Phenomenon: Pokémon can Terastallize, changing their type to their Tera Type and boosting the power of moves of that type.",
-    "Open World: Paldea is a fully open world, allowing players to explore freely.",
-    "Let's Go: Pokémon can follow the player outside of their Poké Ball and be sent out to gather items or auto-battle."
+  "eliteFour": [
+    {
+      "name": "Rika",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/rika.png",
+      "role" : "Ground"
+    },
+    {
+      "name": "Poppy",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/poppy.png",
+      "role" : "Steel"
+    },
+    {
+      "name": "Larry",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/larry.png",
+      "role" : "Flying"
+    },
+    {
+      "name": "Hassel",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/hassel.png",
+      "role" : "Dragon"
+    },
+    {
+      "name": "Geeta",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/geeta.png",
+      "role" : "Mixed Types"
+    }
   ]
 }

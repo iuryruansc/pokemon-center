@@ -10,8 +10,8 @@ import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.FragmentEffectivenessBinding
 import br.com.pokemoncenter.commom.util.hofs.general.createBalloon
 import br.com.pokemoncenter.commom.util.hofs.general.readJson
+import br.com.pokemoncenter.commom.util.hofs.jsonparse.parseTypeEffectiveness
 import br.com.pokemoncenter.commom.util.hofs.types.getCombinedTypeEffectivenessDef
-import br.com.pokemoncenter.commom.util.hofs.types.parseTypeEffectiveness
 import br.com.pokemoncenter.commom.util.listeners.FragmentEffectListener
 import br.com.pokemoncenter.ui.adapters.TypeEffectivenessAdapter
 

@@ -1,6 +1,8 @@
-package br.com.pokemoncenter.commom.util.hofs.types
+package br.com.pokemoncenter.commom.util.hofs.jsonparse
 
-import org.json.JSONArray
+import br.com.pokemoncenter.commom.util.hofs.types.AttackEffectiveness
+import br.com.pokemoncenter.commom.util.hofs.types.DefenseEffectiveness
+import br.com.pokemoncenter.commom.util.hofs.types.TypeEffectiveness
 import org.json.JSONObject
 
 fun parseTypeEffectiveness(jsonString: String): Map<String, TypeEffectiveness> {
@@ -32,8 +34,4 @@ fun parseTypeEffectiveness(jsonString: String): Map<String, TypeEffectiveness> {
     } catch (e: Exception) {
         emptyMap()
     }
-}
-
-fun jsonArrayToList(jsonArray: JSONArray): List<String> {
-    return (0 until jsonArray.length()).map { jsonArray.getString(it) }
 }

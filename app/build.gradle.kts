@@ -61,6 +61,7 @@ dependencies {
     implementation(libs.ballon)
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(libs.viewpager)
     ksp(libs.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

@@ -6,10 +6,10 @@ import br.com.pokemon_center.R
 import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
 import br.com.pokemoncenter.commom.util.hofs.types.typeStyleBackground
 import br.com.pokemoncenter.data.api.models.pokemonbynamedata.Moves
+import br.com.pokemoncenter.data.models.MoveObject
 import br.com.pokemoncenter.data.repository.PokemonDetailsRepository
 import br.com.pokemoncenter.local.db.AppDatabase
 import br.com.pokemoncenter.local.entity.MoveEntity
-import br.com.pokemoncenter.ui.adapters.MoveObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob

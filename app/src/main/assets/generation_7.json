@@ -11,87 +11,87 @@
   "features": [
     "Introduced 88 new Pokémon.",
     "First games to feature the Alola region.",
-    "Introduced Regional Forms and Z-Moves.",
-    "Replaced Gyms with Island Trials.",
-    "Introduced Alolan Forms of several Generation I Pokémon.",
-    "Remakes of Generation I with a different style: Let's Go, Pikachu! and Let's Go, Eevee!"
+    "Remakes of Generation I with a different style: Let's Go, Pikachu! and Let's Go, Eevee!",
+    "Z-Moves: Powerful moves that can be used once per battle.",
+    "Introduced Regional Forms: Pokémon with different forms and typings based on the region they inhabit.",
+    "Replaced Gyms with Island Trials: Replace traditional Gyms with unique challenges and Totem Pokémon."
   ],
   "starters": [
     {
       "name": "Rowlet",
-      "type": "Grass/Flying",
+      "role": "Grass/Flying",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png"
     },
     {
       "name": "Litten",
-      "type": "Fire",
+      "role": "Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png"
     },
     {
       "name": "Popplio",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png"
     }
   ],
   "legendary": [
     {
       "name": "Tapu Koko",
-      "type": "Electric/Fairy",
+      "role": "Electric/Fairy",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png"
     },
     {
       "name": "Tapu Lele",
-      "type": "Psychic/Fairy",
+      "role": "Psychic/Fairy",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png"
     },
     {
       "name": "Tapu Bulu",
-      "type": "Grass/Fairy",
+      "role": "Grass/Fairy",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png"
     },
     {
       "name": "Tapu Fini",
-      "type": "Water/Fairy",
+      "role": "Water/Fairy",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png"
     },
     {
       "name": "Cosmog",
-      "type": "Psychic",
+      "role": "Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png"
     },
     {
       "name": "Cosmoem",
-      "type": "Psychic",
+      "role": "Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png"
     },
     {
       "name": "Solgaleo",
-      "type": "Psychic/Steel",
+      "role": "Psychic/Steel",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png"
     },
     {
       "name": "Lunala",
-      "type": "Psychic/Ghost",
+      "role": "Psychic/Ghost",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png"
     },
     {
       "name": "Necrozma",
-      "type": "Psychic",
+      "role": "Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png"
     },
     {
       "name": "Magearna",
-      "type": "Steel/Fairy",
+      "role": "Steel/Fairy",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png"
     },
     {
       "name": "Marshadow",
-      "type": "Fighting/Ghost",
+      "role": "Fighting/Ghost",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png"
     },
     {
       "name": "Zeraora",
-      "type": "Electric",
+      "role": "Electric",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png"
     }
   ],
@@ -99,7 +99,7 @@
     {
       "name": "Professor Kukui",
       "role": "Professor",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/06/Spr_SM_Kukui.png/120px-Spr_SM_Kukui.png"
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kukui.jpg"
     },
     {
       "name": "Elio",
@@ -127,46 +127,68 @@
       "image": "https://archives.bulbagarden.net/media/upload/thumb/6/62/Gladion_SM_OD.png/120px-Gladion_SM_OD.png"
     }
   ],
-  "trialCaptains": [
+  "gymLeaders": [
     {
-      "name": "Ilima",
-      "type": "Normal",
+      "name": "Ilima (1st)",
+      "role": "Normal",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/ilima.jpg"
     },
     {
-      "name": "Lana",
-      "type": "Water",
+      "name": "Lana (2nd)",
+      "role": "Water",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/lana.jpg"
     },
     {
-      "name": "Kiawe",
-      "type": "Fire",
+      "name": "Kiawe (3rd)",
+      "role": "Fire",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kiawe.jpg"
     },
     {
-      "name": "Mallow",
-      "type": "Grass",
+      "name": "Mallow (4th)",
+      "role": "Grass",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/mallow.jpg"
     },
     {
-      "name": "Sophocles",
-      "type": "Electric",
+      "name": "Sophocles (5th)",
+      "role": "Electric",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/sophocles.jpg"
     },
     {
-      "name": "Acerola",
-      "type": "Ghost",
+      "name": "Acerola (6th)",
+      "role": "Ghost",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg"
     },
     {
-      "name": "Mina",
-      "type": "Fairy",
+      "name": "Mina (7th)",
+      "role": "Fairy",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/mina.jpg"
     }
   ],
-  "mechanics": [
-    "Z-Moves: Powerful moves that can be used once per battle.",
-    "Regional Forms: Pokémon with different forms and typings based on the region they inhabit.",
-    "Island Trials: Replace traditional Gyms with unique challenges and Totem Pokémon."
+  "eliteFour": [
+    {
+      "name": "Hala",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/hala.jpg",
+      "role" : "Fighting"
+    },
+    {
+      "name": "Olivia",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/olivia.jpg",
+      "role" : "Rock"
+    },
+    {
+      "name": "Acerola",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg",
+      "role" : "Ghost"
+    },
+    {
+      "name": "Kahili",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/kahili.jpg",
+      "role" : "Flying"
+    },
+    {
+      "name": "Kukui",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/kukui.jpg",
+      "role" : "Mixed Types"
+    }
   ]
 }

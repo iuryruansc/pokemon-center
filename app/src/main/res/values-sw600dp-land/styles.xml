@@ -47,7 +47,7 @@
         <item name="android:textColor">@color/md_theme_light_onPrimary</item>
         <item name="android:textSize">30sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:text">@string/main_button_pokemon</item>
+        <item name="android:text">@string/main_button_pokedex</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
         <item name="android:shadowDx">7</item>
@@ -78,10 +78,10 @@
         <item name="android:shadowRadius">4</item>
     </style>
 
-    <style name="MainMovesButtonTextStyle" parent="Widget.AppCompat.Button">
+    <style name="MainNaturesButtonTextStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/md_theme_light_onPrimary</item>
         <item name="android:textSize">30sp</item>
-        <item name="android:text">@string/main_button_moves</item>
+        <item name="android:text">@string/main_button_natures</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
         <item name="android:shadowDx">7</item>
@@ -89,10 +89,10 @@
         <item name="android:shadowRadius">4</item>
     </style>
 
-    <style name="MainGamesButtonTextStyle" parent="Widget.AppCompat.Button">
+    <style name="MainGenerationsButtonTextStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/md_theme_light_onPrimary</item>
         <item name="android:textSize">30sp</item>
-        <item name="android:text">@string/main_games_button</item>
+        <item name="android:text">@string/main_button_generations</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
         <item name="android:shadowDx">7</item>
