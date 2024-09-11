@@ -12,9 +12,9 @@
         </shape>
     </item>
     <item android:drawable="@drawable/items_button_image"
-        android:width="150dp"
-        android:height="150dp"
+        android:width="170dp"
+        android:height="170dp"
         android:gravity="right"
-        android:right="-50dp"
-        android:top="-30dp"/>
+        android:right="-60dp"
+        android:top="-35dp"/>
 </layer-list>

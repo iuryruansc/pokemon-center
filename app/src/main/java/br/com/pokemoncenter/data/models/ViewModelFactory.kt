@@ -1,8 +1,9 @@
-package br.com.pokemoncenter.ui.viewmodels
+package br.com.pokemoncenter.data.models
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import br.com.pokemoncenter.ui.viewmodels.PokemonDetailsViewModel
 
 class ViewModelFactory(private val application: Application) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

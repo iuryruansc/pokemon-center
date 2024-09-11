@@ -23,7 +23,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.com.pokemoncenter.ui.views.PokemonDetailsActivity" />
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.PokemonDetailsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.TypesActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.GenerationsChoiceActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.GenerationsDetailsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.NaturesActivity"
+            android:exported="false">
+        </activity>
     </application>
 
 </manifest>

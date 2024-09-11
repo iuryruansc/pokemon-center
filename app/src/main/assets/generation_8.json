@@ -11,84 +11,87 @@
   "features": [
     "Introduced 96 new Pokémon.",
     "First games to feature the Galar region.",
-    "Introduced Dynamax and Gigantamax forms.",
-    "Added the Wild Area and Max Raid Battles.",
     "Remakes of Generation IV: Brilliant Diamond and Shining Pearl.",
-    "Introduced open-world gameplay in Legends: Arceus."
+    "Introduced open-world gameplay in Legends: Arceus.",
+    "Introduced Dynamax: A temporary transformation that increases a Pokémon's size and power.",
+    "Introduced Gigantamax: A special type of Dynamax that also changes the Pokémon's appearance and grants it a G-Max Move.",
+    "Added Wild Area: A large, open area where players can encounter a variety of Pokémon.",
+    "Added Max Raid Battles: Cooperative battles against Dynamaxed Pokémon."
   ],
   "starters": [
     {
       "name": "Grookey",
-      "type": "Grass",
+      "role": "Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png"
     },
     {
       "name": "Scorbunny",
-      "type": "Fire",
+      "role": "Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png"
     },
     {
       "name": "Sobble",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png"
     }
   ],
   "legendary": [
     {
       "name": "Zacian",
-      "type": "Fairy",
+      "role": "Fairy",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png"
     },
     {
       "name": "Zamazenta",
-      "type": "Fighting",
+      "role": "Fighting",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png"
     },
     {
       "name": "Eternatus",
-      "type": "Poison/Dragon",
+      "role": "Poison/Dragon",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png"
     },
     {
       "name": "Kubfu",
-      "type": "Fighting",
+      "role": "Fighting",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png"
     },
     {
       "name": "Urshifu",
-      "type": "Fighting/Dark",
+      "role": "Fighting/Dark",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png"
     },
     {
       "name": "Calyrex",
-      "type": "Psychic/Grass",
+      "role": "Psychic/Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png"
     },
     {
       "name": "Regieleki",
-      "type": "Electric",
+      "role": "Electric",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png"
     },
     {
       "name": "Regidrago",
-      "type": "Dragon",
+      "role": "Dragon",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png"
     },
     {
       "name": "Glastrier",
-      "type": "Ice",
+      "role": "Ice",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png"
     },
     {
       "name": "Spectrier",
-      "type": "Ghost",
+      "role": "Ghost",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png"
     }
   ],
   "importantCharacters": [
     {
       "name": "Professor Magnolia",
-      "role": "Professor"
+      "role": "Professor",
+      "image": "https://i0.wp.com/www.pokemythology.net/conteudo/imgs/personagens/auxilio/p_magnolia.png?w=640&ssl=1"
     },
     {
       "name": "Victor",
@@ -123,60 +126,96 @@
   ],
   "gymLeaders": [
     {
-      "name": "Milo",
-      "type": "Grass",
+      "name": "Milo (1st)",
+      "role": "Grass",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/milo.jpg"
     },
     {
-      "name": "Nessa",
-      "type": "Water",
+      "name": "Nessa (2nd)",
+      "role": "Water",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/nessa.jpg"
     },
     {
-      "name": "Kabu",
-      "type": "Fire",
+      "name": "Kabu (3rd)",
+      "role": "Fire",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/kabu.jpg"
     },
     {
-      "name": "Bea",
-      "type": "Fighting",
+      "name": "Bea (4th/Pokemon Sword)",
+      "role": "Fighting",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/bea.jpg"
     },
     {
-      "name": "Allister",
-      "type": "Ghost",
+      "name": "Allister (4th/Pokemon Shield)",
+      "role": "Ghost",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/allister.jpg"
     },
     {
-      "name": "Opal",
-      "type": "Fairy",
+      "name": "Opal (5th)",
+      "role": "Fairy",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/opal.jpg"
     },
     {
-      "name": "Gordie",
-      "type": "Rock",
+      "name": "Gordie (6th/Pokemon Sword)",
+      "role": "Rock",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/gordie.jpg"
     },
     {
-      "name": "Melony",
-      "type": "Ice",
+      "name": "Melony (6th/Pokemon Shield)",
+      "role": "Ice",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/melony.jpg"
     },
     {
-      "name": "Piers",
-      "type": "Dark",
+      "name": "Piers (7th)",
+      "role": "Dark",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/piers.jpg"
     },
     {
-      "name": "Raihan",
-      "type": "Dragon",
+      "name": "Raihan (8th)",
+      "role": "Dragon",
       "image": "https://img.pokemondb.net/sprites/trainers/swsh/raihan.jpg"
     }
   ],
-  "mechanics": [
-    "Dynamax: A temporary transformation that increases a Pokémon's size and power.",
-    "Gigantamax: A special type of Dynamax that also changes the Pokémon's appearance and grants it a G-Max Move.",
-    "Wild Area: A large, open area where players can encounter a variety of Pokémon.",
-    "Max Raid Battles: Cooperative battles against Dynamaxed Pokémon."
+  "eliteFour": [
+    {
+      "name": "Marnie (Semifinals-Round1)",
+      "image" : "https://archives.bulbagarden.net/media/upload/thumb/0/07/GST_Marnie_icon.png/100px-GST_Marnie_icon.png",
+      "role" : "Dark"
+    },
+    {
+      "name": "Hop (Semifinals-Round2)",
+      "image" : "https://archives.bulbagarden.net/media/upload/thumb/2/2d/GST_Hop_icon.png/100px-GST_Hop_icon.png",
+      "role" : "Mixed Types"
+    },
+    {
+      "name": "Bede (Interruption)",
+      "image" : "https://archives.bulbagarden.net/media/upload/thumb/3/33/GST_Bede_icon.png/100px-GST_Bede_icon.png",
+      "role" : "Fairy"
+    },
+    {
+      "name": "Nessa (Finals-Round1)",
+      "image" : "https://img.pokemondb.net/sprites/trainers/swsh/nessa.jpg",
+      "role" : "Water"
+    },
+    {
+      "name": "Bea(Finals-Round2/Sword)",
+      "image" : "https://img.pokemondb.net/sprites/trainers/swsh/bea.jpg",
+      "role" : "Fighting"
+    },
+    {
+      "name": "Allister(Finals-Round2/Shield)",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/allister.jpg",
+      "role": "Ghost"
+    },
+    {
+      "name": "Raihan (Finals-Round3)",
+      "image": "https://img.pokemondb.net/sprites/trainers/swsh/raihan.jpg",
+      "role": "Dragon"
+    },
+    {
+      "name": "Leon (Champion)",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2c/GST_Leon_icon.png/100px-GST_Leon_icon.png",
+      "role": "Mixed Types"
+    }
   ]
 }

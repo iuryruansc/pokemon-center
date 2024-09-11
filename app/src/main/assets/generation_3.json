@@ -11,77 +11,78 @@
   "features": [
     "Introduced 135 new Pokémon.",
     "First games to feature the Hoenn region.",
-    "Introduced Abilities and Natures.",
-    "Added Double Battles.",
     "Introduced Pokémon Contests.",
-    "Remakes of Generation I: FireRed and LeafGreen."
+    "Remakes of Generation I: FireRed and LeafGreen.",
+    "Introduced Abilities, which give Pokémon passive effects.",
+    "Introduced Natures, which influence stat growth.",
+    "Added Double Battles, allowing for 2 vs. 2 Pokémon battles."
   ],
   "starters": [
     {
       "name": "Treecko",
-      "type": "Grass",
+      "role": "Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png"
     },
     {
       "name": "Torchic",
-      "type": "Fire",
+      "role": "Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
     },
     {
       "name": "Mudkip",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png"
     }
   ],
   "legendary": [
     {
       "name": "Regirock",
-      "type": "Rock",
+      "role": "Rock",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png"
     },
     {
       "name": "Regice",
-      "type": "Ice",
+      "role": "Ice",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png"
     },
     {
       "name": "Registeel",
-      "type": "Steel",
+      "role": "Steel",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png"
     },
     {
       "name": "Latias",
-      "type": "Dragon/Psychic",
+      "role": "Dragon/Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png"
     },
     {
       "name": "Latios",
-      "type": "Dragon/Psychic",
+      "role": "Dragon/Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png"
     },
     {
       "name": "Kyogre",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png"
     },
     {
       "name": "Groudon",
-      "type": "Ground",
+      "role": "Ground",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png"
     },
     {
       "name": "Rayquaza",
-      "type": "Dragon/Flying",
+      "role": "Dragon/Flying",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png"
     },
     {
       "name": "Jirachi",
-      "type": "Steel/Psychic",
+      "role": "Steel/Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png"
     },
     {
       "name": "Deoxys",
-      "type": "Psychic",
+      "role": "Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png"
     }
   ],
@@ -114,49 +115,71 @@
   ],
   "gymLeaders": [
     {
-      "name": "Roxanne",
-      "type": "Rock",
+      "name": "Roxanne (1st)",
+      "role": "Rock",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/roxanne.png"
     },
     {
-      "name": "Brawly",
-      "type": "Fighting",
+      "name": "Brawly (2nd)",
+      "role": "Fighting",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/brawly.png"
     },
     {
-      "name": "Wattson",
-      "type": "Electric",
+      "name": "Wattson (3rd)",
+      "role": "Electric",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/wattson.png"
     },
     {
-      "name": "Flannery",
-      "type": "Fire",
+      "name": "Flannery (4th)",
+      "role": "Fire",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/flannery.png"
     },
     {
-      "name": "Norman",
-      "type": "Normal",
+      "name": "Norman (5th)",
+      "role": "Normal",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/norman.png"
     },
     {
-      "name": "Winona",
-      "type": "Flying",
+      "name": "Winona (6th)",
+      "role": "Flying",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/winona.png"
     },
     {
-      "name": "Tate and Liza",
-      "type": "Psychic",
+      "name": "Tate and Liza (7th)",
+      "role": "Psychic",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/tate-liza.png"
     },
     {
-      "name": "Wallace",
-      "type": "Water",
+      "name": "Wallace (8th)",
+      "role": "Water",
       "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/wallace.png"
     }
   ],
-  "mechanics": [
-    "Introduced Abilities, which give Pokémon passive effects.",
-    "Introduced Natures, which influence stat growth.",
-    "Added Double Battles, allowing for 2 vs. 2 Pokémon battles."
+  "eliteFour": [
+    {
+      "name": "Sidney",
+      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/sidney.png",
+      "role" : "Dark"
+    },
+    {
+      "name": "Phoebe",
+      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/phoebe.png",
+      "role" : "Ghost"
+    },
+    {
+      "name": "Glacia",
+      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/glacia.png",
+      "role" : "Ice"
+    },
+    {
+      "name": "Drake",
+      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/drake.png",
+      "role" : "Dragon"
+    },
+    {
+      "name": "Steven",
+      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/steven.png",
+      "role" : "Steel"
+    }
   ]
 }

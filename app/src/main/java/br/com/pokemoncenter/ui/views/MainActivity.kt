@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityMainBinding
-import java.util.Locale
+import br.com.pokemoncenter.commom.util.hofs.textformat.removeBlankSpace
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -27,20 +27,29 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         binding.mainSearchLayout.setEndIconOnClickListener {
-            val pokemon =
-                binding.mainTextSearch.text.toString().lowercase(Locale.ROOT).replace(" ", "")
+            val pokemon = removeBlankSpace(binding.mainTextSearch.text.toString())
             val intent = Intent(this, PokemonDetailsActivity::class.java)
             intent.putExtra("pokemon", pokemon)
             startActivity(intent)
         }
 
         binding.mainTypesButton.setOnClickListener(this)
+        binding.mainGenerationsButton.setOnClickListener(this)
+        binding.mainNaturesButton.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
             binding.mainTypesButton.id -> {
                 val intent = Intent(this, TypesActivity::class.java)
+                startActivity(intent)
+            }
+            binding.mainGenerationsButton.id -> {
+                val intent = Intent(this, GenerationsChoiceActivity::class.java)
+                startActivity(intent)
+            }
+            binding.mainNaturesButton.id -> {
+                val intent = Intent(this, NaturesActivity::class.java)
                 startActivity(intent)
             }
         }

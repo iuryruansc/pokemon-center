@@ -16,7 +16,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="Section Header"
+            android:text="@string/section_header"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -27,22 +27,12 @@
             android:id="@+id/expandIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/expand_icon"
-            android:contentDescription="Expand content"
+            android:contentDescription="@string/expand_content"
             android:padding="16dp"
+            android:src="@drawable/expand_icon"
             app:layout_constraintBottom_toBottomOf="@id/sectionHeader"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/sectionHeader" />
-
-        <LinearLayout
-            android:id="@+id/sectionContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="visible"
-            app:layout_constraintTop_toBottomOf="@id/sectionHeader">
-
-        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

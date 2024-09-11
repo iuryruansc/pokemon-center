@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">Pokemon-center</string>
-    <string name="main_games_button">Games</string>
+
     <string name="main_searchbar_text">Search Pokémon</string>
     <string name="main_title_text">What Pokémon are you looking for?</string>
     <string name="settings">Settings</string>
-    <string name="main_button_pokemon">Pokédex</string>
+    <string name="main_button_pokedex">Pokédex</string>
     <string name="main_button_types">Types</string>
-    <string name="main_button_moves">Moves</string>
+    <string name="main_button_natures">Natures</string>
     <string name="main_button_items">Items</string>
+    <string name="main_button_generations">Generations</string>
     <string name="id">Id</string>
     <string name="genera">Genus</string>
     <string name="name">Name</string>
@@ -57,4 +58,12 @@
     <string name="move_name">Move Name</string>
     <string name="types_chart">Types Chart</string>
     <string name="credit_text">Chart by u/ConfusedFlareon</string>
+    <string name="character_name">name</string>
+    <string name="sprite_character">sprite character</string>
+    <string name="generation_role">role</string>
+    <string name="generation_number">Generation I</string>
+    <string name="natures_chart_description">natures chart</string>
+    <string name="natures_chart_credit">Chart by https://bulbapedia.bulbagarden.net/wiki/Nature.</string>
+    <string name="expand_content">Expand content</string>
+    <string name="section_header">Section Header</string>
 </resources>

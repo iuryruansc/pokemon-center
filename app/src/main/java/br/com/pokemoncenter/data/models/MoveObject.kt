@@ -1,4 +1,4 @@
-package br.com.pokemoncenter.ui.adapters
+package br.com.pokemoncenter.data.models
 
 import br.com.pokemoncenter.data.api.models.nestedmodels.Type
 

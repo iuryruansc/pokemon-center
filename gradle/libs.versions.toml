@@ -21,6 +21,7 @@ balloon = "1.6.7"
 room = "2.6.1"
 ksp = "2.0.10-1.0.24"
 ktlint = "11.3.1"
+viewpager = "1.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -45,6 +46,7 @@ ballon = { group = "com.github.skydoves", name = "balloon", version.ref = "ballo
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room"}
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room"}
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room"}
+viewpager = { group = "androidx.viewpager2", name = "viewpager2", version.ref = "viewpager"}
 
 
 [plugins]

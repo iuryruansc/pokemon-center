@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import br.com.pokemon_center.R
+import br.com.pokemoncenter.data.models.MoveObject
 import coil.load
 import java.util.Locale
 

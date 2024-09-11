@@ -12,128 +12,153 @@
     "Introduced the original 151 Pokémon.",
     "Established the core gameplay mechanics.",
     "First games to feature the Kanto region.",
-    "Introduced the type chart and status effects."
+    "Introduced the type chart and status effects.",
+    "Special stat was a single stat for both special attack and special defense.",
+    "Only two moves could be used per turn."
   ],
   "starters": [
     {
       "name": "Bulbasaur",
-      "type": "Grass",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "role": "Grass"
     },
     {
       "name": "Charmander",
-      "type": "Fire",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "role": "Fire"
     },
     {
       "name": "Squirtle",
-      "type": "Water",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "role": "Water"
     }
   ],
   "legendary": [
     {
       "name": "Articuno",
-      "type": "Ice/Flying",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "role": "Ice/Flying"
     },
     {
       "name": "Zapdos",
-      "type": "Electric/Flying",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+      "role": "Electric/Flying"
     },
     {
       "name": "Moltres",
-      "type": "Fire/Flying",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+      "role": "Fire/Flying"
     },
     {
       "name": "Mewtwo",
-      "type": "Psychic",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "role": "Psychic"
     },
     {
       "name": "Mew",
-      "type": "Psychic",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+      "role": "Psychic"
     }
   ],
   "importantCharacters": [
     {
       "name": "Professor Oak",
-      "role": "Professor",
-      "image": "https://archives.bulbagarden.net/media/upload/1/1e/Spr_RG_Oak.png"
+      "image": "https://archives.bulbagarden.net/media/upload/1/1e/Spr_RG_Oak.png",
+      "role": "Professor"
     },
     {
       "name": "Brock",
-      "role": "Gym Leader",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png"
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png",
+      "role": "Gym Leader"
     },
     {
       "name": "Red",
-      "role": "Player Character",
-      "image": "https://archives.bulbagarden.net/media/upload/d/d2/Spr_GS_Red.png"
+      "image": "https://archives.bulbagarden.net/media/upload/d/d2/Spr_GS_Red.png",
+      "role": "Player Character"
     },
     {
       "name": "Blue Oak",
-      "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/5/51/Spr_RG_Blue_3.png"
+      "image": "https://archives.bulbagarden.net/media/upload/5/51/Spr_RG_Blue_3.png",
+      "role": "Rival"
     },
     {
       "name": "Giovanni",
-      "role": "Gym Leader / Team Rocket Boss",
-      "image": "https://archives.bulbagarden.net/media/upload/2/23/Spr_RG_Giovanni.png"
+      "image": "https://archives.bulbagarden.net/media/upload/2/23/Spr_RG_Giovanni.png",
+      "role": "Gym Leader / Team Rocket Boss"
     },
     {
       "name": "Bill",
-      "role": "Pokémon Researcher",
-      "image": "https://archives.bulbagarden.net/media/upload/d/db/Spr_FRLG_Bill.png"
+      "image": "https://archives.bulbagarden.net/media/upload/d/db/Spr_FRLG_Bill.png",
+      "role": "Pokémon Researcher"
     }
   ],
   "gymLeaders": [
     {
-      "name": "Brock",
-      "type": "Rock",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png"
+      "name": "Brock (1st)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png",
+      "role": "Rock"
     },
     {
-      "name": "Misty",
-      "type": "Water",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/misty.png"
+      "name": "Misty (2nd)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/misty.png",
+      "role": "Water"
     },
     {
-      "name": "Lt.Surge",
-      "type": "Lightning",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/lt-surge.png"
+      "name": "Lt.Surge (3rd)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/lt-surge.png",
+      "role": "Lightning"
     },
     {
-      "name": "Erika",
-      "type": "Grass",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/erika.png"
+      "name": "Erika (4th)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/erika.png",
+      "role": "Grass"
     },
     {
-      "name": "Koga",
-      "type": "Ghost",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/koga.png"
+      "name": "Koga (5th)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/koga.png",
+      "role": "Ghost"
     },
     {
-      "name": "Sabrina",
-      "type": "Psychic",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/sabrina.png"
+      "name": "Sabrina (6th)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/sabrina.png",
+      "role": "Psychic"
     },
     {
-      "name": "Blaine",
-      "type": "Fire",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/blaine.png"
+      "name": "Blaine (7th)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/blaine.png",
+      "role": "Fire"
     },
     {
-      "name": "Giovanni",
-      "type": "Ground",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/giovanni.png"
+      "name": "Giovanni (8th)",
+      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/giovanni.png",
+      "role": "Ground"
     }
   ],
-  "mechanics": [
-    "Special stat was a single stat for both special attack and special defense.",
-    "Only two moves could be used per turn."
+  "eliteFour": [
+    {
+      "name": "Lorelei",
+      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/lorelei.png",
+      "role" : "Ice"
+    },
+    {
+      "name": "Bruno",
+      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/bruno.png",
+      "role" : "Fighting"
+    },
+    {
+      "name": "Agatha",
+      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/agatha.png",
+      "role" : "Ghost"
+    },
+    {
+      "name": "Lance",
+      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/lorelei.png",
+      "role" : "Dragon"
+    },
+    {
+      "name": "Blue",
+      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/blue.png",
+      "role" : "Mixed Types"
+    }
   ]
 }

@@ -13,54 +13,57 @@
     "First games to feature the Johto region.",
     "Introduced new Pokémon types: Dark and Steel.",
     "Added breeding and held items.",
-    "Introduced Shiny Pokémon."
+    "Introduced Shiny Pokémon.",
+    "Introduced the Special Attack and Special Defense stats, splitting the Special stat.",
+    "Added new moves and abilities.",
+    "Introduced a day-night cycle and real-time clock."
   ],
   "starters": [
     {
       "name": "Chikorita",
-      "type": "Grass",
+      "role": "Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png"
     },
     {
       "name": "Cyndaquil",
-      "type": "Fire",
+      "role": "Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png"
     },
     {
       "name": "Totodile",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png"
     }
   ],
   "legendary": [
     {
       "name": "Raikou",
-      "type": "Electric",
+      "role": "Electric",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png"
     },
     {
       "name": "Entei",
-      "type": "Fire",
+      "role": "Fire",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png"
     },
     {
       "name": "Suicune",
-      "type": "Water",
+      "role": "Water",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png"
     },
     {
       "name": "Ho-Oh",
-      "type": "Fire/Flying",
+      "role": "Fire/Flying",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png"
     },
     {
       "name": "Lugia",
-      "type": "Psychic/Flying",
+      "role": "Psychic/Flying",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png"
     },
     {
       "name": "Celebi",
-      "type": "Psychic/Grass",
+      "role": "Psychic/Grass",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png"
     }
   ],
@@ -93,49 +96,71 @@
   ],
   "gymLeaders": [
     {
-      "name": "Falker",
-      "type": "Fly",
+      "name": "Falker (1st)",
+      "role": "Fly",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/falkner.png"
     },
     {
-      "name": "Bugsy",
-      "type": "Bug",
+      "name": "Bugsy (2nd)",
+      "role": "Bug",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/bugsy.png"
     },
     {
-      "name": "Whitney",
-      "type": "Normal",
+      "name": "Whitney (3rd)",
+      "role": "Normal",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/whitney.png"
     },
     {
-      "name": "Morty",
-      "type": "Ghost",
+      "name": "Morty (4th)",
+      "role": "Ghost",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/morty.png"
     },
     {
-      "name": "Chuck",
-      "type": "Fighting",
+      "name": "Chuck (5th)",
+      "role": "Fighting",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/chuck.png"
     },
     {
-      "name": "Jasmine",
-      "type": "Steel",
+      "name": "Jasmine (6th)",
+      "role": "Steel",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/jasmine.png"
     },
     {
-      "name": "Pryce",
-      "type": "Ice",
+      "name": "Pryce (7th)",
+      "role": "Ice",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/pryce.png"
     },
     {
-      "name": "Clair",
-      "type": "Dragon",
+      "name": "Clair (8th)",
+      "role": "Dragon",
       "image": "https://img.pokemondb.net/sprites/trainers/gold-silver/clair.png"
     }
   ],
-  "mechanics": [
-    "Introduced the Special Attack and Special Defense stats, splitting the Special stat.",
-    "Added new moves and abilities.",
-    "Introduced a day-night cycle and real-time clock."
+  "eliteFour": [
+    {
+      "name": "Will",
+      "image" : "https://img.pokemondb.net/sprites/trainers/gold-silver/will.png",
+      "role" : "Psychic"
+    },
+    {
+      "name": "Koga",
+      "image" : "https://img.pokemondb.net/sprites/trainers/gold-silver/koga.png",
+      "role" : "Poison"
+    },
+    {
+      "name": "Bruno",
+      "image" : "https://img.pokemondb.net/sprites/trainers/gold-silver/bruno.png",
+      "role" : "Fighting"
+    },
+    {
+      "name": "Karen",
+      "image" : "https://img.pokemondb.net/sprites/trainers/gold-silver/karen.png",
+      "role" : "Dark"
+    },
+    {
+      "name": "Lance",
+      "image" : "https://img.pokemondb.net/sprites/trainers/gold-silver/lance.png",
+      "role" : "Dragon"
+    }
   ]
 }

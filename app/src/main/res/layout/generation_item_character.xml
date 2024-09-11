@@ -6,31 +6,35 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/name"
-        android:layout_width="match_parent"
+        android:id="@+id/generation_info_name"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="name"
+        android:text="@string/character_name"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView
-        android:id="@+id/sprite"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/generation_info_sprite"
+        android:layout_width="100dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="100dp"
         android:src="@drawable/brock"
-        android:contentDescription="sprite character"
+        android:contentDescription="@string/sprite_character"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/generation_info_name"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
+        android:id="@+id/generation_info_role"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="type"
+        android:layout_marginTop="5dp"
+        android:text="@string/generation_role"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/sprite"/>
+        app:layout_constraintTop_toBottomOf="@id/generation_info_sprite"/>
 
 
 
