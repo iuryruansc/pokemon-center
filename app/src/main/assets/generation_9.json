@@ -152,27 +152,27 @@
   "eliteFour": [
     {
       "name": "Rika",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/rika.png",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/rika.jpg",
       "role" : "Ground"
     },
     {
       "name": "Poppy",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/poppy.png",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/poppy.jpg",
       "role" : "Steel"
     },
     {
       "name": "Larry",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/larry.png",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/larry.jpg",
       "role" : "Flying"
     },
     {
       "name": "Hassel",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/hassel.png",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/hassel.jpg",
       "role" : "Dragon"
     },
     {
       "name": "Geeta",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/geeta.png",
+      "image" : "https://img.pokemondb.net/sprites/trainers/sv/geeta.jpg",
       "role" : "Mixed Types"
     }
   ]

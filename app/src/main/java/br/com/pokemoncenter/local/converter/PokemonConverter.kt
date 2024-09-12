@@ -1,7 +1,6 @@
 package br.com.pokemoncenter.local.converter
 
 import androidx.room.TypeConverter
-import br.com.pokemoncenter.data.api.models.nestedmodels.Move
 import br.com.pokemoncenter.data.api.models.pokemonbynamedata.Abilities
 import br.com.pokemoncenter.data.api.models.pokemonbynamedata.Cry
 import br.com.pokemoncenter.data.api.models.pokemonbynamedata.Moves
@@ -12,17 +11,6 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 class PokemonConverter {
-
-    @TypeConverter
-    fun fromMove(move: Move): String {
-        return Gson().toJson(move)
-    }
-
-    @TypeConverter
-    fun toMove(moveString: String): Move {
-        val type = object : TypeToken<Move>() {}.type
-        return Gson().fromJson(moveString, type)
-    }
 
     @TypeConverter
     fun fromSprite(sprites: Sprites): String {

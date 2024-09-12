@@ -129,66 +129,86 @@
   ],
   "gymLeaders": [
     {
-      "name": "Ilima (1st)",
+      "name": "Ilima (1st Trial)",
       "role": "Normal",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/ilima.jpg"
     },
     {
-      "name": "Lana (2nd)",
+      "name": "Lana (2nd Trial)",
       "role": "Water",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/lana.jpg"
     },
     {
-      "name": "Kiawe (3rd)",
+      "name": "Kiawe (3rd Trial)",
       "role": "Fire",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kiawe.jpg"
     },
     {
-      "name": "Mallow (4th)",
+      "name": "Mallow (4th Trial)",
       "role": "Grass",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/mallow.jpg"
     },
     {
-      "name": "Sophocles (5th)",
+      "name": "Sophocles (5th Trial)",
       "role": "Electric",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/sophocles.jpg"
     },
     {
-      "name": "Acerola (6th)",
+      "name": "Acerola (6th trial)",
       "role": "Ghost",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg"
     },
     {
-      "name": "Mina (7th)",
+      "name": "Mina (7th Trial)",
       "role": "Fairy",
       "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/mina.jpg"
+    },
+    {
+      "name": "Hala (1st Kahuna)",
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/hala.jpg",
+      "role": "Fighting"
+    },
+    {
+      "name": "Olivia (2nd Kahuna)",
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/olivia.jpg",
+      "role": "Rock"
+    },
+    {
+      "name": "Nanu (3rd Kahuna)",
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/nanu.jpg",
+      "role": "Dark"
+    },
+    {
+      "name": "Hapu (4th Kahuna)",
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/hapu.jpg",
+      "role": "Ground"
     }
   ],
   "eliteFour": [
     {
       "name": "Hala",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/hala.jpg",
-      "role" : "Fighting"
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/hala.jpg",
+      "role": "Fighting"
     },
     {
       "name": "Olivia",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/olivia.jpg",
-      "role" : "Rock"
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/olivia.jpg",
+      "role": "Rock"
     },
     {
       "name": "Acerola",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg",
-      "role" : "Ghost"
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg",
+      "role": "Ghost"
     },
     {
       "name": "Kahili",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/kahili.jpg",
-      "role" : "Flying"
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kahili.jpg",
+      "role": "Flying"
     },
     {
       "name": "Kukui",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sun-moon/kukui.jpg",
-      "role" : "Mixed Types"
+      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kukui.jpg",
+      "role": "Mixed Types"
     }
   ]
 }

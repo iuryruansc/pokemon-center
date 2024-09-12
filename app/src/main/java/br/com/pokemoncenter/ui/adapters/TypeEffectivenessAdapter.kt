@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.pokemon_center.R
+import br.com.pokemoncenter.commom.TypeEffectiveness
 import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
 import br.com.pokemoncenter.commom.util.listeners.FragmentEffectListener
 import java.util.Locale
@@ -47,31 +48,41 @@ class TypeEffectivenessAdapter(private val typeEffectiveness: Map<String, Double
 
         holder.tvType.setImageResource(typeStyle(type)!!)
 
-        when (val effectiveness = typeEffectiveness[type]) {
-            4.0 -> {
-                holder.tvEffectBar.setBackgroundResource(R.color.quadrupleEffective)
-                holder.tvEffectiveness.text = String.format(Locale.ROOT, "x%.1f", effectiveness)
+        when (
+            val effectiveness =
+                TypeEffectiveness.fromValue(typeEffectiveness[type] ?: 1.0)
+        ) {
+            TypeEffectiveness.QUADRUPLE_EFFECTIVE -> {
+                holder.tvEffectBar.setBackgroundResource(effectiveness.colorResId)
+                holder.tvEffectiveness.text =
+                    String.format(Locale.ROOT, effectiveness.format, effectiveness.value)
             }
 
-            2.0 -> {
-                holder.tvEffectBar.setBackgroundResource(R.color.theme_dark_double_effective)
-                holder.tvEffectiveness.text = String.format(Locale.ROOT, "x%.1f", effectiveness)
+            TypeEffectiveness.DOUBLE_EFFECTIVE -> {
+                holder.tvEffectBar.setBackgroundResource(effectiveness.colorResId)
+                holder.tvEffectiveness.text =
+                    String.format(Locale.ROOT, effectiveness.format, effectiveness.value)
             }
 
-            0.5 -> {
-                holder.tvEffectBar.setBackgroundResource(R.color.doubleResist)
-                holder.tvEffectiveness.text = String.format(Locale.ROOT, "x%.1f", effectiveness)
+            TypeEffectiveness.DOUBLE_RESIST -> {
+                holder.tvEffectBar.setBackgroundResource(effectiveness.colorResId)
+                holder.tvEffectiveness.text =
+                    String.format(Locale.ROOT, effectiveness.format, effectiveness.value)
             }
 
-            0.25 -> {
-                holder.tvEffectBar.setBackgroundResource(R.color.quadrupleResist)
-                holder.tvEffectiveness.text = String.format(Locale.ROOT, "x%.2f", effectiveness)
+            TypeEffectiveness.QUADRUPLE_RESIST -> {
+                holder.tvEffectBar.setBackgroundResource(effectiveness.colorResId)
+                holder.tvEffectiveness.text =
+                    String.format(Locale.ROOT, effectiveness.format, effectiveness.value)
             }
 
-            0.0 -> {
-                holder.tvEffectBar.setBackgroundResource(R.color.noEffect)
-                holder.tvEffectiveness.text = String.format(Locale.ROOT, "x%.1f", effectiveness)
+            TypeEffectiveness.NO_EFFECT -> {
+                holder.tvEffectBar.setBackgroundResource(effectiveness.colorResId)
+                holder.tvEffectiveness.text =
+                    String.format(Locale.ROOT, effectiveness.format, effectiveness.value)
             }
+
+            null -> TODO()
         }
     }
 }

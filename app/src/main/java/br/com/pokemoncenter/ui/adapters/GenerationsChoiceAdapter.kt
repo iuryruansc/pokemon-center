@@ -9,7 +9,8 @@ import br.com.pokemon_center.R
 import br.com.pokemoncenter.commom.util.listeners.GenerationChoiceListener
 import br.com.pokemoncenter.data.models.ButtonData
 
-class GenerationsChoiceAdapter(private val buttonDataList: List<ButtonData>) : RecyclerView.Adapter<GenerationsChoiceAdapter.GenChoiceViewHolder>() {
+class GenerationsChoiceAdapter(private val buttonDataList: List<ButtonData>) :
+    RecyclerView.Adapter<GenerationsChoiceAdapter.GenChoiceViewHolder>() {
 
     private var choiceListener: GenerationChoiceListener? = null
 
@@ -17,7 +18,8 @@ class GenerationsChoiceAdapter(private val buttonDataList: List<ButtonData>) : R
         this.choiceListener = listener
     }
 
-    class GenChoiceViewHolder(itemView: View, choiceListener: GenerationChoiceListener?) : RecyclerView.ViewHolder(itemView) {
+    class GenChoiceViewHolder(itemView: View, choiceListener: GenerationChoiceListener?) :
+        RecyclerView.ViewHolder(itemView) {
         val generationChoiceButton: Button = itemView.findViewById(R.id.gen_choice_button)
 
         init {

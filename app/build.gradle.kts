@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.devtools.ksp)
     alias(libs.plugins.gradle.ktlint)
+    alias(libs.plugins.detekt)
 }
 
 android {

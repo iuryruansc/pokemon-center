@@ -1,5 +1,7 @@
 package br.com.pokemoncenter.commom.util.hofs.types
 
+import br.com.pokemoncenter.commom.Constants
+
 fun getCombinedTypeEffectivenessDef(
     type1: String,
     type2: String?,
@@ -10,7 +12,8 @@ fun getCombinedTypeEffectivenessDef(
     val combinedEffectiveness = mutableMapOf<String, Double>()
 
     for (type in typeEffectivenessMap.keys) {
-        combinedEffectiveness[type] = 1.0 // Initialize with normal effectiveness
+        combinedEffectiveness[type] =
+            Constants.EFFECTIVE_NORMAL // Initialize with normal effectiveness
     }
 
     // Apply defense effectiveness for type1
@@ -30,12 +33,14 @@ private fun applyTypeEffectiveness(
     combinedEffectiveness: MutableMap<String, Double>
 ) {
     for (type in defenseEffectiveness.double) {
-        combinedEffectiveness[type] = combinedEffectiveness[type]?.times(2.0) ?: 2.0
+        combinedEffectiveness[type] =
+            combinedEffectiveness[type]?.times(Constants.EFFECTIVE_2X) ?: Constants.EFFECTIVE_2X
     }
     for (type in defenseEffectiveness.half) {
-        combinedEffectiveness[type] = combinedEffectiveness[type]?.times(0.5) ?: 0.5
+        combinedEffectiveness[type] =
+            combinedEffectiveness[type]?.times(Constants.EFFECTIVE_HALF) ?: Constants.EFFECTIVE_HALF
     }
     for (type in defenseEffectiveness.zero) {
-        combinedEffectiveness[type] = 0.0
+        combinedEffectiveness[type] = Constants.NO_EFFECT
     }
 }

@@ -9,7 +9,6 @@ fun readJson(context: Context, fileName: String): String? {
             .bufferedReader().use { it.readText() }
         return jsonString
     } catch (ioException: Exception) {
-        ioException.printStackTrace()
         return null
     }
 }

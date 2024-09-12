@@ -1,5 +1,10 @@
 package br.com.pokemoncenter.commom.util.hofs.general
 
+import br.com.pokemoncenter.commom.Constants
+
 fun calculateStatAtLevel(baseStat: Int, level: Int): Int {
-    return ((2 * baseStat + 31) * level / 100 + 5)
+    return (
+        (Constants.BASE_STAT_MULTIPLIER * baseStat + Constants.INDIVIDUAL_VALUE) *
+            level / Constants.LEVEL_DIVISOR + Constants.STAT_CONSTANT
+        )
 }

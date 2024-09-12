@@ -32,37 +32,32 @@ class InfoFragment : Fragment() {
         if (pokemonName != null) {
             viewModel.pokemonSpecies(pokemonName)
             viewModel.pokemonDetails(pokemonName)
+            observeViewModel()
+        }
+    }
 
-            viewModel.pokemonDescription.observe(viewLifecycleOwner) {
-                binding.infoDescription.text = it
-            }
-
-            viewModel.pokemonHeight.observe(viewLifecycleOwner) {
-                binding.heightValue.text = it
-            }
-
-            viewModel.pokemonWeight.observe(viewLifecycleOwner) {
-                binding.weightValue.text = it
-            }
-
-            viewModel.captureRate.observe(viewLifecycleOwner) {
+    private fun observeViewModel() {
+        with(viewModel) {
+            pokemonDescription.observe(viewLifecycleOwner) { binding.infoDescription.text = it }
+            pokemonHeight.observe(viewLifecycleOwner) { binding.heightValue.text = it }
+            pokemonWeight.observe(viewLifecycleOwner) { binding.weightValue.text = it }
+            captureRate.observe(viewLifecycleOwner) {
                 binding.captureRateValue.text = it
-                binding.pokeballRate.progress = it.toInt()
-                binding.greatballRate.progress = it.toInt()
-                binding.ultraballRate.progress = it.toInt()
+                setProgressBar(it.toInt())
             }
-
-            viewModel.baseExperience.observe(viewLifecycleOwner) {
-                binding.baseExperienceValue.text = it
-            }
-
-            viewModel.genera.observe(viewLifecycleOwner) {
-                binding.generaValue.text = it
-            }
-
-            viewModel.generationDebut.observe(viewLifecycleOwner) {
+            baseExperience.observe(viewLifecycleOwner) { binding.baseExperienceValue.text = it }
+            genera.observe(viewLifecycleOwner) { binding.generaValue.text = it }
+            generationDebut.observe(viewLifecycleOwner) {
                 binding.generationText.text = capitalizedName(it)
             }
+        }
+    }
+
+    private fun setProgressBar(progress: Int) {
+        with(binding) {
+            pokeballRate.progress = progress
+            greatballRate.progress = progress
+            ultraballRate.progress = progress
         }
     }
 

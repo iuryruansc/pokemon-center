@@ -1,5 +1,7 @@
 package br.com.pokemoncenter.data.repository
 
+import br.com.pokemoncenter.commom.DataNotFoundException
+import br.com.pokemoncenter.commom.DataParseException
 import br.com.pokemoncenter.commom.util.testing.EspressoIdlingResourceHelper
 import br.com.pokemoncenter.commom.util.testing.IdlingResourceHelper
 import br.com.pokemoncenter.data.api.models.MoveDetailsResponse
@@ -21,6 +23,10 @@ class PokemonDetailsRepository(
             } else {
                 // Handle the case where the result is null
             }
+        } catch (e: DataNotFoundException) {
+            return PokemonReturn(false, e.message.orEmpty(), null)
+        } catch (e: DataParseException) {
+            return PokemonReturn(false, e.message.orEmpty(), null)
         } catch (ex: Exception) {
             return PokemonReturn(false, ex.message.orEmpty(), null)
         } finally {
@@ -38,6 +44,10 @@ class PokemonDetailsRepository(
             } else {
                 // Handle the case where the result is null
             }
+        } catch (e: DataNotFoundException) {
+            return PokemonReturn(false, e.message.orEmpty(), null)
+        } catch (e: DataParseException) {
+            return PokemonReturn(false, e.message.orEmpty(), null)
         } catch (ex: Exception) {
             return PokemonReturn(false, ex.message.orEmpty(), null)
         } finally {
@@ -55,6 +65,10 @@ class PokemonDetailsRepository(
             } else {
                 // Handle the case where the result is null
             }
+        } catch (e: DataNotFoundException) {
+            return PokemonReturn(false, e.message.orEmpty(), null)
+        } catch (e: DataParseException) {
+            return PokemonReturn(false, e.message.orEmpty(), null)
         } catch (ex: Exception) {
             return PokemonReturn(false, ex.message.orEmpty(), null)
         } finally {

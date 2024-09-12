@@ -9,6 +9,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.pokemon_center.R
+import br.com.pokemoncenter.commom.Constants.CHARACTER_SPAN_COUNT
+import br.com.pokemoncenter.commom.Constants.TEXT_SPAN_COUNT
 import br.com.pokemoncenter.data.models.SectionItem
 import coil.load
 
@@ -105,12 +107,12 @@ class SectionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onAttachedToRecyclerView(recyclerView: RecyclerView) {
         super.onAttachedToRecyclerView(recyclerView)
-        val gridLayoutManager = GridLayoutManager(recyclerView.context, 3)
+        val gridLayoutManager = GridLayoutManager(recyclerView.context, CHARACTER_SPAN_COUNT)
         gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
             override fun getSpanSize(position: Int): Int {
                 return when (items[position]) {
-                    is SectionItem.CharacterContent -> 1
-                    else -> 3
+                    is SectionItem.CharacterContent -> TEXT_SPAN_COUNT
+                    else -> CHARACTER_SPAN_COUNT
                 }
             }
         }

@@ -23,15 +23,15 @@ class GenerationsChoiceActivity : AppCompatActivity(), GenerationChoiceListener 
         val genRecycleView = binding.generationChoiceRv
 
         val buttonDataList = listOf(
-            ButtonData("Generation 1", R.drawable.gen1_button),
-            ButtonData("Generation 2", R.drawable.gen2_button),
-            ButtonData("Generation 3", R.drawable.gen3_button),
-            ButtonData("Generation 4", R.drawable.gen4_button),
-            ButtonData("Generation 5", R.drawable.gen5_button),
-            ButtonData("Generation 6", R.drawable.gen6_button),
-            ButtonData("Generation 7", R.drawable.gen7_button),
-            ButtonData("Generation 8", R.drawable.gen8_button),
-            ButtonData("Generation 9", R.drawable.gen9_button)
+            ButtonData("Generation I", R.drawable.gen1_button),
+            ButtonData("Generation II", R.drawable.gen2_button),
+            ButtonData("Generation III", R.drawable.gen3_button),
+            ButtonData("Generation IV", R.drawable.gen4_button),
+            ButtonData("Generation V", R.drawable.gen5_button),
+            ButtonData("Generation VI", R.drawable.gen6_button),
+            ButtonData("Generation VII", R.drawable.gen7_button),
+            ButtonData("Generation VIII", R.drawable.gen8_button),
+            ButtonData("Generation IX", R.drawable.gen9_button)
         )
 
         val adapter = GenerationsChoiceAdapter(buttonDataList)

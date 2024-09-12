@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.core.widget.doAfterTextChanged
 import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityMainBinding
 import br.com.pokemoncenter.commom.util.hofs.textformat.removeBlankSpace
@@ -24,6 +25,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        binding.mainSearchLayout.isEndIconVisible = false
+
+        binding.mainTextSearch.doAfterTextChanged { editable ->
+            val text = editable?.toString()?.trim() ?: ""
+            binding.mainSearchLayout.isEndIconVisible = text.isNotEmpty()
         }
 
         binding.mainSearchLayout.setEndIconOnClickListener {
