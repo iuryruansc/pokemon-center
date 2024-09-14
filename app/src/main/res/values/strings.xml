@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Pokemon-center</string>
-
+    <string name="app_name">Pokemon Center</string>
     <string name="main_searchbar_text">Search Pokémon</string>
     <string name="main_title_text">What Pokémon are you looking for?</string>
     <string name="settings">Settings</string>
@@ -66,4 +65,8 @@
     <string name="natures_chart_credit">Chart by https://bulbapedia.bulbagarden.net/wiki/Nature.</string>
     <string name="expand_content">Expand content</string>
     <string name="section_header">Section Header</string>
+    <string name="crysound">crysound</string>
+    <string name="menu">menu</string>
+    <string name="home">home</string>
+    <string name="natures_chart">Natures Chart</string>
 </resources>

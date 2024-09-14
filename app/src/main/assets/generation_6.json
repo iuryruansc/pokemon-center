@@ -70,105 +70,105 @@
     {
       "name": "Professor Sycamore",
       "role": "Professor",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/c3/Professor_Sycamore_OD.png/100px-Professor_Sycamore_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/9/99/VSSycamore_Masters.png"
     },
     {
       "name": "Calem",
       "role": "Player Character/Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/cb/Calem_XY_OD.png/100px-Calem_XY_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/d/d0/VSCalem_Masters.png"
     },
     {
       "name": "Serena",
       "role": "Player Character/Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/44/Serena_XY_OD.png/100px-Serena_XY_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/f/f8/VSSerena_Masters.png"
     },
     {
       "name": "Shauna",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/9/9b/Shauna_XY_OD.png/100px-Shauna_XY_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/a/a6/VSShauna.png"
     },
     {
       "name": "Tierno",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/45/Tierno_XY_OD.png/100px-Tierno_XY_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/a/a7/VSTierno.png"
     },
     {
       "name": "Trevor",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/3a/Trevor_XY_OD.png/100px-Trevor_XY_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/f/f0/VSTrevor_Masters.png"
     },
     {
       "name": "Diantha",
       "role": "Champion",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/dc/Diantha_XY_OD.png/100px-Diantha_XY_OD.png"
+      "image": "https://archives.bulbagarden.net/media/upload/b/b6/VSDiantha.png"
     }
   ],
   "gymLeaders": [
     {
       "name": "Viola (1st)",
       "role": "Bug",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/viola.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSViola.png"
     },
     {
       "name": "Grant (2nd)",
       "role": "Rock",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/grant.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/0/03/VSGrant.png"
     },
     {
       "name": "Korrina (3rd)",
       "role": "Fighting",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/korrina.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/4/4c/VSKorrina.png"
     },
     {
       "name": "Ramos (4th)",
       "role": "Grass",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/ramos.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/0/06/VSRamos.png"
     },
     {
       "name": "Clemont (5th)",
       "role": "Electric",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/clemont.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/e/e7/VSClemont.png"
     },
     {
       "name": "Valerie (6th)",
       "role": "Fairy",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/valerie.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/2/22/VSValerie.png"
     },
     {
       "name": "Olympia (7th)",
       "role": "Psychic",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/olympia.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/7/7f/VSOlympia.png"
     },
     {
       "name": "Wulfric (8th)",
       "role": "Ice",
-      "image": "https://img.pokemondb.net/sprites/trainers/x-y/wulfric.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/f/f0/VSWulfric.png"
     }
   ],
   "eliteFour": [
     {
       "name": "Wikstrom",
-      "image" : "https://img.pokemondb.net/sprites/trainers/x-y/wikstrom.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/54/VSWikstrom.png",
       "role" : "Steel"
     },
     {
       "name": "Malva",
-      "image" : "https://img.pokemondb.net/sprites/trainers/x-y/malva.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/5d/VSMalva.png",
       "role" : "Fire"
     },
     {
       "name": "Drasna",
-      "image" : "https://img.pokemondb.net/sprites/trainers/x-y/drasna.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/e/e1/VSDrasna.png",
       "role" : "Dragon"
     },
     {
       "name": "Siebold",
-      "image" : "https://img.pokemondb.net/sprites/trainers/x-y/siebold.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/8/81/VSSiebold.png",
       "role" : "Water"
     },
     {
       "name": "Diantha",
-      "image" : "https://img.pokemondb.net/sprites/trainers/x-y/diantha.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/b/b6/VSDiantha.png",
       "role" : "Mixed Types"
     }
   ]

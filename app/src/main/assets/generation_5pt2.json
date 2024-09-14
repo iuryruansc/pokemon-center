@@ -2,21 +2,20 @@
   "general": {
     "generationName": "Generation V",
     "region": "Unova",
-    "introducedPokemon": "156",
+    "introducedPokemon": "0",
     "startDexNumber": "494",
     "endDexNumber": "649",
-    "games": "Black, White",
-    "releaseYear": "2010"
+    "games": "Black 2 and White 2",
+    "releaseYear": "2012"
   },
   "features": [
-    "Introduced 156 new Pokémon.",
-    "First games to feature the Unova region.",
-    "Featured a seasonal cycle.",
-    "First generation to have direct sequels: Black 2 & White 2.",
-    "Introduced Triple Battles: 3 vs. 3 Pokémon battles.",
-    "Introduced Rotation Battles: A unique battle style where you can rotate your Pokémon during battle.",
-    "Introduced the Dream World: An online feature where players could interact with Pokémon and obtain items.",
-    "Entralink: A local wireless feature for interacting with other players."
+    "Sequels to Black and White, taking place two years later.",
+    "New locations and redesigned areas in Unova.",
+    "Expanded regional Pokédex with Pokémon from previous generations.",
+    "Key System for unlocking new areas and challenges.",
+    "Pokémon World Tournament to battle past Gym Leaders and Champions.",
+    "Black Tower/White Treehollow challenging post-game areas.",
+    "Join Avenue for a customizable shopping mall experience."
   ],
   "starters": [
     {
@@ -52,6 +51,16 @@
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png"
     },
     {
+      "name": "Black Kyurem",
+      "role": "Dragon/Ice",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e8/0646Kyurem-Black.png"
+    },
+    {
+      "name": "White Kyurem",
+      "role": "Dragon/Ice",
+      "image": "https://archives.bulbagarden.net/media/upload/5/5d/0646Kyurem-White.png"
+    },
+    {
       "name": "Landorus",
       "role": "Ground/Flying",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png"
@@ -72,16 +81,6 @@
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png"
     },
     {
-      "name": "Terrakion",
-      "role": "Rock/Fighting",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png"
-    },
-    {
-      "name": "Virizion",
-      "role": "Grass/Fighting",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png"
-    },
-    {
       "name": "Keldeo",
       "role": "Water/Fighting",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png"
@@ -90,75 +89,60 @@
       "name": "Meloetta",
       "role": "Normal/Psychic",
       "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png"
-    },
-    {
-      "name": "Genesect",
-      "role": "Bug/Steel",
-      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png"
     }
   ],
   "importantCharacters": [
     {
       "name": "Professor Juniper",
       "role": "Professor",
-      "image": "https://archives.bulbagarden.net/media/upload/f/f7/Juniper_Xtransceiver.png"
+      "image": "https://archives.bulbagarden.net/media/upload/5/54/Juniper_Xtransceiver_2.png"
     },
     {
-      "name": "Hilda",
+      "name": "Rosa",
       "role": "Player Character",
-      "image": "https://archives.bulbagarden.net/media/upload/6/60/Hilda_Xtransceiver.png"
+      "image": "https://archives.bulbagarden.net/media/upload/6/67/Rosa_Xtransceiver.png"
     },
     {
-      "name": "Hilbert",
+      "name": "Nate",
       "role": "Player Character",
-      "image": "https://archives.bulbagarden.net/media/upload/7/72/Hilbert_Xtransceiver.png"
+      "image": "https://archives.bulbagarden.net/media/upload/a/a0/Nate_Xtransceiver.png"
     },
     {
       "name": "Cheren",
+      "role": "Gym Leader",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/Cheren_Xtransceiver_2.png"
+    },
+    {
+      "name": "Hugh",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/b/bd/Cheren_Xtransceiver.png"
+      "image": "https://archives.bulbagarden.net/media/upload/1/1f/Hugh_Xtransceiver.png"
     },
     {
       "name": "Bianca",
-      "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/c/c6/Bianca_Xtransceiver.png"
+      "role": "Professor's Assistant",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4f/Bianca_Xtransceiver_2.png"
     },
     {
-      "name": "Alder",
+      "name": "Iris",
       "role": "Champion",
-      "image": "https://archives.bulbagarden.net/media/upload/b/b5/VSAlder.png"
-    },
-    {
-      "name": "N",
-      "role": "Antagonist/Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/c/c9/VSN.png"
+      "image": "https://archives.bulbagarden.net/media/upload/d/da/VSIris_2.png"
     },
     {
       "name": "Ghetsis",
       "role": "Antagonist",
-      "image": "https://archives.bulbagarden.net/media/upload/1/12/VSGhetsis.png"
+      "image": "https://archives.bulbagarden.net/media/upload/3/36/VSGhetsis_2.png"
     }
   ],
   "gymLeaders": [
     {
-      "name": "Cilan (1st/Oshawott as starter)",
-      "role": "Grass",
-      "image": "https://archives.bulbagarden.net/media/upload/7/70/VSCilan.png"
-    },
-    {
-      "name": "Chili (1st/Snivy as starter)",
-      "role": "Fire",
-      "image": "https://archives.bulbagarden.net/media/upload/1/15/VSChili.png"
-    },
-    {
-      "name": "Cress (1st/Tepig as starter)",
-      "role": "Water",
-      "image": "https://archives.bulbagarden.net/media/upload/c/c6/VSCress.png"
-    },
-    {
-      "name": "Lenora (2nd)",
+      "name": "Cheren (1st)",
       "role": "Normal",
-      "image": "https://archives.bulbagarden.net/media/upload/e/ef/VSLenora.png"
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/Cheren_Xtransceiver_2.png"
+    },
+    {
+      "name": "Roxie (2nd)",
+      "role": "Poison",
+      "image": "https://archives.bulbagarden.net/media/upload/d/de/VSRoxie.png"
     },
     {
       "name": "Burgh (3rd)",
@@ -168,7 +152,7 @@
     {
       "name": "Elesa (4th)",
       "role": "Electric",
-      "image": "https://archives.bulbagarden.net/media/upload/9/92/VSElesa.png"
+      "image": "https://archives.bulbagarden.net/media/upload/0/0f/VSElesa_2.png"
     },
     {
       "name": "Clay (5th)",
@@ -181,19 +165,14 @@
       "image": "https://archives.bulbagarden.net/media/upload/c/c7/VSSkyla.png"
     },
     {
-      "name": "Brycen (7th)",
-      "role": "Ice",
-      "image": "https://img.pokemondb.net/sprites/trainers/black-white/brycen.png"
-    },
-    {
-      "name": "Drayden (8th/Pokemon Black)",
+      "name": "Drayden (7th)",
       "role": "Dragon",
       "image": "https://archives.bulbagarden.net/media/upload/d/dd/VSDrayden.png"
     },
     {
-      "name": "Iris (8th/Pokemon White)",
-      "role": "Dragon",
-      "image": "https://archives.bulbagarden.net/media/upload/b/b3/VSIris.png"
+      "name": "Marlon (8th)",
+      "role": "Water",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e4/VSMarlon.png"
     }
   ],
   "eliteFour": [
@@ -218,8 +197,8 @@
       "role" : "Fighting"
     },
     {
-      "name": "Alder",
-      "image" : "https://archives.bulbagarden.net/media/upload/b/b5/VSAlder.png",
+      "name": "Iris",
+      "image" : "https://archives.bulbagarden.net/media/upload/d/da/VSIris_2.png",
       "role" : "Mixed Types"
     }
   ]

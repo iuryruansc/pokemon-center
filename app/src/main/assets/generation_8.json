@@ -106,115 +106,115 @@
     {
       "name": "Hop",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2d/GST_Hop_icon.png/100px-GST_Hop_icon.png"
+      "image": "https://archives.bulbagarden.net/media/upload/2/2d/GST_Hop_icon.png"
     },
     {
       "name": "Marnie",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/07/GST_Marnie_icon.png/100px-GST_Marnie_icon.png"
+      "image": "https://archives.bulbagarden.net/media/upload/0/07/GST_Marnie_icon.png"
     },
     {
       "name": "Bede",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/33/GST_Bede_icon.png/100px-GST_Bede_icon.png"
+      "image": "https://archives.bulbagarden.net/media/upload/3/33/GST_Bede_icon.png"
     },
     {
       "name": "Leon",
       "role": "Champion",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2c/GST_Leon_icon.png/100px-GST_Leon_icon.png"
+      "image": "https://archives.bulbagarden.net/media/upload/2/2c/GST_Leon_icon.png"
     }
   ],
   "gymLeaders": [
     {
       "name": "Milo (1st)",
       "role": "Grass",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/milo.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/e/e5/GST_Milo_icon.png"
     },
     {
       "name": "Nessa (2nd)",
       "role": "Water",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/nessa.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/9/94/GST_Nessa_icon.png"
     },
     {
       "name": "Kabu (3rd)",
       "role": "Fire",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/kabu.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/0/04/GST_Kabu_icon.png"
     },
     {
-      "name": "Bea (4th/Pokemon Sword)",
+      "name": "Bea (4th/Sword)",
       "role": "Fighting",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/bea.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/8/8c/GST_Bea_icon.png"
     },
     {
-      "name": "Allister (4th/Pokemon Shield)",
+      "name": "Allister (4th/Shield)",
       "role": "Ghost",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/allister.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/7/74/GST_Allister_icon.png"
     },
     {
       "name": "Opal (5th)",
       "role": "Fairy",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/opal.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/e/eb/GST_Opal_icon.png"
     },
     {
-      "name": "Gordie (6th/Pokemon Sword)",
+      "name": "Gordie (6th/Sword)",
       "role": "Rock",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/gordie.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/a/ac/GST_Gordie_icon.png"
     },
     {
-      "name": "Melony (6th/Pokemon Shield)",
+      "name": "Melony (6th/Shield)",
       "role": "Ice",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/melony.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/6/68/GST_Melony_icon.png"
     },
     {
       "name": "Piers (7th)",
       "role": "Dark",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/piers.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/c/ce/GST_Piers_icon.png"
     },
     {
       "name": "Raihan (8th)",
       "role": "Dragon",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/raihan.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/1/1f/GST_Raihan_icon.png"
     }
   ],
   "eliteFour": [
     {
       "name": "Marnie (Semifinals-Round1)",
-      "image" : "https://archives.bulbagarden.net/media/upload/thumb/0/07/GST_Marnie_icon.png/100px-GST_Marnie_icon.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/0/07/GST_Marnie_icon.png",
       "role" : "Dark"
     },
     {
       "name": "Hop (Semifinals-Round2)",
-      "image" : "https://archives.bulbagarden.net/media/upload/thumb/2/2d/GST_Hop_icon.png/100px-GST_Hop_icon.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/2/2d/GST_Hop_icon.png",
       "role" : "Mixed Types"
     },
     {
       "name": "Bede (Interruption)",
-      "image" : "https://archives.bulbagarden.net/media/upload/thumb/3/33/GST_Bede_icon.png/100px-GST_Bede_icon.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/3/33/GST_Bede_icon.png",
       "role" : "Fairy"
     },
     {
       "name": "Nessa (Finals-Round1)",
-      "image" : "https://img.pokemondb.net/sprites/trainers/swsh/nessa.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/9/94/GST_Nessa_icon.png",
       "role" : "Water"
     },
     {
       "name": "Bea(Finals-Round2/Sword)",
-      "image" : "https://img.pokemondb.net/sprites/trainers/swsh/bea.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/8/8c/GST_Bea_icon.png",
       "role" : "Fighting"
     },
     {
       "name": "Allister(Finals-Round2/Shield)",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/allister.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/7/74/GST_Allister_icon.png",
       "role": "Ghost"
     },
     {
       "name": "Raihan (Finals-Round3)",
-      "image": "https://img.pokemondb.net/sprites/trainers/swsh/raihan.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/1/1f/GST_Raihan_icon.png",
       "role": "Dragon"
     },
     {
       "name": "Leon (Champion)",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2c/GST_Leon_icon.png/100px-GST_Leon_icon.png",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2c/GST_Leon_icon.png",
       "role": "Mixed Types"
     }
   ]

@@ -95,91 +95,91 @@
     {
       "name": "Brendan",
       "role": "Player Character/Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/6/68/Spr_RS_Brendan.png"
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrendan.png"
     },
     {
       "name": "May",
       "role": "Player Character/Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/3/38/Spr_RS_May.png"
+      "image": "https://archives.bulbagarden.net/media/upload/6/63/VSMay.png"
     },
     {
       "name": "Wally",
       "role": "Rival",
-      "image": "https://archives.bulbagarden.net/media/upload/8/87/Spr_RS_Wally.png"
+      "image": "https://archives.bulbagarden.net/media/upload/7/7e/VSWally_2.png"
     },
     {
       "name": "Steven Stone",
       "role": "Champion",
-      "image": "https://archives.bulbagarden.net/media/upload/a/ad/Spr_RS_Steven.png"
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png"
     }
   ],
   "gymLeaders": [
     {
       "name": "Roxanne (1st)",
       "role": "Rock",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/roxanne.png"
+      "image": "https://archives.bulbagarden.net/media/upload/9/90/VSRoxanne.png"
     },
     {
       "name": "Brawly (2nd)",
       "role": "Fighting",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/brawly.png"
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrawly.png"
     },
     {
       "name": "Wattson (3rd)",
       "role": "Electric",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/wattson.png"
+      "image": "https://archives.bulbagarden.net/media/upload/c/c2/VSWattson.png"
     },
     {
       "name": "Flannery (4th)",
       "role": "Fire",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/flannery.png"
+      "image": "https://archives.bulbagarden.net/media/upload/f/f3/VSFlannery.png"
     },
     {
       "name": "Norman (5th)",
       "role": "Normal",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/norman.png"
+      "image": "https://archives.bulbagarden.net/media/upload/a/a0/VSNorman.png"
     },
     {
       "name": "Winona (6th)",
       "role": "Flying",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/winona.png"
+      "image": "https://archives.bulbagarden.net/media/upload/0/0a/VSWinona.png"
     },
     {
       "name": "Tate and Liza (7th)",
       "role": "Psychic",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/tate-liza.png"
+      "image": "https://archives.bulbagarden.net/media/upload/c/cb/VSLiza_%26_Tate.png"
     },
     {
       "name": "Wallace (8th)",
       "role": "Water",
-      "image": "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/wallace.png"
+      "image": "https://archives.bulbagarden.net/media/upload/3/3d/VSWallace.png"
     }
   ],
   "eliteFour": [
     {
       "name": "Sidney",
-      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/sidney.png",
-      "role" : "Dark"
+      "image": "https://archives.bulbagarden.net/media/upload/4/40/VSSidney.png",
+      "role": "Dark"
     },
     {
       "name": "Phoebe",
-      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/phoebe.png",
-      "role" : "Ghost"
+      "image": "https://archives.bulbagarden.net/media/upload/0/01/VSPhoebe.png",
+      "role": "Ghost"
     },
     {
       "name": "Glacia",
-      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/glacia.png",
-      "role" : "Ice"
+      "image": "https://archives.bulbagarden.net/media/upload/6/61/VSGlacia.png",
+      "role": "Ice"
     },
     {
       "name": "Drake",
-      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/drake.png",
-      "role" : "Dragon"
+      "image": "https://archives.bulbagarden.net/media/upload/f/f5/VSDrake.png",
+      "role": "Dragon"
     },
     {
       "name": "Steven",
-      "image" : "https://img.pokemondb.net/sprites/trainers/ruby-sapphire/steven.png",
-      "role" : "Steel"
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png",
+      "role": "Steel"
     }
   ]
 }

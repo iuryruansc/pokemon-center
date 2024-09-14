@@ -1,13 +1,16 @@
 package br.com.pokemoncenter.ui.views
 
+import android.content.Intent
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.MenuItem
 import android.view.View
 import android.view.animation.AnimationUtils
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar.OnMenuItemClickListener
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -15,6 +18,7 @@ import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
 import br.com.pokemoncenter.commom.util.hofs.textformat.capitalizedName
 import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
+import br.com.pokemoncenter.commom.util.ui.setupNavigationView
 import br.com.pokemoncenter.commom.util.ui.showErrorDialog
 import br.com.pokemoncenter.data.models.ViewModelFactory
 import br.com.pokemoncenter.ui.adapters.PokemonDetailsPagerAdapter
@@ -24,7 +28,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import kotlinx.coroutines.launch
 import java.util.Locale
 
-class PokemonDetailsActivity : AppCompatActivity() {
+class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
 
     private lateinit var binding: ActivityPokemonDetailsBinding
     private val viewModel: PokemonDetailsViewModel by viewModels { ViewModelFactory(application) }
@@ -51,15 +55,13 @@ class PokemonDetailsActivity : AppCompatActivity() {
             }
         }
 
-        binding.sprite.setOnClickListener {
-            if (mediaPlayer?.isPlaying == true) {
-                stopMediaPlayer()
-            } else {
-                cryUrl?.let { url ->
-                    playMediaPlayer(url)
-                }
-            }
+        binding.topAppBar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
         }
+
+        setupNavigationView(binding.navigationView, binding.drawerLayout)
+
+        binding.topAppBar.setOnMenuItemClickListener(this)
     }
 
     private suspend fun observePokemon(pokemonName: String) {
@@ -160,5 +162,32 @@ class PokemonDetailsActivity : AppCompatActivity() {
         super.onStop()
         mediaPlayer?.release()
         mediaPlayer = null
+    }
+
+    override fun onMenuItemClick(item: MenuItem?): Boolean {
+        return when (item!!.itemId) {
+            R.id.menu_sound -> {
+                if (mediaPlayer?.isPlaying == true) {
+                    stopMediaPlayer()
+                } else {
+                    cryUrl?.let { url -> playMediaPlayer(url) }
+                }
+                true
+            }
+
+            R.id.menu_home -> {
+                val intent = Intent(this, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                startActivity(intent)
+                true
+            }
+
+            R.id.menu_drawer -> {
+                binding.drawerLayout.open()
+                true
+            }
+
+            else -> false
+        }
     }
 }

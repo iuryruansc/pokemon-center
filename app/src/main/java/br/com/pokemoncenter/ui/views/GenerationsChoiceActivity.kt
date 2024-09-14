@@ -8,6 +8,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityGenerationsChoiceBinding
 import br.com.pokemoncenter.commom.util.listeners.GenerationChoiceListener
+import br.com.pokemoncenter.commom.util.ui.menuItemClick
+import br.com.pokemoncenter.commom.util.ui.setupNavigationView
 import br.com.pokemoncenter.data.models.ButtonData
 import br.com.pokemoncenter.ui.adapters.GenerationsChoiceAdapter
 
@@ -27,7 +29,8 @@ class GenerationsChoiceActivity : AppCompatActivity(), GenerationChoiceListener 
             ButtonData("Generation II", R.drawable.gen2_button),
             ButtonData("Generation III", R.drawable.gen3_button),
             ButtonData("Generation IV", R.drawable.gen4_button),
-            ButtonData("Generation V", R.drawable.gen5_button),
+            ButtonData("Generation V (Black/White)", R.drawable.gen5_button),
+            ButtonData("Generation V (Black 2/White 2)", R.drawable.gen5_button),
             ButtonData("Generation VI", R.drawable.gen6_button),
             ButtonData("Generation VII", R.drawable.gen7_button),
             ButtonData("Generation VIII", R.drawable.gen8_button),
@@ -39,6 +42,16 @@ class GenerationsChoiceActivity : AppCompatActivity(), GenerationChoiceListener 
 
         genRecycleView.layoutManager = LinearLayoutManager(this)
         genRecycleView.adapter = adapter
+
+        binding.topAppBar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
+        setupNavigationView(binding.navigationView, binding.drawerLayout)
+
+        binding.topAppBar.setOnMenuItemClickListener {
+            menuItemClick(it, binding.drawerLayout)
+        }
     }
 
     override fun onChoiceClick(view: View, position: Int) {
@@ -48,6 +61,7 @@ class GenerationsChoiceActivity : AppCompatActivity(), GenerationChoiceListener 
             "generation_3.json",
             "generation_4.json",
             "generation_5.json",
+            "generation_5pt2.json",
             "generation_6.json",
             "generation_7.json",
             "generation_8.json",

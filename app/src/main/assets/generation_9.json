@@ -89,12 +89,12 @@
     {
       "name": "Nemona",
       "role": "Rival/Friend",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/a/ae/LCR_Nemona_icon_V.png/150px-LCR_Nemona_icon_V.png"
+      "image": "https://archives.bulbagarden.net/media/upload/7/70/LCR_Nemona_icon_large_S.png"
     },
     {
       "name": "Arven",
       "role": "Friend",
-      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d5/LCR_Arven_icon_S.png/150px-LCR_Arven_icon_S.png"
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/43/LCR_Arven_icon_large_V.png/800px-LCR_Arven_icon_large_V.png"
     },
     {
       "name": "Penny",
@@ -104,75 +104,75 @@
     {
       "name": "Geeta",
       "role": "Champion",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/geeta.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/d/d2/VSGeeta.png"
     }
   ],
   "gymLeaders": [
     {
       "name": "Katy (1st)",
       "role": "Bug",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/katy.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/d/d5/VSKaty.png"
     },
     {
       "name": "Brassius (2nd)",
       "role": "Grass",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/brassius.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/6/6e/VSBrassius.png"
     },
     {
       "name": "Iono (3rd)",
       "role": "Electric",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/iono.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/41/VSIono.png/1024px-VSIono.png"
     },
     {
       "name": "Kofu (4th)",
       "role": "Water",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/kofu.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/80/VSKofu.png/800px-VSKofu.png"
     },
     {
       "name": "Larry (5th)",
       "role": "Normal",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/larry.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/e/e7/VSLarry_2.png"
     },
     {
       "name": "Ryme (6th)",
       "role": "Ghost",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/ryme.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/0b/VSRyme.png/123px-VSRyme.png"
     },
     {
       "name": "Tulip (7th)",
       "role": "Psychic",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/tulip.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/b/b5/VSTulip.png/1024px-VSTulip.png"
     },
     {
       "name": "Grusha (8th)",
       "role": "Ice",
-      "image": "https://img.pokemondb.net/sprites/trainers/sv/grusha.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/c/c3/VSGrusha.png"
     }
   ],
   "eliteFour": [
     {
       "name": "Rika",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/rika.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/6/63/VSRika.png",
       "role" : "Ground"
     },
     {
       "name": "Poppy",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/poppy.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/thumb/a/ad/VSPoppy.png/800px-VSPoppy.png",
       "role" : "Steel"
     },
     {
       "name": "Larry",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/larry.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/e/e7/VSLarry_2.png",
       "role" : "Flying"
     },
     {
       "name": "Hassel",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/hassel.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/thumb/2/26/VSHassel.png/800px-VSHassel.png",
       "role" : "Dragon"
     },
     {
       "name": "Geeta",
-      "image" : "https://img.pokemondb.net/sprites/trainers/sv/geeta.jpg",
+      "image" : "https://archives.bulbagarden.net/media/upload/d/d2/VSGeeta.png",
       "role" : "Mixed Types"
     }
   ]

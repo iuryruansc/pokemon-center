@@ -63,27 +63,32 @@
   "importantCharacters": [
     {
       "name": "Professor Oak",
-      "image": "https://archives.bulbagarden.net/media/upload/1/1e/Spr_RG_Oak.png",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/81/Oak_PE_OD.png/800px-Oak_PE_OD.png",
       "role": "Professor"
     },
     {
-      "name": "Brock",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png",
-      "role": "Gym Leader"
-    },
-    {
       "name": "Red",
-      "image": "https://archives.bulbagarden.net/media/upload/d/d2/Spr_GS_Red.png",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4f/VSRed.png",
       "role": "Player Character"
     },
     {
-      "name": "Blue Oak",
-      "image": "https://archives.bulbagarden.net/media/upload/5/51/Spr_RG_Blue_3.png",
+      "name": "Brock",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e2/VSBrock_PE.png",
+      "role": "Gym Leader"
+    },
+    {
+      "name": "Misty",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0c/VSMisty_PE.png",
+      "role": "Gym Leader"
+    },
+    {
+      "name": "Blue",
+      "image": "https://archives.bulbagarden.net/media/upload/5/5f/VSBlue_PE.png",
       "role": "Rival"
     },
     {
       "name": "Giovanni",
-      "image": "https://archives.bulbagarden.net/media/upload/2/23/Spr_RG_Giovanni.png",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4a/VSGiovanni_PE.png",
       "role": "Gym Leader / Team Rocket Boss"
     },
     {
@@ -95,69 +100,69 @@
   "gymLeaders": [
     {
       "name": "Brock (1st)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/brock.png",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e2/VSBrock_PE.png",
       "role": "Rock"
     },
     {
       "name": "Misty (2nd)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/misty.png",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0c/VSMisty_PE.png",
       "role": "Water"
     },
     {
       "name": "Lt.Surge (3rd)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/lt-surge.png",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c6/VSLt_Surge_PE.png",
       "role": "Lightning"
     },
     {
       "name": "Erika (4th)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/erika.png",
+      "image": "https://archives.bulbagarden.net/media/upload/3/35/VSErika_PE.png",
       "role": "Grass"
     },
     {
       "name": "Koga (5th)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/koga.png",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d8/VSKoga_PE.png",
       "role": "Ghost"
     },
     {
       "name": "Sabrina (6th)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/sabrina.png",
+      "image": "https://archives.bulbagarden.net/media/upload/2/20/VSSabrina_PE.png",
       "role": "Psychic"
     },
     {
       "name": "Blaine (7th)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/blaine.png",
+      "image": "https://archives.bulbagarden.net/media/upload/1/11/VSBlaine_PE.png",
       "role": "Fire"
     },
     {
       "name": "Giovanni (8th)",
-      "image": "https://img.pokemondb.net/sprites/trainers/red-blue/giovanni.png",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4a/VSGiovanni_PE.png",
       "role": "Ground"
     }
   ],
   "eliteFour": [
     {
       "name": "Lorelei",
-      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/lorelei.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/d/dc/VSLorelei_PE.png",
       "role" : "Ice"
     },
     {
       "name": "Bruno",
-      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/bruno.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/6/64/VSBruno_PE.png",
       "role" : "Fighting"
     },
     {
       "name": "Agatha",
-      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/agatha.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/5f/VSAgatha_PE.png",
       "role" : "Ghost"
     },
     {
       "name": "Lance",
-      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/lorelei.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/d/dc/VSLance_PE.png",
       "role" : "Dragon"
     },
     {
       "name": "Blue",
-      "image" : "https://img.pokemondb.net/sprites/trainers/red-blue/blue.png",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/5f/VSBlue_PE.png",
       "role" : "Mixed Types"
     }
   ]

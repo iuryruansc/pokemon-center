@@ -99,7 +99,7 @@
     {
       "name": "Professor Kukui",
       "role": "Professor",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kukui.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/7/76/VSKukui_2.png"
     },
     {
       "name": "Elio",
@@ -131,83 +131,83 @@
     {
       "name": "Ilima (1st Trial)",
       "role": "Normal",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/ilima.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/b/bf/VSIlima_USUM.png"
     },
     {
       "name": "Lana (2nd Trial)",
       "role": "Water",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/lana.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/c/c6/VSLana_USUM.png"
     },
     {
       "name": "Kiawe (3rd Trial)",
       "role": "Fire",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kiawe.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/3/34/VSKiawe.png"
     },
     {
       "name": "Mallow (4th Trial)",
       "role": "Grass",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/mallow.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/9/92/VSMallow.png"
     },
     {
       "name": "Sophocles (5th Trial)",
       "role": "Electric",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/sophocles.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/a/aa/VSSophocles.png"
     },
     {
       "name": "Acerola (6th trial)",
       "role": "Ghost",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png"
     },
     {
       "name": "Mina (7th Trial)",
       "role": "Fairy",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/mina.jpg"
+      "image": "https://archives.bulbagarden.net/media/upload/4/48/VSMina_2_USUM.png"
     },
     {
-      "name": "Hala (1st Kahuna)",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/hala.jpg",
+      "name": "Hala (Melemele Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6b/VSHala_2.png",
       "role": "Fighting"
     },
     {
-      "name": "Olivia (2nd Kahuna)",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/olivia.jpg",
+      "name": "Olivia (Akala Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png",
       "role": "Rock"
     },
     {
-      "name": "Nanu (3rd Kahuna)",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/nanu.jpg",
+      "name": "Nanu (Ula'ula Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/5/57/VSNanu_2.png",
       "role": "Dark"
     },
     {
       "name": "Hapu (4th Kahuna)",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/hapu.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/VSHapu.png",
       "role": "Ground"
     }
   ],
   "eliteFour": [
     {
       "name": "Hala",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/hala.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6b/VSHala_2.png",
       "role": "Fighting"
     },
     {
       "name": "Olivia",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/olivia.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png",
       "role": "Rock"
     },
     {
       "name": "Acerola",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/acerola.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png",
       "role": "Ghost"
     },
     {
       "name": "Kahili",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kahili.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/e/eb/VSKahili_USUM.png",
       "role": "Flying"
     },
     {
       "name": "Kukui",
-      "image": "https://img.pokemondb.net/sprites/trainers/sun-moon/kukui.jpg",
+      "image": "https://archives.bulbagarden.net/media/upload/7/76/VSKukui_2.png",
       "role": "Mixed Types"
     }
   ]

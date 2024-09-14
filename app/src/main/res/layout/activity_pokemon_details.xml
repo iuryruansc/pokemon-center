@@ -1,116 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:visibility="visible">
+    tools:openDrawer="start">
 
-    <com.google.android.material.progressindicator.CircularProgressIndicator
-        android:id="@+id/progress_indicator"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:visibility="visible">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/details_constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/details_app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.appbar.MaterialToolbar
+                        android:id="@+id/top_app_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/type_steel_background"
+                        android:minHeight="?attr/actionBarSize"
+                        app:menu="@menu/top_app_bar_pokedetails"
+                        app:navigationIcon="@drawable/back_icon"
+                        app:title="Details" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/id"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/details_app_bar" />
+
+                <ImageView
+                    android:id="@+id/sprite"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="@string/pokemon_sprite"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/id" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/name"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sprite" />
+
+                <ImageView
+                    android:id="@+id/type1"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="35dp"
+                    android:contentDescription="@string/Type_1"
+                    android:text="@string/Type_1"
+                    app:layout_constraintEnd_toStartOf="@id/type2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/name" />
+
+                <ImageView
+                    android:id="@+id/type2"
+                    android:layout_width="75dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/type_2"
+                    android:src="@drawable/type_electric"
+                    android:text="@string/type_2"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/type1"
+                    app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/details_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/details_constraint_layout">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/details_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:indeterminate="true"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/navigation_drawer" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/details_constraint_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/id"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/id"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/sprite"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            android:contentDescription="@string/pokemon_sprite"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/id" />
-
-        <TextView
-            android:id="@+id/name"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/name"
-            android:textAlignment="center"
-            android:textSize="20sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sprite" />
-
-        <ImageView
-            android:id="@+id/type1"
-            android:layout_width="75dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="35dp"
-            android:contentDescription="@string/Type_1"
-            android:text="@string/Type_1"
-            app:layout_constraintEnd_toStartOf="@id/type2"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/name" />
-
-        <ImageView
-            android:id="@+id/type2"
-            android:layout_width="75dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@string/type_2"
-            android:src="@drawable/type_electric"
-            android:text="@string/type_2"
-            android:visibility="gone"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/type1"
-            app:layout_constraintTop_toBottomOf="@+id/name" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:id="@+id/details_linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        android:orientation="vertical"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/details_constraint_layout">
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/details_tab_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp">
-
-        </com.google.android.material.tabs.TabLayout>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewpager_info"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_item"
+        android:title="Menu">
+        <menu>
+            <item
+                android:id="@+id/pokedex_item"
+                android:icon="@drawable/drawer_pokedex_icon"
+                android:title="@string/main_button_pokedex"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/types_item"
+                android:icon="@drawable/drawer_types_icon"
+                android:title="@string/types_chart"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/natures_item"
+                android:icon="@drawable/drawer_natures_icon"
+                android:title="@string/natures_chart"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/generations_item"
+                android:icon="@drawable/drawer_gen_icon"
+                android:title="@string/main_button_generations"
+                android:checkable="true"/>
+        </menu>
+    </item>
+
+</menu>

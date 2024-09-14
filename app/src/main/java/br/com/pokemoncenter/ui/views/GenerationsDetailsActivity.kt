@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import br.com.pokemon_center.databinding.ActivityGenerationsDetailsBinding
 import br.com.pokemoncenter.commom.util.hofs.jsonparse.parseGenerationJson
+import br.com.pokemoncenter.commom.util.ui.menuItemClick
+import br.com.pokemoncenter.commom.util.ui.setupNavigationView
 import br.com.pokemoncenter.ui.adapters.SectionAdapter
 
 class GenerationsDetailsActivity : AppCompatActivity() {
@@ -23,5 +25,15 @@ class GenerationsDetailsActivity : AppCompatActivity() {
         adapter.setItems(sectionItems)
 
         binding.generationRv.adapter = adapter
+
+        binding.topAppBar.setNavigationOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
+
+        setupNavigationView(binding.navigationView, binding.drawerLayout)
+
+        binding.topAppBar.setOnMenuItemClickListener {
+            menuItemClick(it, binding.drawerLayout)
+        }
     }
 }
