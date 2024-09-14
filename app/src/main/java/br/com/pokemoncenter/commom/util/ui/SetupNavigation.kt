@@ -5,6 +5,7 @@ import android.content.Intent
 import android.view.MenuItem
 import androidx.drawerlayout.widget.DrawerLayout
 import br.com.pokemon_center.R
+import br.com.pokemoncenter.ui.views.FavoritesActivity
 import br.com.pokemoncenter.ui.views.GenerationsChoiceActivity
 import br.com.pokemoncenter.ui.views.MainActivity
 import br.com.pokemoncenter.ui.views.NaturesActivity
@@ -13,26 +14,16 @@ import com.google.android.material.navigation.NavigationView
 
 fun Activity.setupNavigationView(nv: NavigationView, dl: DrawerLayout) {
     nv.setNavigationItemSelectedListener { menuItem ->
-        when (menuItem.itemId) {
-            R.id.types_item -> {
-                if (this !is TypesActivity) {
-                    val intent = Intent(this, TypesActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-
-            R.id.natures_item -> {
-                if (this !is NaturesActivity) {
-                    val intent = Intent(this, NaturesActivity::class.java)
-                    startActivity(intent)
-                }
-            }
-
-            R.id.generations_item -> {
-                if (this !is GenerationsChoiceActivity) {
-                    val intent = Intent(this, GenerationsChoiceActivity::class.java)
-                    startActivity(intent)
-                }
+        val targetActivity = when (menuItem.itemId) {
+            R.id.types_item -> TypesActivity::class.java
+            R.id.natures_item -> NaturesActivity::class.java
+            R.id.generations_item -> GenerationsChoiceActivity::class.java
+            R.id.favorites_item -> FavoritesActivity::class.java
+            else -> null
+        }
+        targetActivity?.let {
+            if (this::class.java != it) {
+                startActivity(Intent(this, it))
             }
         }
         menuItem.isChecked = true
@@ -43,6 +34,7 @@ fun Activity.setupNavigationView(nv: NavigationView, dl: DrawerLayout) {
         is TypesActivity -> R.id.types_item
         is NaturesActivity -> R.id.natures_item
         is GenerationsChoiceActivity -> R.id.generations_item
+        is FavoritesActivity -> R.id.favorites_item
         else -> null
     }
     currentMenuItemId?.let { nv.setCheckedItem(it) }

@@ -4,9 +4,13 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import br.com.pokemoncenter.commom.util.hofs.textformat.capitalizedName
+import br.com.pokemoncenter.commom.util.hofs.types.typeStyleBackground
 import br.com.pokemoncenter.data.api.models.PokemonByNameResponse
+import br.com.pokemoncenter.data.api.models.pokemonbynamedata.Types
 import br.com.pokemoncenter.data.repository.PokemonDetailsRepository
 import br.com.pokemoncenter.local.db.AppDatabase
+import br.com.pokemoncenter.local.entity.FavoritesEntity
 import br.com.pokemoncenter.local.entity.PokemonByNameEntity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -27,10 +31,13 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
     private var _errorMessage = MutableLiveData<String>()
     val errorMessage: LiveData<String> get() = _errorMessage
 
-    private val _isLoading = MutableStateFlow(true)
+    private var _isLoading = MutableStateFlow(true)
     val isLoading: StateFlow<Boolean> get() = _isLoading
 
-    private val _pokemon = MutableStateFlow<PokemonByNameResponse?>(null)
+    private var _isFavorite = MutableStateFlow(false)
+    val isFavorite: StateFlow<Boolean> get() = _isFavorite
+
+    private var _pokemon = MutableStateFlow<PokemonByNameResponse?>(null)
     val pokemon: StateFlow<PokemonByNameResponse?> get() = _pokemon
 
     fun pokemonDetails(pokemon: String) {
@@ -70,6 +77,47 @@ class PokemonDetailsViewModel(application: Application) : AndroidViewModel(appli
                 }
             }
         }
+    }
+
+    fun pokemonToFavorite(pokemon: String) {
+        viewModelScope.launch {
+            val pokemonDetails = pokemonDao.getPokemonByName(pokemon)!!
+            val favorite = pokemonDao.getFavorite(capitalizedName(pokemon))
+            val types = pokemonDetails.types
+
+            if (favorite == null) {
+                val backgroundColor = getBackground(types)
+
+                val newFavorite = FavoritesEntity(
+                    name = capitalizedName(pokemonDetails.name),
+                    sprite = pokemonDetails.sprites.frontDefault,
+                    backgroundOne = backgroundColor[0],
+                    backgroundTwo = backgroundColor[1]
+                )
+                pokemonDao.insertFavorite(newFavorite)
+                _isFavorite.value = true
+            } else {
+                pokemonDao.deleteFavorite(favorite)
+                _isFavorite.value = false
+            }
+        }
+    }
+
+    suspend fun alreadyFavorite(pokemonName: String): Boolean {
+        val exists = pokemonDao.getFavorite(capitalizedName(pokemonName))
+        return exists != null
+    }
+
+    private fun getBackground(types: List<Types>): List<Int?> {
+        val background = mutableListOf<Int?>()
+        if (types.size > 1) {
+            background.add(typeStyleBackground(types[0].type.name))
+            background.add(typeStyleBackground(types[1].type.name))
+        } else {
+            background.add(typeStyleBackground(types[0].type.name))
+            background.add(null)
+        }
+        return background
     }
 
     private fun PokemonByNameEntity.toPokemonByNameResponse(): PokemonByNameResponse {

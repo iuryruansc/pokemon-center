@@ -8,7 +8,7 @@
                 android:endColor="#FFD700" />
             <corners android:radius="10dp" />
             <stroke android:width="2dp" android:color="@color/black" />
-            <padding android:left="15dp" android:bottom="10dp" />
+            <padding android:left="10dp" android:bottom="10dp" />
         </shape>
     </item>
     <item android:drawable="@drawable/games_button_image"
