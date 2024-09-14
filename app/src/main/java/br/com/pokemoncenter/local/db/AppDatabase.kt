@@ -9,13 +9,14 @@ import br.com.pokemoncenter.local.converter.MoveConverter
 import br.com.pokemoncenter.local.converter.PokemonConverter
 import br.com.pokemoncenter.local.converter.SpeciesConverter
 import br.com.pokemoncenter.local.dao.PokemonDao
+import br.com.pokemoncenter.local.entity.FavoritesEntity
 import br.com.pokemoncenter.local.entity.MoveEntity
 import br.com.pokemoncenter.local.entity.PokemonByNameEntity
 import br.com.pokemoncenter.local.entity.SpeciesByNameEntity
 
 @Database(
-    entities = [PokemonByNameEntity::class, SpeciesByNameEntity::class, MoveEntity::class],
-    version = 7,
+    entities = [PokemonByNameEntity::class, SpeciesByNameEntity::class, MoveEntity::class, FavoritesEntity::class],
+    version = 10,
     exportSchema = false
 )
 @TypeConverters(SpeciesConverter::class, PokemonConverter::class, MoveConverter::class)

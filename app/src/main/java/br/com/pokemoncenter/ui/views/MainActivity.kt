@@ -61,6 +61,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.mainTypesButton.setOnClickListener(this)
         binding.mainGenerationsButton.setOnClickListener(this)
         binding.mainNaturesButton.setOnClickListener(this)
+        binding.mainFavoritesButton?.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -77,6 +78,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             binding.mainNaturesButton.id -> {
                 val intent = Intent(this, NaturesActivity::class.java)
+                startActivity(intent)
+            }
+            binding.mainFavoritesButton?.id -> {
+                val intent = Intent(this, FavoritesActivity::class.java)
                 startActivity(intent)
             }
         }

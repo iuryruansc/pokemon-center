@@ -67,10 +67,10 @@
         <item name="android:shadowRadius">10</item>
     </style>
 
-    <style name="MainItemsButtonTextStyle" parent="Widget.AppCompat.Button">
+    <style name="MainFavoritesButtonTextStyle" parent="Widget.AppCompat.Button">
         <item name="android:textColor">@color/md_theme_light_onPrimary</item>
         <item name="android:textSize">30sp</item>
-        <item name="android:text">@string/main_button_items</item>
+        <item name="android:text">@string/main_button_favorites</item>
         <item name="android:fontFamily">"@font/pocketmonk"</item>
         <item name="android:shadowColor">@color/black</item>
         <item name="android:shadowDx">10</item>

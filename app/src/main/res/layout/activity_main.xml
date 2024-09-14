@@ -69,9 +69,7 @@
         style="@style/MainPokedexButtonTextStyle"
         android:layout_width="0dp"
         android:layout_height="150dp"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
         android:background="@drawable/pokedex_button_background"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="2.5:1"
@@ -106,30 +104,30 @@
         app:layout_constraintStart_toEndOf="@id/guideline_half"/>
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/main_items_button"
-        style="@style/MainItemsButtonTextStyle"
+        android:id="@+id/main_favorites_button"
+        style="@style/MainFavoritesButtonTextStyle"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/items_button_background"
+        android:background="@drawable/items_favorites_background"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="1.75:1"
-        app:layout_constraintEnd_toStartOf="@id/guideline_half"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_types_button" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_half"
+        app:layout_constraintTop_toBottomOf="@+id/main_natures_button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/main_generations_button"
         style="@style/MainGenerationsButtonTextStyle"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:background="@drawable/generations_button_background"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="1.75:1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/guideline_half"
-        app:layout_constraintTop_toBottomOf="@id/main_natures_button" />
+        app:layout_constraintEnd_toStartOf="@id/guideline_half"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_types_button" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_half"

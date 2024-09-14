@@ -101,11 +101,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/main_items_button"
-        style="@style/MainItemsButtonTextStyle"
+        style="@style/MainFavoritesButtonTextStyle"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/items_button_background"
+        android:background="@drawable/items_favorites_background"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="1.75:1"
         app:layout_constraintEnd_toStartOf="@id/guideline_half"

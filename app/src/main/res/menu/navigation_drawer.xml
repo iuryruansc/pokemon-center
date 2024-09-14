@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/main_item"
-        android:title="Menu">
+        android:title="@string/menu_drawer">
         <menu>
             <item
                 android:id="@+id/pokedex_item"
@@ -24,6 +24,11 @@
                 android:id="@+id/generations_item"
                 android:icon="@drawable/drawer_gen_icon"
                 android:title="@string/main_button_generations"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/favorites_item"
+                android:icon="@drawable/favorite_icon"
+                android:title="@string/favorites_drawer"
                 android:checkable="true"/>
         </menu>
     </item>

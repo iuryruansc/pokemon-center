@@ -34,6 +34,7 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
     private val viewModel: PokemonDetailsViewModel by viewModels { ViewModelFactory(application) }
     private var mediaPlayer: MediaPlayer? = null
     private var cryUrl: String? = null
+    private var pokemonName: String = ""
 
     enum class TabIndex {
         INFO, STATS, EFFECTIVENESS, MOVES
@@ -44,12 +45,13 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
         binding = ActivityPokemonDetailsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val pokemonName = intent.getStringExtra("pokemon")
+        pokemonName = intent.getStringExtra("pokemon")
             ?: return
         viewModel.pokemonDetails(pokemonName)
 
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
+                launch { observeFavorite() }
                 launch { observePokemon(pokemonName) }
                 launch { observeLoading() }
             }
@@ -73,9 +75,11 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
                     id.text = String.format(Locale.ROOT, "#%03d", pokemon.id)
                     name.text = capitalizedName(pokemon.name)
                     val type1 = pokemon.types[0].type.name
-                    var type2: String? = null
+                    var secondType: String? = null
                     if (pokemon.types.size > 1) {
-                        type2 = pokemon.types[1].type.name
+                        type2.load(typeStyle(pokemon.types[1].type.name))
+                        type2.visibility = View.VISIBLE
+                        secondType = pokemon.types[1].type.name
                     }
                     cryUrl = pokemon.cries.latest
 
@@ -83,7 +87,7 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
                         this@PokemonDetailsActivity,
                         pokemonName,
                         type1,
-                        type2
+                        secondType
                     )
 
                     binding.viewpagerInfo.adapter = pagerAdapter
@@ -102,6 +106,27 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
                     showError(it)
                 }
             }
+        }
+    }
+
+    private suspend fun observeFavorite() {
+
+        lifecycleScope.launch {
+            val initialIsFavorite = viewModel.alreadyFavorite(pokemonName)
+            setFavoriteIcon(initialIsFavorite)
+        }
+
+        viewModel.isFavorite.collect { isFavorite ->
+            setFavoriteIcon(isFavorite)
+        }
+    }
+
+    private fun setFavoriteIcon(isFavorite: Boolean) {
+        if (isFavorite) {
+            binding.topAppBar.menu.findItem(R.id.menu_favorite).setIcon(R.drawable.favorite_icon)
+        } else {
+            binding.topAppBar.menu.findItem(R.id.menu_favorite)
+                .setIcon(R.drawable.not_favorite_icon)
         }
     }
 
@@ -172,6 +197,11 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
                 } else {
                     cryUrl?.let { url -> playMediaPlayer(url) }
                 }
+                true
+            }
+
+            R.id.menu_favorite -> {
+                viewModel.pokemonToFavorite(pokemonName)
                 true
             }
 
