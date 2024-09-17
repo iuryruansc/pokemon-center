@@ -39,8 +39,21 @@ private fun addCharacters(sectionItems: MutableList<SectionItem>, generation: Ge
     addCharacterSection(sectionItems, "Starters", generation.starters)
     addCharacterSection(sectionItems, "Legendary", generation.legendary)
     addCharacterSection(sectionItems, "Important Characters", generation.importantCharacters)
-    addCharacterSection(sectionItems, "Gym Leaders/Trial Captains (Sun/Moon)", generation.gymLeaders)
-    addCharacterSection(sectionItems, "Elite Four/Champion Cup (Sword/Shield)", generation.eliteFour)
+
+    val gymLeaderSectionTitle = when (generation.general.region) {
+        "Alola" -> "Trial Captains"
+        "Hisui (Ancient Sinnoh)" -> "Diamond Clan Wardens"
+        else -> "Gym Leaders"
+    }
+    addCharacterSection(sectionItems, gymLeaderSectionTitle, generation.gymLeaders)
+
+    val eliteFourSectionTitle = when (generation.general.region) {
+        "Galar" -> "Champion Cup"
+        "Hisui (Ancient Sinnoh)" -> "Pearl Clan Wardens"
+        else -> "Elite Four"
+    }
+
+    addCharacterSection(sectionItems, eliteFourSectionTitle, generation.eliteFour)
 }
 
 private fun addCharacterSection(

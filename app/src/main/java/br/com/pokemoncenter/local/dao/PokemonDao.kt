@@ -5,9 +5,9 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import br.com.pokemoncenter.local.entity.FavoritesEntity
 import br.com.pokemoncenter.local.entity.MoveEntity
 import br.com.pokemoncenter.local.entity.PokemonByNameEntity
-import br.com.pokemoncenter.local.entity.FavoritesEntity
 import br.com.pokemoncenter.local.entity.SpeciesByNameEntity
 
 @Dao

@@ -37,7 +37,7 @@
 
             </com.google.android.material.appbar.AppBarLayout>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/natures_chart"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

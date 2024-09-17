@@ -33,7 +33,8 @@ class GenerationsChoiceActivity : AppCompatActivity(), GenerationChoiceListener 
             ButtonData("Generation V (Black 2/White 2)", R.drawable.gen5_button),
             ButtonData("Generation VI", R.drawable.gen6_button),
             ButtonData("Generation VII", R.drawable.gen7_button),
-            ButtonData("Generation VIII", R.drawable.gen8_button),
+            ButtonData("Generation VIII (Sword/Shield)", R.drawable.gen8_button),
+            ButtonData("Generation VIII (Legends: Arceus)", R.drawable.gen8_button),
             ButtonData("Generation IX", R.drawable.gen9_button)
         )
 
@@ -65,6 +66,7 @@ class GenerationsChoiceActivity : AppCompatActivity(), GenerationChoiceListener 
             "generation_6.json",
             "generation_7.json",
             "generation_8.json",
+            "generation_8pt2.json",
             "generation_9.json"
         )
         if (position in fileNames.indices) {

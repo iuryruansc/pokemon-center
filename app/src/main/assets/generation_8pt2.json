@@ -1,0 +1,185 @@
+{
+  "general": {
+    "generationName": "Generation VIII",
+    "region": "Hisui (Ancient Sinnoh)",
+    "introducedPokemon": "7",
+    "startDexNumber": "Not Available",
+    "endDexNumber": "Not Available",
+    "games": "Legends: Arceus",
+    "releaseYear": "2022"
+  },
+  "features": [
+    "Introduced 7 new Pokémon and several regional forms.",
+    "First game to feature the Hisui region, the ancient version of Sinnoh.",
+    "Open-world gameplay with seamless transitions between areas.",
+    "Action-based battle system with real-time elements.",
+    "New catching mechanics allowing players to catch Pokémon without engaging in battle.",
+    "Crafting system for creating Poké Balls, potions, and other items.",
+    "Noble Pokémon: Special, powerful Pokémon that have been frenzied and need to be calmed."
+  ],
+  "starters": [
+    {
+      "name": "Rowlet",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png"
+    },
+    {
+      "name": "Cyndaquil",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png"
+    },
+    {
+      "name": "Oshawott",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Arceus",
+      "role": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png"
+    },
+    {
+      "name": "Dialga",
+      "role": "Steel/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png"
+    },
+    {
+      "name": "Palkia",
+      "role": "Water/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png"
+    },
+    {
+      "name": "Giratina",
+      "role": "Ghost/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png"
+    },
+    {
+      "name": "Heatran",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png"
+    },
+    {
+      "name": "Cresselia",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png"
+    },
+    {
+      "name": "Regigigas",
+      "role": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png"
+    },
+    {
+      "name": "Phione",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png"
+    },
+    {
+      "name": "Manaphy",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png"
+    },
+    {
+      "name": "Darkrai",
+      "role": "Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png"
+    },
+    {
+      "name": "Shaymin",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Laventon",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d2/Legends_Arceus_Professor_Laventon.png/320px-Legends_Arceus_Professor_Laventon.png"
+    },
+    {
+      "name": "Rei",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/6/68/Legends_Arceus_Rei.png/800px-Legends_Arceus_Rei.png"
+    },
+    {
+      "name": "Akari",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/38/Legends_Arceus_Akari.png/800px-Legends_Arceus_Akari.png"
+    },
+    {
+      "name": "Cyllene",
+      "role": "Galaxy Team Captain",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/9/9f/Legends_Arceus_Cyllene.png/320px-Legends_Arceus_Cyllene.png"
+    },
+    {
+      "name": "Kamado",
+      "role": "Galaxy Team Leader",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/cd/Legends_Arceus_Kamado.png/800px-Legends_Arceus_Kamado.png"
+    },
+    {
+      "name": "Volo",
+      "role": "Merchant",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/6/6d/Legends_Arceus_Volo.png/320px-Legends_Arceus_Volo.png"
+    },
+    {
+      "name": "Cogita",
+      "role": "Researcher",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/a/a9/Legends_Arceus_Cogita.png/320px-Legends_Arceus_Cogita.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Mai",
+      "role": "Warden of Special Wyrdeer",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/d8/Legends_Arceus_Mai.png/320px-Legends_Arceus_Mai.png"
+    },
+    {
+      "name": "Arezu",
+      "role": "Warden of Noble Lilligant",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f5/Legends_Arceus_Arezu.png/320px-Legends_Arceus_Arezu.png"
+    },
+    {
+      "name": "Iscan",
+      "role": "Warden of Special Basculegion",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/28/Legends_Arceus_Iscan.png/320px-Legends_Arceus_Iscan.png"
+    },
+    {
+      "name": "Melli",
+      "role": "Warden of Noble Electrode",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/cb/Legends_Arceus_Melli.png/250px-Legends_Arceus_Melli.png"
+    },
+    {
+      "name": "Sabi",
+      "role": "Warden of Special Braviary",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/7/75/Legends_Arceus_Sabi.png/800px-Legends_Arceus_Sabi.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Lian",
+      "role": "Warden of Noble Kleavor",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/9/99/Legends_Arceus_Lian.png/320px-Legends_Arceus_Lian.png"
+    },
+    {
+      "name": "Calaba",
+      "role": "Warden of Special Ursaluna",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4a/Legends_Arceus_Calaba.png"
+    },
+    {
+      "name": "Palina",
+      "role": "Warden of Noble Arcanine",
+      "image": "https://archives.bulbagarden.net/media/upload/8/8d/Legends_Arceus_Palina.png"
+    },
+    {
+      "name": "Ingo",
+      "role": "Warden of Special Sneasler",
+      "image": "https://archives.bulbagarden.net/media/upload/9/99/Legends_Arceus_Ingo.png"
+    },
+    {
+      "name": "Gaeric",
+      "role": "Warden of Noble Avalugg",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/80/Legends_Arceus_Gaeric.png/320px-Legends_Arceus_Gaeric.png"
+    }
+  ]
+}

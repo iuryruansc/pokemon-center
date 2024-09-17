@@ -37,7 +37,7 @@
 
             </com.google.android.material.appbar.AppBarLayout>
 
-            <ImageView
+            <com.github.chrisbanes.photoview.PhotoView
                 android:id="@+id/type_chart_image"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"

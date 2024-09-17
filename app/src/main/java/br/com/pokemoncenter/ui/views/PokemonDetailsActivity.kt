@@ -49,6 +49,8 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
             ?: return
         viewModel.pokemonDetails(pokemonName)
 
+        showLoading()
+
         lifecycleScope.launch {
             repeatOnLifecycle(Lifecycle.State.STARTED) {
                 launch { observeFavorite() }
@@ -101,7 +103,6 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
     private suspend fun observeLoading() {
         viewModel.isLoading.collect { isLoading ->
             if (isLoading) {
-                showLoading()
                 viewModel.errorMessage.observe(this@PokemonDetailsActivity) {
                     showError(it)
                 }
@@ -110,7 +111,6 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
     }
 
     private suspend fun observeFavorite() {
-
         lifecycleScope.launch {
             val initialIsFavorite = viewModel.alreadyFavorite(pokemonName)
             setFavoriteIcon(initialIsFavorite)

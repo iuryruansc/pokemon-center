@@ -35,7 +35,6 @@ class FavoritesActivity : AppCompatActivity(), ActivityFavoritesListener {
             menuItemClick(it, binding.drawerLayout)
         }
 
-
         adapter.setCardListener(this)
 
         favoritesRecyclerView.layoutManager = GridLayoutManager(this, 2)
@@ -46,15 +45,7 @@ class FavoritesActivity : AppCompatActivity(), ActivityFavoritesListener {
         super.onResume()
         viewModel.getFavorites()
         viewModel.favoritesList.observe(this) { favorites ->
-            if (favorites != null) {
-                binding.favoritesNull.visibility = View.GONE
-                binding.favoritesRv.visibility = View.VISIBLE
-
-                adapter.submitList(favorites)
-            } else {
-                binding.favoritesNull.visibility = View.VISIBLE
-                binding.favoritesRv.visibility = View.GONE
-            }
+            adapter.submitList(favorites)
         }
     }
 

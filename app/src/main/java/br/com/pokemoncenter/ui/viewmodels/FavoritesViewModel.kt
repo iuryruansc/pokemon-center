@@ -22,12 +22,10 @@ class FavoritesViewModel(application: Application) : AndroidViewModel(applicatio
     private val viewModelJob = SupervisorJob()
     private val viewModelScope = CoroutineScope(Dispatchers.IO + viewModelJob)
 
-
     fun getFavorites() {
         viewModelScope.launch {
             val favorites = pokemonDao.getAllFavorites()
             _favoritesList.postValue(favorites)
         }
-
     }
 }

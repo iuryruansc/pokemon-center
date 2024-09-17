@@ -1,0 +1,54 @@
+{
+  "regions": [
+    {
+      "name": "Kanto",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/7/7d/PE_Kanto_Map.png/1024px-PE_Kanto_Map.png",
+      "altText": "Map of the Kanto region"
+    },
+    {
+      "name": "Johto",
+      "image":"https://archives.bulbagarden.net/media/upload/thumb/6/64/JohtoMap.png/1024px-JohtoMap.png",
+      "altText": "Map of the Johto region"
+    },
+    {
+      "name": "Hoehn",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/85/Hoenn_ORAS.png/1024px-Hoenn_ORAS.png",
+      "altText": "Map of the Hoehn region"
+    },
+    {
+      "name": "Sinnoh",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/08/Sinnoh_BDSP_artwork.png/1024px-Sinnoh_BDSP_artwork.png",
+      "altText": "Map of the Sinnoh region"
+    },
+    {
+      "name": "Unnova",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/f/fc/Unova_B2W2_alt.png/1024px-Unova_B2W2_alt.png",
+      "altText": "Map of the Unnova region"
+    },
+    {
+      "name": "Kalos",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/8a/Kalos_alt.png/1024px-Kalos_alt.png",
+      "altText": "Map of the Kalos region"
+    },
+    {
+      "name": "Alola",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/0/0b/Alola_USUM_artwork.png/1024px-Alola_USUM_artwork.png",
+      "altText": "Map of the Alola region"
+    },
+    {
+      "name": "Galar",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/ce/Galar_artwork.png/800px-Galar_artwork.png",
+      "altText": "Map of the Galar region"
+    },
+    {
+      "name": "Paldea",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/f/fd/Paldea_artwork.png/1024px-Paldea_artwork.png",
+      "altText": "Map of the Paldea region"
+    },
+    {
+      "name": "Hisui",
+      "image": "https://archives.bulbagarden.net/media/upload/2/22/Legends_Arceus_Hisui.png",
+      "altText": "Map of the Hisui region"
+    }
+  ]
+}
