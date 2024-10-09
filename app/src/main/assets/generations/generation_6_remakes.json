@@ -1,0 +1,256 @@
+{
+  "general": {
+    "generationName": "Generation VI",
+    "region": "Kalos",
+    "introducedPokemon": "0",
+    "startDexNumber": "1",
+    "endDexNumber": "721",
+    "games": "Omega Ruby (Ruby Remake), Alpha Sapphire (Sapphire Remake)",
+    "releaseYear": "2014"
+  },
+  "features": [
+    "Remakes of Generation III games Ruby and Sapphire.",
+    "Includes Pokémon from Hoenn and Kanto regions.",
+    "Features Mega Evolution: Many Pokémon gain access to powerful Mega Evolutions.",
+    "Primal Reversion: Groudon and Kyogre can undergo Primal Reversion, a more powerful form than Mega Evolution.",
+    "Soaring in the sky with Mega Latios/Latias.",
+    "DexNav: A tool to help find and catch specific Pokémon with hidden abilities or egg moves.",
+    "Secret Bases: Customizable bases return with more features and online connectivity.",
+    "Cosplay Pikachu: A special Pikachu that can dress up in different costumes and learn unique moves."
+  ],
+  "starters": [
+    {
+      "name": "Treecko",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png"
+    },
+    {
+      "name": "Torchic",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
+    },
+    {
+      "name": "Mudkip",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Regirock",
+      "role": "Rock",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png"
+    },
+    {
+      "name": "Regice",
+      "role": "Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png"
+    },
+    {
+      "name": "Registeel",
+      "role": "Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png"
+    },
+    {
+      "name": "Latias",
+      "role": "Dragon/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png"
+    },
+    {
+      "name": "Latios",
+      "role": "Dragon/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png"
+    },
+    {
+      "name": "Kyogre",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png"
+    },
+    {
+      "name": "Groudon",
+      "role": "Ground",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png"
+    },
+    {
+      "name": "Rayquaza",
+      "role": "Dragon/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png"
+    },
+    {
+      "name": "Jirachi",
+      "role": "Steel/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png"
+    },
+    {
+      "name": "Deoxys",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png"
+    },
+    {
+      "name": "Uxie",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png"
+    },
+    {
+      "name": "Mesprit",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png"
+    },
+    {
+      "name": "Azelf",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png"
+    },
+    {
+      "name": "Heatran",
+      "role": "Fire/Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png"
+    },
+    {
+      "name": "Regigigas",
+      "role": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png"
+    },
+    {
+      "name": "Cresselia",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png"
+    },
+    {
+      "name": "Phione",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png"
+    },
+    {
+      "name": "Manaphy",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png"
+    },
+    {
+      "name": "Darkrai",
+      "role": "Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png"
+    },
+    {
+      "name": "Shaymin",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png"
+    },
+    {
+      "name": "Arceus",
+      "role": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png"
+    },
+    {
+      "name": "Dialga",
+      "role": "Steel/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png"
+    },
+    {
+      "name": "Palkia",
+      "role": "Water/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png"
+    },
+    {
+      "name": "Giratina",
+      "role": "Ghost/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Birch",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/7/75/Spr_RS_Birch.png"
+    },
+    {
+      "name": "Brendan",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrendan.png"
+    },
+    {
+      "name": "May",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/6/63/VSMay.png"
+    },
+    {
+      "name": "Wally",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/7/7e/VSWally_2.png"
+    },
+    {
+      "name": "Steven Stone",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Roxanne (1st)",
+      "role": "Rock",
+      "image": "https://archives.bulbagarden.net/media/upload/9/90/VSRoxanne.png"
+    },
+    {
+      "name": "Brawly (2nd)",
+      "role": "Fighting",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrawly.png"
+    },
+    {
+      "name": "Wattson (3rd)",
+      "role": "Electric",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c2/VSWattson.png"
+    },
+    {
+      "name": "Flannery (4th)",
+      "role": "Fire",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f3/VSFlannery.png"
+    },
+    {
+      "name": "Norman (5th)",
+      "role": "Normal",
+      "image": "https://archives.bulbagarden.net/media/upload/a/a0/VSNorman.png"
+    },
+    {
+      "name": "Winona (6th)",
+      "role": "Flying",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0a/VSWinona.png"
+    },
+    {
+      "name": "Tate and Liza (7th)",
+      "role": "Psychic",
+      "image": "https://archives.bulbagarden.net/media/upload/c/cb/VSLiza_%26_Tate.png"
+    },
+    {
+      "name": "Juan (8th)",
+      "role": "Water",
+      "image": "https://archives.bulbagarden.net/media/upload/7/71/Spr_B2W2_Juan.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Sidney",
+      "image": "https://archives.bulbagarden.net/media/upload/4/40/VSSidney.png",
+      "role": "Dark"
+    },
+    {
+      "name": "Phoebe",
+      "image": "https://archives.bulbagarden.net/media/upload/0/01/VSPhoebe.png",
+      "role": "Ghost"
+    },
+    {
+      "name": "Glacia",
+      "image": "https://archives.bulbagarden.net/media/upload/6/61/VSGlacia.png",
+      "role": "Ice"
+    },
+    {
+      "name": "Drake",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f5/VSDrake.png",
+      "role": "Dragon"
+    },
+    {
+      "name": "Steven Stone",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png",
+      "role": "Steel"
+    }
+  ]
+}

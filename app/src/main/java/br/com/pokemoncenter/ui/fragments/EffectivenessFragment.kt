@@ -12,10 +12,10 @@ import br.com.pokemoncenter.commom.util.hofs.general.createBalloon
 import br.com.pokemoncenter.commom.util.hofs.general.readJson
 import br.com.pokemoncenter.commom.util.hofs.jsonparse.parseTypeEffectiveness
 import br.com.pokemoncenter.commom.util.hofs.types.getCombinedTypeEffectivenessDef
-import br.com.pokemoncenter.commom.util.listeners.FragmentEffectListener
+import br.com.pokemoncenter.commom.util.listeners.PokemonNameListener
 import br.com.pokemoncenter.ui.adapters.TypeEffectivenessAdapter
 
-class EffectivenessFragment : Fragment(), FragmentEffectListener {
+class EffectivenessFragment : Fragment(), PokemonNameListener {
 
     private var _binding: FragmentEffectivenessBinding? = null
     private val binding get() = _binding!!

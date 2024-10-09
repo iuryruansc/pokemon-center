@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/region_button"
+        android:layout_width="wrap_content"
+        android:layout_height="225dp"
+        android:background="@drawable/map_kanto"
+        android:gravity="bottom"
+        android:padding="22dp"
+        android:layout_gravity="center"
+        android:text="@string/map_name"
+        android:textColor="@color/md_theme_dark_onSurface"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</com.google.android.material.card.MaterialCardView>

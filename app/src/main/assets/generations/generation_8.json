@@ -1,0 +1,221 @@
+{
+  "general": {
+    "generationName": "Generation VIII",
+    "region": "Galar",
+    "introducedPokemon": "96",
+    "startDexNumber": "810",
+    "endDexNumber": "905",
+    "games": "Sword, Shield",
+    "releaseYear": "2019"
+  },
+  "features": [
+    "Introduced 96 new Pokémon.",
+    "First games to feature the Galar region.",
+    "Remakes of Generation IV: Brilliant Diamond and Shining Pearl.",
+    "Introduced open-world gameplay in Legends: Arceus.",
+    "Introduced Dynamax: A temporary transformation that increases a Pokémon's size and power.",
+    "Introduced Gigantamax: A special type of Dynamax that also changes the Pokémon's appearance and grants it a G-Max Move.",
+    "Added Wild Area: A large, open area where players can encounter a variety of Pokémon.",
+    "Added Max Raid Battles: Cooperative battles against Dynamaxed Pokémon."
+  ],
+  "starters": [
+    {
+      "name": "Grookey",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png"
+    },
+    {
+      "name": "Scorbunny",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png"
+    },
+    {
+      "name": "Sobble",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Zacian",
+      "role": "Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png"
+    },
+    {
+      "name": "Zamazenta",
+      "role": "Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png"
+    },
+    {
+      "name": "Eternatus",
+      "role": "Poison/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png"
+    },
+    {
+      "name": "Kubfu",
+      "role": "Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png"
+    },
+    {
+      "name": "Urshifu",
+      "role": "Fighting/Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png"
+    },
+    {
+      "name": "Calyrex",
+      "role": "Psychic/Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png"
+    },
+    {
+      "name": "Regieleki",
+      "role": "Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png"
+    },
+    {
+      "name": "Regidrago",
+      "role": "Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png"
+    },
+    {
+      "name": "Glastrier",
+      "role": "Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png"
+    },
+    {
+      "name": "Spectrier",
+      "role": "Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Magnolia",
+      "role": "Professor",
+      "image": "https://i0.wp.com/www.pokemythology.net/conteudo/imgs/personagens/auxilio/p_magnolia.png?w=640&ssl=1"
+    },
+    {
+      "name": "Victor",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/1/13/Victor_Icon_SWSH-1.png/150px-Victor_Icon_SWSH-1.png"
+    },
+    {
+      "name": "Gloria",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/a/a7/Gloria_Icon_SWSH-4.png/150px-Gloria_Icon_SWSH-4.png"
+    },
+    {
+      "name": "Hop",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2d/GST_Hop_icon.png"
+    },
+    {
+      "name": "Marnie",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/0/07/GST_Marnie_icon.png"
+    },
+    {
+      "name": "Bede",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/3/33/GST_Bede_icon.png"
+    },
+    {
+      "name": "Leon",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2c/GST_Leon_icon.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Milo (1st)",
+      "role": "Grass",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e5/GST_Milo_icon.png"
+    },
+    {
+      "name": "Nessa (2nd)",
+      "role": "Water",
+      "image": "https://archives.bulbagarden.net/media/upload/9/94/GST_Nessa_icon.png"
+    },
+    {
+      "name": "Kabu (3rd)",
+      "role": "Fire",
+      "image": "https://archives.bulbagarden.net/media/upload/0/04/GST_Kabu_icon.png"
+    },
+    {
+      "name": "Bea (4th/Sword)",
+      "role": "Fighting",
+      "image": "https://archives.bulbagarden.net/media/upload/8/8c/GST_Bea_icon.png"
+    },
+    {
+      "name": "Allister (4th/Shield)",
+      "role": "Ghost",
+      "image": "https://archives.bulbagarden.net/media/upload/7/74/GST_Allister_icon.png"
+    },
+    {
+      "name": "Opal (5th)",
+      "role": "Fairy",
+      "image": "https://archives.bulbagarden.net/media/upload/e/eb/GST_Opal_icon.png"
+    },
+    {
+      "name": "Gordie (6th/Sword)",
+      "role": "Rock",
+      "image": "https://archives.bulbagarden.net/media/upload/a/ac/GST_Gordie_icon.png"
+    },
+    {
+      "name": "Melony (6th/Shield)",
+      "role": "Ice",
+      "image": "https://archives.bulbagarden.net/media/upload/6/68/GST_Melony_icon.png"
+    },
+    {
+      "name": "Piers (7th)",
+      "role": "Dark",
+      "image": "https://archives.bulbagarden.net/media/upload/c/ce/GST_Piers_icon.png"
+    },
+    {
+      "name": "Raihan (8th)",
+      "role": "Dragon",
+      "image": "https://archives.bulbagarden.net/media/upload/1/1f/GST_Raihan_icon.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Marnie (Semifinals-Round1)",
+      "image" : "https://archives.bulbagarden.net/media/upload/0/07/GST_Marnie_icon.png",
+      "role" : "Dark"
+    },
+    {
+      "name": "Hop (Semifinals-Round2)",
+      "image" : "https://archives.bulbagarden.net/media/upload/2/2d/GST_Hop_icon.png",
+      "role" : "Mixed Types"
+    },
+    {
+      "name": "Bede (Interruption)",
+      "image" : "https://archives.bulbagarden.net/media/upload/3/33/GST_Bede_icon.png",
+      "role" : "Fairy"
+    },
+    {
+      "name": "Nessa (Finals-Round1)",
+      "image" : "https://archives.bulbagarden.net/media/upload/9/94/GST_Nessa_icon.png",
+      "role" : "Water"
+    },
+    {
+      "name": "Bea(Finals-Round2/Sword)",
+      "image" : "https://archives.bulbagarden.net/media/upload/8/8c/GST_Bea_icon.png",
+      "role" : "Fighting"
+    },
+    {
+      "name": "Allister(Finals-Round2/Shield)",
+      "image": "https://archives.bulbagarden.net/media/upload/7/74/GST_Allister_icon.png",
+      "role": "Ghost"
+    },
+    {
+      "name": "Raihan (Finals-Round3)",
+      "image": "https://archives.bulbagarden.net/media/upload/1/1f/GST_Raihan_icon.png",
+      "role": "Dragon"
+    },
+    {
+      "name": "Leon (Champion)",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2c/GST_Leon_icon.png",
+      "role": "Mixed Types"
+    }
+  ]
+}

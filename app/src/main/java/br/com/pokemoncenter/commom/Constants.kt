@@ -32,8 +32,8 @@ enum class StatIndex {
     HP, ATK, DEF, SATK, SDEF, SPEED
 }
 
-enum class FragmentPosition {
-    INFO, STATS, EFFECTIVENESS, MOVES
+enum class TabIndex {
+    INFO, STATS, EFFECTIVENESS, MOVES, EVOLUTIONTREE
 }
 
 enum class TypeEffectiveness(val value: Double, val colorResId: Int, val format: String) {
@@ -47,3 +47,17 @@ enum class TypeEffectiveness(val value: Double, val colorResId: Int, val format:
         fun fromValue(value: Double): TypeEffectiveness? = entries.find { it.value == value }
     }
 }
+
+enum class RegionImage(val imageResId: Int) {
+    KANTO(R.drawable.map_kanto),
+    JOHTO(R.drawable.map_johto),
+    HOENN(R.drawable.map_hoenn),
+    SINNOH(R.drawable.map_sinnoh),
+    ALOLA(R.drawable.map_alola),
+    GALAR(R.drawable.map_galar),
+    PALDEA(R.drawable.map_paldea),
+    HISUI(R.drawable.map_hisui),
+    UNOVA(R.drawable.map_unova),
+    KALOS(R.drawable.map_kalos)
+}
+

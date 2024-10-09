@@ -1,0 +1,184 @@
+{
+  "general": {
+    "generationName": "Generation III",
+    "region": "Hoenn",
+    "introducedPokemon": "135",
+    "startDexNumber": "252",
+    "endDexNumber": "386",
+    "games": "Ruby, Sapphire, Emerald",
+    "releaseYear": "2002"
+  },
+  "features": [
+    "Introduced 135 new Pokémon.",
+    "First games to feature the Hoenn region.",
+    "Introduced Pokémon Contests.",
+    "Introduced Abilities, which give Pokémon passive effects.",
+    "Introduced Natures, which influence stat growth.",
+    "Added Double Battles, allowing for 2 vs. 2 Pokémon battles."
+  ],
+  "starters": [
+    {
+      "name": "Treecko",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png"
+    },
+    {
+      "name": "Torchic",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png"
+    },
+    {
+      "name": "Mudkip",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Regirock",
+      "role": "Rock",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png"
+    },
+    {
+      "name": "Regice",
+      "role": "Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png"
+    },
+    {
+      "name": "Registeel",
+      "role": "Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png"
+    },
+    {
+      "name": "Latias",
+      "role": "Dragon/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png"
+    },
+    {
+      "name": "Latios",
+      "role": "Dragon/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png"
+    },
+    {
+      "name": "Kyogre",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png"
+    },
+    {
+      "name": "Groudon",
+      "role": "Ground",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png"
+    },
+    {
+      "name": "Rayquaza",
+      "role": "Dragon/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png"
+    },
+    {
+      "name": "Jirachi",
+      "role": "Steel/Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png"
+    },
+    {
+      "name": "Deoxys",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Birch",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/7/75/Spr_RS_Birch.png"
+    },
+    {
+      "name": "Brendan",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrendan.png"
+    },
+    {
+      "name": "May",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/6/63/VSMay.png"
+    },
+    {
+      "name": "Wally",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/7/7e/VSWally_2.png"
+    },
+    {
+      "name": "Steven Stone",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Roxanne (1st)",
+      "role": "Rock",
+      "image": "https://archives.bulbagarden.net/media/upload/9/90/VSRoxanne.png"
+    },
+    {
+      "name": "Brawly (2nd)",
+      "role": "Fighting",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrawly.png"
+    },
+    {
+      "name": "Wattson (3rd)",
+      "role": "Electric",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c2/VSWattson.png"
+    },
+    {
+      "name": "Flannery (4th)",
+      "role": "Fire",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f3/VSFlannery.png"
+    },
+    {
+      "name": "Norman (5th)",
+      "role": "Normal",
+      "image": "https://archives.bulbagarden.net/media/upload/a/a0/VSNorman.png"
+    },
+    {
+      "name": "Winona (6th)",
+      "role": "Flying",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0a/VSWinona.png"
+    },
+    {
+      "name": "Tate and Liza (7th)",
+      "role": "Psychic",
+      "image": "https://archives.bulbagarden.net/media/upload/c/cb/VSLiza_%26_Tate.png"
+    },
+    {
+      "name": "Wallace (8th)",
+      "role": "Water",
+      "image": "https://archives.bulbagarden.net/media/upload/3/3d/VSWallace.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Sidney",
+      "image": "https://archives.bulbagarden.net/media/upload/4/40/VSSidney.png",
+      "role": "Dark"
+    },
+    {
+      "name": "Phoebe",
+      "image": "https://archives.bulbagarden.net/media/upload/0/01/VSPhoebe.png",
+      "role": "Ghost"
+    },
+    {
+      "name": "Glacia",
+      "image": "https://archives.bulbagarden.net/media/upload/6/61/VSGlacia.png",
+      "role": "Ice"
+    },
+    {
+      "name": "Drake",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f5/VSDrake.png",
+      "role": "Dragon"
+    },
+    {
+      "name": "Steven Stone",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png",
+      "role": "Steel"
+    }
+  ]
+}

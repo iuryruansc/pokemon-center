@@ -73,4 +73,8 @@
     <string name="menu_drawer">Menu</string>
     <string name="favorites_drawer">Favorites</string>
     <string name="no_favorites_yet">No favorites yet</string>
+    <string name="map_name">Map Name</string>
+    <string name="evolution_tree">Evolution Tree</string>
+    <string name="evolves_from">Evolves From</string>
+    <string name="game_logo">game logo</string>
 </resources>

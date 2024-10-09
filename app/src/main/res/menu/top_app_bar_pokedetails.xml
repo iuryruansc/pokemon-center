@@ -10,7 +10,7 @@
 
     <item
         android:id="@+id/menu_favorite"
-        android:icon="@drawable/not_favorite_icon"
+        android:icon="@drawable/menu_not_favorite_icon"
         android:title="@string/favorite"
         app:showAsAction="always"/>
 
@@ -22,7 +22,7 @@
 
     <item
         android:id="@+id/menu_drawer"
-        android:icon="@drawable/details_menu"
+        android:icon="@drawable/menu_details"
         android:title="@string/menu"
         app:showAsAction="always" />
 

@@ -1,0 +1,213 @@
+{
+  "general": {
+    "generationName": "Generation VII",
+    "region": "Alola",
+    "introducedPokemon": "88",
+    "startDexNumber": "722",
+    "endDexNumber": "809",
+    "games": "Sun, Moon",
+    "releaseYear": "2016"
+  },
+  "features": [
+    "Introduced 88 new Pokémon, which 7 are Ultra Beasts.",
+    "First games to feature the Alola region.",
+    "Z-Moves: Powerful moves that can be used once per battle.",
+    "Introduced Regional Forms: Pokémon with different forms and typings based on the region they inhabit.",
+    "Replaced Gyms with Island Trials: Replace traditional Gyms with unique challenges and Totem Pokémon."
+  ],
+  "starters": [
+    {
+      "name": "Rowlet",
+      "role": "Grass/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png"
+    },
+    {
+      "name": "Litten",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png"
+    },
+    {
+      "name": "Popplio",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Tapu Koko",
+      "role": "Electric/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png"
+    },
+    {
+      "name": "Tapu Lele",
+      "role": "Psychic/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png"
+    },
+    {
+      "name": "Tapu Bulu",
+      "role": "Grass/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png"
+    },
+    {
+      "name": "Tapu Fini",
+      "role": "Water/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png"
+    },
+    {
+      "name": "Cosmog",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png"
+    },
+    {
+      "name": "Cosmoem",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png"
+    },
+    {
+      "name": "Solgaleo",
+      "role": "Psychic/Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png"
+    },
+    {
+      "name": "Lunala",
+      "role": "Psychic/Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png"
+    },
+    {
+      "name": "Necrozma",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png"
+    },
+    {
+      "name": "Magearna",
+      "role": "Steel/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png"
+    },
+    {
+      "name": "Marshadow",
+      "role": "Fighting/Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png"
+    },
+    {
+      "name": "Zeraora",
+      "role": "Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Kukui",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/7/76/VSKukui_2.png"
+    },
+    {
+      "name": "Elio",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/dd/Elio_SM_OD.png/100px-Elio_SM_OD.png"
+    },
+    {
+      "name": "Selene",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/dd/Selene_SM_OD.png/100px-Selene_SM_OD.png"
+    },
+    {
+      "name": "Hau",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/9/91/Hau_SM_OD.png/140px-Hau_SM_OD.png"
+    },
+    {
+      "name": "Lillie",
+      "role": "Companion",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/c/c2/Lillie_SM_OD.png/150px-Lillie_SM_OD.png"
+    },
+    {
+      "name": "Gladion",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/6/62/Gladion_SM_OD.png/120px-Gladion_SM_OD.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Ilima (1st Trial)",
+      "role": "Normal",
+      "image": "https://archives.bulbagarden.net/media/upload/b/bf/VSIlima_USUM.png"
+    },
+    {
+      "name": "Lana (2nd Trial)",
+      "role": "Water",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c6/VSLana_USUM.png"
+    },
+    {
+      "name": "Kiawe (3rd Trial)",
+      "role": "Fire",
+      "image": "https://archives.bulbagarden.net/media/upload/3/34/VSKiawe.png"
+    },
+    {
+      "name": "Mallow (4th Trial)",
+      "role": "Grass",
+      "image": "https://archives.bulbagarden.net/media/upload/9/92/VSMallow.png"
+    },
+    {
+      "name": "Sophocles (5th Trial)",
+      "role": "Electric",
+      "image": "https://archives.bulbagarden.net/media/upload/a/aa/VSSophocles.png"
+    },
+    {
+      "name": "Acerola (6th trial)",
+      "role": "Ghost",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png"
+    },
+    {
+      "name": "Mina (7th Trial)",
+      "role": "Fairy",
+      "image": "https://archives.bulbagarden.net/media/upload/4/48/VSMina_2_USUM.png"
+    },
+    {
+      "name": "Hala (Melemele Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6b/VSHala_2.png",
+      "role": "Fighting"
+    },
+    {
+      "name": "Olivia (Akala Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png",
+      "role": "Rock"
+    },
+    {
+      "name": "Nanu (Ula'ula Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/5/57/VSNanu_2.png",
+      "role": "Dark"
+    },
+    {
+      "name": "Hapu (4th Kahuna)",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/VSHapu.png",
+      "role": "Ground"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Hala",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6b/VSHala_2.png",
+      "role": "Fighting"
+    },
+    {
+      "name": "Olivia",
+      "image": "https://archives.bulbagarden.net/media/upload/f/ff/VSOlivia_2.png",
+      "role": "Rock"
+    },
+    {
+      "name": "Acerola",
+      "image": "https://archives.bulbagarden.net/media/upload/6/6c/VSAcerola.png",
+      "role": "Ghost"
+    },
+    {
+      "name": "Kahili",
+      "image": "https://archives.bulbagarden.net/media/upload/e/eb/VSKahili_USUM.png",
+      "role": "Flying"
+    },
+    {
+      "name": "Kukui",
+      "image": "https://archives.bulbagarden.net/media/upload/7/76/VSKukui_2.png",
+      "role": "Mixed Types"
+    }
+  ]
+}
