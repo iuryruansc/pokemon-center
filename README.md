@@ -35,11 +35,11 @@ This Android application allows users to browse and view information about Pokem
 
 ## Screenshots
 
-| <img src="./app/src/main/assets/screenshots/project_mainview.jpeg" height="450" alt="initial interface screenshot"/> | <img src="./app/src/main/assets/screenshots/project_pokemon_details.jpeg" height="450" alt="pokemon details screenshot"/> | <img src="./app/src/main/assets/screenshots/project_gen_games.jpeg" height="450" alt="games by generation screenshot"/> |
+| <img src="./app/src/main/assets/screenshots/project_mainview.jpeg" height="400" alt="initial interface screenshot"/> | <img src="./app/src/main/assets/screenshots/project_pokemon_details.jpeg" height="400" alt="pokemon details screenshot"/> | <img src="./app/src/main/assets/screenshots/project_gen_games.jpeg" height="400" alt="games by generation screenshot"/> |
 | :---: | :---: | :---: |
 
 
-| <img src="./app/src/main/assets/screenshots/project_regions.jpeg" height="450" alt="pokedex by regions screenshot"/> | <img src="./app/src/main/assets/screenshots/project_natures_chart.jpeg" height="450" alt="natures chart screenshot"/> | <img src="./app/src/main/assets/screenshots/project_types_chart.jpeg" height="450" alt="types chart screenshot"/> |
+| <img src="./app/src/main/assets/screenshots/project_regions.jpeg" height="400" alt="pokedex by regions screenshot"/> | <img src="./app/src/main/assets/screenshots/project_natures_chart.jpeg" height="400" alt="natures chart screenshot"/> | <img src="./app/src/main/assets/screenshots/project_types_chart.jpeg" height="400" alt="types chart screenshot"/> |
 |:---:| :---: | :---: |
 
 ## API Documentation
