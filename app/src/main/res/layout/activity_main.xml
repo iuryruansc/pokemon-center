@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/wallpaper"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     android:padding="16dp"
     tools:context="br.com.pokemoncenter.ui.views.MainActivity">
 
@@ -23,12 +23,12 @@
 
     <TextView
         android:id="@+id/main_tv_title"
+        style="@style/MainTitleTextStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
-        style="@style/MainTitleTextStyle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/settingsButton" />
@@ -36,19 +36,19 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/main_search_layout"
         style="?attr/textInputFilledStyle"
-        app:boxStrokeWidth="0dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
         android:hint="@string/main_searchbar_text"
-        app:boxStrokeWidthFocused="0dp"
         app:boxCornerRadiusBottomEnd="50dp"
         app:boxCornerRadiusBottomStart="50dp"
         app:boxCornerRadiusTopEnd="50dp"
         app:boxCornerRadiusTopStart="50dp"
-        app:endIconDrawable="@drawable/search_icon"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:endIconDrawable="@drawable/icon_search"
         app:endIconMode="custom"
         app:layout_constraintDimensionRatio="7:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,9 +58,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/main_text_search"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:inputType="text"
-            android:maxLines="1"
-            android:layout_height="wrap_content" />
+            android:maxLines="1" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -70,7 +70,7 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/pokedex_button_background"
+        android:background="@drawable/background_pokedex_button"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="2.5:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,25 +83,25 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/types_button_background"
+        android:background="@drawable/background_types_button"
         android:gravity="bottom"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintDimensionRatio="1.75:1"
-        app:layout_constraintTop_toBottomOf="@+id/main_pokemon_button"
-        app:layout_constraintEnd_toStartOf="@id/guideline_half"/>
+        app:layout_constraintEnd_toStartOf="@id/guideline_half"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_pokemon_button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/main_natures_button"
+        style="@style/MainNaturesButtonTextStyle"
         android:layout_width="0dp"
         android:layout_height="100dp"
-        android:gravity="bottom"
         android:layout_marginTop="8dp"
-        android:background="@drawable/natures_button_background"
-        style="@style/MainNaturesButtonTextStyle"
+        android:background="@drawable/background_natures_button"
+        android:gravity="bottom"
         app:layout_constraintDimensionRatio="1.75:1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_pokemon_button"
-        app:layout_constraintStart_toEndOf="@id/guideline_half"/>
+        app:layout_constraintStart_toEndOf="@id/guideline_half"
+        app:layout_constraintTop_toBottomOf="@+id/main_pokemon_button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/main_favorites_button"
@@ -109,7 +109,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/items_favorites_background"
+        android:background="@drawable/background_favorites_button"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="1.75:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,7 +122,7 @@
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:layout_marginTop="4dp"
-        android:background="@drawable/generations_button_background"
+        android:background="@drawable/background_generations_button"
         android:gravity="bottom"
         app:layout_constraintDimensionRatio="1.75:1"
         app:layout_constraintEnd_toStartOf="@id/guideline_half"

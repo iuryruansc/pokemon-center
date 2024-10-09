@@ -54,7 +54,7 @@
                         android:background="@drawable/type_steel_background"
                         android:minHeight="?attr/actionBarSize"
                         app:menu="@menu/top_app_bar_pokedetails"
-                        app:navigationIcon="@drawable/back_icon"
+                        app:navigationIcon="@drawable/menu_back_icon"
                         app:title="Details" />
 
                 </com.google.android.material.appbar.AppBarLayout>

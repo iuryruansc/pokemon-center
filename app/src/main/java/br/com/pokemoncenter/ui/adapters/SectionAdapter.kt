@@ -24,10 +24,10 @@ class SectionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         fun bind(item: SectionItem.Header) {
             header.text = item.title
-            expandIcon.setImageResource(if (item.isExpanded) R.drawable.collapse_icon else R.drawable.expand_icon)
+            expandIcon.setImageResource(if (item.isExpanded) R.drawable.icon_collapse else R.drawable.icon_expand)
             expandIcon.setOnClickListener {
                 item.isExpanded = !item.isExpanded
-                expandIcon.setImageResource(if (item.isExpanded) R.drawable.collapse_icon else R.drawable.expand_icon)
+                expandIcon.setImageResource(if (item.isExpanded) R.drawable.icon_collapse else R.drawable.icon_expand)
                 val adapter = bindingAdapter as SectionAdapter
                 adapter.notifyItemChanged(absoluteAdapterPosition)
             }
@@ -49,8 +49,10 @@ class SectionAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
         fun bind(item: SectionItem.CharacterContent) {
             characterName.text = item.characterName
+            characterName.textAlignment = View.TEXT_ALIGNMENT_CENTER
             characterImage.load(Uri.parse(item.characterImage))
             characterRole.text = item.characterRole
+            characterRole.textAlignment = View.TEXT_ALIGNMENT_CENTER
         }
     }
 

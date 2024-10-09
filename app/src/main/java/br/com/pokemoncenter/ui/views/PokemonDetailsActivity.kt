@@ -16,6 +16,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import br.com.pokemon_center.R
 import br.com.pokemon_center.databinding.ActivityPokemonDetailsBinding
+import br.com.pokemoncenter.commom.TabIndex
 import br.com.pokemoncenter.commom.util.hofs.textformat.capitalizedName
 import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
 import br.com.pokemoncenter.commom.util.ui.setupNavigationView
@@ -35,10 +36,6 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
     private var mediaPlayer: MediaPlayer? = null
     private var cryUrl: String? = null
     private var pokemonName: String = ""
-
-    enum class TabIndex {
-        INFO, STATS, EFFECTIVENESS, MOVES
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -123,10 +120,10 @@ class PokemonDetailsActivity : AppCompatActivity(), OnMenuItemClickListener {
 
     private fun setFavoriteIcon(isFavorite: Boolean) {
         if (isFavorite) {
-            binding.topAppBar.menu.findItem(R.id.menu_favorite).setIcon(R.drawable.favorite_icon)
+            binding.topAppBar.menu.findItem(R.id.menu_favorite).setIcon(R.drawable.menu_favorite_icon)
         } else {
             binding.topAppBar.menu.findItem(R.id.menu_favorite)
-                .setIcon(R.drawable.not_favorite_icon)
+                .setIcon(R.drawable.menu_not_favorite_icon)
         }
     }
 

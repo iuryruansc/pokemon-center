@@ -62,28 +62,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.mainGenerationsButton.setOnClickListener(this)
         binding.mainNaturesButton.setOnClickListener(this)
         binding.mainFavoritesButton?.setOnClickListener(this)
+        binding.mainPokemonButton.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v?.id) {
-            binding.mainTypesButton.id -> {
-                val intent = Intent(this, TypesActivity::class.java)
-                startActivity(intent)
-            }
+            binding.mainTypesButton.id -> startActivity(Intent(this, TypesActivity::class.java))
 
-            binding.mainGenerationsButton.id -> {
-                val intent = Intent(this, GenerationsChoiceActivity::class.java)
-                startActivity(intent)
-            }
+            binding.mainGenerationsButton.id -> startActivity(Intent(this, GenChoiceActivity::class.java))
 
-            binding.mainNaturesButton.id -> {
-                val intent = Intent(this, NaturesActivity::class.java)
-                startActivity(intent)
-            }
-            binding.mainFavoritesButton?.id -> {
-                val intent = Intent(this, FavoritesActivity::class.java)
-                startActivity(intent)
-            }
+            binding.mainNaturesButton.id -> startActivity(Intent(this, NaturesActivity::class.java))
+
+            binding.mainFavoritesButton?.id -> startActivity(Intent(this, FavoritesActivity::class.java))
+
+            binding.mainPokemonButton.id -> startActivity(Intent(this, RegionChoiceActivity::class.java))
         }
     }
 }

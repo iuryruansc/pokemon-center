@@ -6,19 +6,19 @@ import android.view.ViewGroup
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import br.com.pokemon_center.R
-import br.com.pokemoncenter.commom.util.listeners.GenerationChoiceListener
+import br.com.pokemoncenter.commom.util.listeners.ChoiceListener
 import br.com.pokemoncenter.data.models.ButtonData
 
 class GenerationsChoiceAdapter(private val buttonDataList: List<ButtonData>) :
     RecyclerView.Adapter<GenerationsChoiceAdapter.GenChoiceViewHolder>() {
 
-    private var choiceListener: GenerationChoiceListener? = null
+    private var choiceListener: ChoiceListener? = null
 
-    fun setChoiceListener(listener: GenerationChoiceListener) {
+    fun setChoiceListener(listener: ChoiceListener) {
         this.choiceListener = listener
     }
 
-    class GenChoiceViewHolder(itemView: View, choiceListener: GenerationChoiceListener?) :
+    class GenChoiceViewHolder(itemView: View, choiceListener: ChoiceListener?) :
         RecyclerView.ViewHolder(itemView) {
         val generationChoiceButton: Button = itemView.findViewById(R.id.gen_choice_button)
 
@@ -30,7 +30,7 @@ class GenerationsChoiceAdapter(private val buttonDataList: List<ButtonData>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GenChoiceViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.generations_choice_item, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.activity_generations_choice_item, parent, false)
         return GenChoiceViewHolder(view, choiceListener)
     }
 

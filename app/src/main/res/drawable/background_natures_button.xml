@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:endColor="#00A800"
+                android:startColor="#585858" />
+            <corners android:radius="10dp" />
+            <stroke android:width="2dp" android:color="@color/black" />
+            <padding android:left="15dp" android:bottom="10dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/image_natures_button"
+        android:width="150dp"
+        android:height="150dp"
+        android:gravity="right"
+        android:right="-50dp"
+        android:top="-20dp"/>
+</layer-list>

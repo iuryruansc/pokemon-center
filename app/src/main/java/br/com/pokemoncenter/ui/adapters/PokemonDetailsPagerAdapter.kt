@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import br.com.pokemoncenter.commom.FragmentPosition
+import br.com.pokemoncenter.commom.TabIndex
 import br.com.pokemoncenter.ui.fragments.EffectivenessFragment
 import br.com.pokemoncenter.ui.fragments.InfoFragment
 import br.com.pokemoncenter.ui.fragments.MovesFragment
@@ -26,10 +26,10 @@ class PokemonDetailsPagerAdapter(
             putString("type2", type2)
         }
         return when (position) {
-            FragmentPosition.INFO.ordinal -> InfoFragment().apply { arguments = fragmentArgs }
-            FragmentPosition.STATS.ordinal -> StatsFragment().apply { arguments = fragmentArgs }
-            FragmentPosition.EFFECTIVENESS.ordinal -> EffectivenessFragment().apply { arguments = fragmentArgs }
-            FragmentPosition.MOVES.ordinal -> MovesFragment().apply { arguments = fragmentArgs }
+            TabIndex.INFO.ordinal -> InfoFragment().apply { arguments = fragmentArgs }
+            TabIndex.STATS.ordinal -> StatsFragment().apply { arguments = fragmentArgs }
+            TabIndex.EFFECTIVENESS.ordinal -> EffectivenessFragment().apply { arguments = fragmentArgs }
+            TabIndex.MOVES.ordinal -> MovesFragment().apply { arguments = fragmentArgs }
             else -> throw IllegalArgumentException("Invalid position: $position")
         }
     }

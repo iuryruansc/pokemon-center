@@ -1,0 +1,175 @@
+{
+  "general": {
+    "generationName": "Generation VI",
+    "region": "Kalos",
+    "introducedPokemon": "72",
+    "startDexNumber": "650",
+    "endDexNumber": "721",
+    "games": "X, Y",
+    "releaseYear": "2013"
+  },
+  "features": [
+    "Introduced 72 new Pokémon.",
+    "First games to feature the Kalos region.",
+    "Remakes of Generation III: Omega Ruby and Alpha Sapphire.",
+    "Introduced Mega Evolution: A temporary transformation that grants Pokémon increased power and sometimes a different typing.",
+    "Introduced Fairy type: A new type introduced to balance the type chart, particularly against Dragon types.",
+    "Added Character Customization: Players can customize their character's appearance.",
+    "Introduced Pokémon-Amie: A feature allowing players to interact and play with their Pokémon."
+  ],
+  "starters": [
+    {
+      "name": "Chespin",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png"
+    },
+    {
+      "name": "Fennekin",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png"
+    },
+    {
+      "name": "Froakie",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Xerneas",
+      "role": "Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png"
+    },
+    {
+      "name": "Yveltal",
+      "role": "Dark/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png"
+    },
+    {
+      "name": "Zygarde",
+      "role": "Dragon/Ground",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png"
+    },
+    {
+      "name": "Diancie",
+      "role": "Rock/Fairy",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png"
+    },
+    {
+      "name": "Hoopa",
+      "role": "Psychic/Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png"
+    },
+    {
+      "name": "Volcanion",
+      "role": "Fire/Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Sycamore",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/9/99/VSSycamore_Masters.png"
+    },
+    {
+      "name": "Calem",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d0/VSCalem_Masters.png"
+    },
+    {
+      "name": "Serena",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f8/VSSerena_Masters.png"
+    },
+    {
+      "name": "Shauna",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/a/a6/VSShauna.png"
+    },
+    {
+      "name": "Tierno",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/a/a7/VSTierno.png"
+    },
+    {
+      "name": "Trevor",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f0/VSTrevor_Masters.png"
+    },
+    {
+      "name": "Diantha",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/b/b6/VSDiantha.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Viola (1st)",
+      "role": "Bug",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSViola.png"
+    },
+    {
+      "name": "Grant (2nd)",
+      "role": "Rock",
+      "image": "https://archives.bulbagarden.net/media/upload/0/03/VSGrant.png"
+    },
+    {
+      "name": "Korrina (3rd)",
+      "role": "Fighting",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4c/VSKorrina.png"
+    },
+    {
+      "name": "Ramos (4th)",
+      "role": "Grass",
+      "image": "https://archives.bulbagarden.net/media/upload/0/06/VSRamos.png"
+    },
+    {
+      "name": "Clemont (5th)",
+      "role": "Electric",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e7/VSClemont.png"
+    },
+    {
+      "name": "Valerie (6th)",
+      "role": "Fairy",
+      "image": "https://archives.bulbagarden.net/media/upload/2/22/VSValerie.png"
+    },
+    {
+      "name": "Olympia (7th)",
+      "role": "Psychic",
+      "image": "https://archives.bulbagarden.net/media/upload/7/7f/VSOlympia.png"
+    },
+    {
+      "name": "Wulfric (8th)",
+      "role": "Ice",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f0/VSWulfric.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Wikstrom",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/54/VSWikstrom.png",
+      "role" : "Steel"
+    },
+    {
+      "name": "Malva",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/5d/VSMalva.png",
+      "role" : "Fire"
+    },
+    {
+      "name": "Drasna",
+      "image" : "https://archives.bulbagarden.net/media/upload/e/e1/VSDrasna.png",
+      "role" : "Dragon"
+    },
+    {
+      "name": "Siebold",
+      "image" : "https://archives.bulbagarden.net/media/upload/8/81/VSSiebold.png",
+      "role" : "Water"
+    },
+    {
+      "name": "Diantha",
+      "image" : "https://archives.bulbagarden.net/media/upload/b/b6/VSDiantha.png",
+      "role" : "Mixed Types"
+    }
+  ]
+}

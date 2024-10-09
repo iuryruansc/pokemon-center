@@ -9,19 +9,19 @@ import androidx.recyclerview.widget.RecyclerView
 import br.com.pokemon_center.R
 import br.com.pokemoncenter.commom.TypeEffectiveness
 import br.com.pokemoncenter.commom.util.hofs.types.typeStyle
-import br.com.pokemoncenter.commom.util.listeners.FragmentEffectListener
+import br.com.pokemoncenter.commom.util.listeners.PokemonNameListener
 import java.util.Locale
 
 class TypeEffectivenessAdapter(private val typeEffectiveness: Map<String, Double>) :
     RecyclerView.Adapter<TypeEffectivenessAdapter.TypeViewHolder>() {
 
-    private var effectListener: FragmentEffectListener? = null
+    private var effectListener: PokemonNameListener? = null
 
-    fun setEffectListener(listener: FragmentEffectListener) {
+    fun setEffectListener(listener: PokemonNameListener) {
         this.effectListener = listener
     }
 
-    class TypeViewHolder(itemView: View, effectListener: FragmentEffectListener?) :
+    class TypeViewHolder(itemView: View, effectListener: PokemonNameListener?) :
         RecyclerView.ViewHolder(itemView) {
         val tvType: ImageView = itemView.findViewById(R.id.tvType)
         val tvEffectiveness: TextView = itemView.findViewById(R.id.tvEffectiveness)

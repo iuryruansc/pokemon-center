@@ -32,11 +32,11 @@
             android:exported="false">
         </activity>
         <activity
-            android:name="br.com.pokemoncenter.ui.views.GenerationsChoiceActivity"
+            android:name="br.com.pokemoncenter.ui.views.GenChoiceActivity"
             android:exported="false">
         </activity>
         <activity
-            android:name="br.com.pokemoncenter.ui.views.GenerationsDetailsActivity"
+            android:name="br.com.pokemoncenter.ui.views.GenDetailsActivity"
             android:exported="false">
         </activity>
         <activity
@@ -45,6 +45,18 @@
         </activity>
         <activity
             android:name="br.com.pokemoncenter.ui.views.FavoritesActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.RegionChoiceActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.RegionDetailsActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="br.com.pokemoncenter.ui.views.GenGamesActivity"
             android:exported="false">
         </activity>
     </application>

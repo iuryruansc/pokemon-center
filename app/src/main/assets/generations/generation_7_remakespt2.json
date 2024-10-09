@@ -1,0 +1,180 @@
+{
+  "general": {
+    "generationName": "Generation VII",
+    "region": "Kanto",
+    "introducedPokemon": "0",
+    "startDexNumber": "1",
+    "endDexNumber": "151",
+    "games": "Let's Go, Pikachu!, Let's Go, Eevee!",
+    "releaseYear": "2018"
+  },
+  "features": [
+    "Remakes of Generation I games Yellow with gameplay inspired by Pokémon Go.",
+    "Includes Pokémon from the Kanto region and Meltan/Melmetal.",
+    "Partner Pokémon (Pikachu or Eevee) follows you and cannot evolve.",
+    "Wild Pokémon are visible in the overworld.",
+    "Catching Pokémon replaces battling wild Pokémon.",
+    "Two-player cooperative play.",
+    "Can connect with Pokémon Go to transfer Pokémon."
+  ],
+  "starters": [
+    {
+      "name": "Pikachu",
+      "role": "Electric (Let's Go Pikachu)",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    },
+    {
+      "name": "Eevee",
+      "role": "Normal (Let's Go Eevee)",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Articuno",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "role": "Ice/Flying"
+    },
+    {
+      "name": "Zapdos",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+      "role": "Electric/Flying"
+    },
+    {
+      "name": "Moltres",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+      "role": "Fire/Flying"
+    },
+    {
+      "name": "Mewtwo",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "role": "Psychic"
+    },
+    {
+      "name": "Mew",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+      "role": "Psychic"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Oak",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/81/Oak_PE_OD.png/800px-Oak_PE_OD.png",
+      "role": "Professor"
+    },
+    {
+      "name": "Chase",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/41/Lets_Go_Pikachu_Eevee_Chase.png/800px-Lets_Go_Pikachu_Eevee_Chase.png",
+      "role": "Player Character/Rival"
+    },
+    {
+      "name": "Elaine",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/b/b7/Lets_Go_Pikachu_Eevee_Elaine.png/320px-Lets_Go_Pikachu_Eevee_Elaine.png",
+      "role": "Player Character/Rival"
+    },
+    {
+      "name": "Trace",
+      "image": "https://archives.bulbagarden.net/media/upload/b/b0/VSTrace_2.png",
+      "role": "Rival"
+    },
+    {
+      "name": "Brock",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e2/VSBrock_PE.png",
+      "role": "Gym Leader"
+    },
+    {
+      "name": "Misty",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0c/VSMisty_PE.png",
+      "role": "Gym Leader"
+    },
+    {
+      "name": "Blue",
+      "image": "https://archives.bulbagarden.net/media/upload/5/5f/VSBlue_PE.png",
+      "role": "Post-game Challenge"
+    },
+    {
+      "name": "Red",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4f/VSRed.png",
+      "role": "Post-game Challenge"
+    },
+    {
+      "name": "Giovanni",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4a/VSGiovanni_PE.png",
+      "role": "Gym Leader / Team Rocket Boss"
+    },
+    {
+      "name": "Bill",
+      "image": "https://archives.bulbagarden.net/media/upload/d/db/Spr_FRLG_Bill.png",
+      "role": "Pokémon Researcher"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Brock (1st)",
+      "image": "https://archives.bulbagarden.net/media/upload/e/e2/VSBrock_PE.png",
+      "role": "Rock"
+    },
+    {
+      "name": "Misty (2nd)",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0c/VSMisty_PE.png",
+      "role": "Water"
+    },
+    {
+      "name": "Lt.Surge (3rd)",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c6/VSLt_Surge_PE.png",
+      "role": "Lightning"
+    },
+    {
+      "name": "Erika (4th)",
+      "image": "https://archives.bulbagarden.net/media/upload/3/35/VSErika_PE.png",
+      "role": "Grass"
+    },
+    {
+      "name": "Koga (5th)",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d8/VSKoga_PE.png",
+      "role": "Ghost"
+    },
+    {
+      "name": "Sabrina (6th)",
+      "image": "https://archives.bulbagarden.net/media/upload/2/20/VSSabrina_PE.png",
+      "role": "Psychic"
+    },
+    {
+      "name": "Blaine (7th)",
+      "image": "https://archives.bulbagarden.net/media/upload/1/11/VSBlaine_PE.png",
+      "role": "Fire"
+    },
+    {
+      "name": "Giovanni (8th)",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4a/VSGiovanni_PE.png",
+      "role": "Ground"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Lorelei",
+      "image" : "https://archives.bulbagarden.net/media/upload/d/dc/VSLorelei_PE.png",
+      "role" : "Ice"
+    },
+    {
+      "name": "Bruno",
+      "image" : "https://archives.bulbagarden.net/media/upload/6/64/VSBruno_PE.png",
+      "role" : "Fighting"
+    },
+    {
+      "name": "Agatha",
+      "image" : "https://archives.bulbagarden.net/media/upload/5/5f/VSAgatha_PE.png",
+      "role" : "Ghost"
+    },
+    {
+      "name": "Lance",
+      "image" : "https://archives.bulbagarden.net/media/upload/d/dc/VSLance_PE.png",
+      "role" : "Dragon"
+    },
+    {
+      "name": "Trace",
+      "image": "https://archives.bulbagarden.net/media/upload/b/b0/VSTrace_2.png",
+      "role": "Mixed Types"
+    }
+  ]
+}

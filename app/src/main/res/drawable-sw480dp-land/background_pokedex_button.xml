@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="180"
+                android:endColor="#FF4500"
+                android:startColor="#EA2020" />
+            <corners android:radius="10dp" />
+            <stroke android:width="2dp" android:color="@color/black" />
+            <padding android:left="10dp" android:bottom="10dp" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/image_pokeball_button"
+        android:width="125dp"
+        android:height="125dp"
+        android:gravity="right"
+        android:right="-40dp"
+        android:top="-10dp" />
+</layer-list>

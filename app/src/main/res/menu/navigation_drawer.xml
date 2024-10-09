@@ -27,7 +27,7 @@
                 android:checkable="true"/>
             <item
                 android:id="@+id/favorites_item"
-                android:icon="@drawable/favorite_icon"
+                android:icon="@drawable/menu_favorite_icon"
                 android:title="@string/favorites_drawer"
                 android:checkable="true"/>
         </menu>

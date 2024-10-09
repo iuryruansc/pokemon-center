@@ -1,0 +1,95 @@
+{
+  "general": {
+    "generationName": "Generation IX",
+    "region": "Kitakami (The Teal Mask) and Blueberry Academy (The Indigo Disk)",
+    "introducedPokemon": "17",
+    "startDexNumber": "906",
+    "endDexNumber": "1025",
+    "games": "Scarlet & Violet - The Hidden Treasure of Area Zero",
+    "releaseYear": "2023"
+  },
+  "features": [
+    "New Pokémon: The DLC introduces 17 new Pokémon",
+    "Returning Pokémon: The DLC brings back over 230 familiar Pokémon that were not in the original Scarlet and Violet games.",
+    "New Areas: The DLC introduces two new areas, The Teal Mask and The Indigo Disk.",
+    "New Storylines: The DLC features two new storylines, one for each new area.",
+    "New Items: The DLC introduces new items, including new TM's and new held items.",
+    "Up to 25 Legendary Pokémon to be catch from previous generations"
+  ],
+  "starters": [
+  ],
+  "legendary": [
+    {
+      "name": "Okidogi",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png",
+      "role": "Poison/Fighting"
+    },
+    {
+      "name": "Munkidori",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png",
+      "role": "Poison/Psychic"
+    },
+    {
+      "name": "Fezandipiti",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png",
+      "role": "Poison/Fairy"
+    },
+    {
+      "name": "Ogerpon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png",
+      "role": "Grass"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Carmine",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/e/e6/Scarlet_Violet_Carmine.png/320px-Scarlet_Violet_Carmine.png"
+    },
+    {
+      "name": "Kieran",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/f/f5/Scarlet_Violet_Kieran.png/320px-Scarlet_Violet_Kieran.png"
+    },
+    {
+      "name": "Cyrano",
+      "role": "Academy Director",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/4/45/Scarlet_Violet_Cyrano.png/320px-Scarlet_Violet_Cyrano.png"
+    },
+    {
+      "name": "Briar",
+      "role": "Teacher",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/7/7a/Scarlet_Violet_Briar.png/320px-Scarlet_Violet_Briar.png"
+    },
+    {
+      "name": "Perrin",
+      "role": "Photographer",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/d/df/Scarlet_Violet_Perrin.png/320px-Scarlet_Violet_Perrin.png"
+    }
+  ],
+  "gymLeaders": [
+
+  ],
+  "eliteFour": [
+    {
+      "name": "Lacey",
+      "role": "Fairy",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/8/83/Scarlet_Violet_Lacey.png/320px-Scarlet_Violet_Lacey.png"
+    },
+    {
+      "name": "Crispin",
+      "role": "Fire",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/2e/Scarlet_Violet_Crispin.png/800px-Scarlet_Violet_Crispin.png"
+    },
+    {
+      "name": "Amarys",
+      "role": "Steel",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/2/22/Scarlet_Violet_Amarys.png/320px-Scarlet_Violet_Amarys.png"
+    },
+    {
+      "name": "Drayton",
+      "role": "Dragon",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/3b/Scarlet_Violet_Drayton.png/800px-Scarlet_Violet_Drayton.png"
+    }
+  ]
+}

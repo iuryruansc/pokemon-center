@@ -32,7 +32,7 @@
                     android:background="@drawable/type_steel_background"
                     android:minHeight="?attr/actionBarSize"
                     app:menu="@menu/top_app_bar_views"
-                    app:navigationIcon="@drawable/back_icon"
+                    app:navigationIcon="@drawable/menu_back_icon"
                     app:title="Natures Chart" />
 
             </com.google.android.material.appbar.AppBarLayout>
@@ -46,7 +46,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/natures_app_bar"
-                app:srcCompat="@drawable/natures" />
+                app:srcCompat="@drawable/chart_natures" />
 
             <TextView
                 android:layout_width="match_parent"

@@ -132,7 +132,7 @@
         android:contentDescription="@string/pokeball_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/capture_rate_value"
-        app:srcCompat="@drawable/pokeball_icon" />
+        app:srcCompat="@drawable/icon_pokeball" />
 
     <ImageView
         android:id="@+id/greatball_icon"
@@ -142,7 +142,7 @@
         android:contentDescription="@string/greatball_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pokeball_icon"
-        app:srcCompat="@drawable/greatball_icon" />
+        app:srcCompat="@drawable/icon_greatball" />
 
     <ImageView
         android:id="@+id/ultraball_icon"
@@ -152,7 +152,7 @@
         android:contentDescription="@string/ultraball_icon"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/greatball_icon"
-        app:srcCompat="@drawable/ultraball_icon" />
+        app:srcCompat="@drawable/icon_ultraball" />
 
 
     <ProgressBar

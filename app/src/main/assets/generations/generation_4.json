@@ -1,0 +1,204 @@
+{
+  "general": {
+    "generationName": "Generation IV",
+    "region": "Sinnoh",
+    "introducedPokemon": "107",
+    "startDexNumber": "387",
+    "endDexNumber": "493",
+    "games": "Diamond, Pearl, Platinum",
+    "releaseYear": "2006"
+  },
+  "features": [
+    "Introduced 107 new Pokémon.",
+    "First games to feature the Sinnoh region.",
+    "Remakes of Generation II: HeartGold and SoulSilver.",
+    "Introduced the Physical/Special split: Moves are now categorized as physical or special based on their individual properties, not just the type.",
+    "Introduced the Pokétch: A multi-function device worn by the player with various apps.",
+    "Global Trade System (GTS): Allows players to trade Pokémon with others around the world."
+  ],
+  "starters": [
+    {
+      "name": "Turtwig",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png"
+    },
+    {
+      "name": "Chimchar",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png"
+    },
+    {
+      "name": "Piplup",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Dialga",
+      "role": "Steel/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png"
+    },
+    {
+      "name": "Palkia",
+      "role": "Water/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png"
+    },
+    {
+      "name": "Giratina",
+      "role": "Ghost/Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png"
+    },
+    {
+      "name": "Uxie",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png"
+    },
+    {
+      "name": "Mesprit",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png"
+    },
+    {
+      "name": "Azelf",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png"
+    },
+    {
+      "name": "Heatran",
+      "role": "Fire/Steel",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png"
+    },
+    {
+      "name": "Regigigas",
+      "role": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png"
+    },
+    {
+      "name": "Cresselia",
+      "role": "Psychic",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png"
+    },
+    {
+      "name": "Phione",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png"
+    },
+    {
+      "name": "Manaphy",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png"
+    },
+    {
+      "name": "Darkrai",
+      "role": "Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png"
+    },
+    {
+      "name": "Shaymin",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png"
+    },
+    {
+      "name": "Arceus",
+      "role": "Normal",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Rowan",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d8/Spr_DP_Rowan.png"
+    },
+    {
+      "name": "Lucas",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/9/9d/Spr_DP_Lucas.png"
+    },
+    {
+      "name": "Dawn",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/0/00/Spr_DP_Dawn.png"
+    },
+    {
+      "name": "Barry",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/3/32/Spr_DP_Barry.png"
+    },
+    {
+      "name": "Cynthia",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2f/Spr_DP_Cynthia.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Roark (1st)",
+      "role": "Fire",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/roark.png"
+    },
+    {
+      "name": "Gardenia (2nd)",
+      "role": "Grass",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/gardenia.png"
+    },
+    {
+      "name": "Maylene (3rd)",
+      "role": "Fighting",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/maylene.png"
+    },
+    {
+      "name": "Crasher Wake (4th)",
+      "role": "Water",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/crasher-wake.png"
+    },
+    {
+      "name": "Fantina (5th)",
+      "role": "Ghost",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/fantina.png"
+    },
+    {
+      "name": "Byron (6th)",
+      "role": "Steel",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/byron.png"
+    },
+    {
+      "name": "Candice (7th)",
+      "role": "Ice",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/candice.png"
+    },
+    {
+      "name": "Volkner (8th)",
+      "role": "Electric",
+      "image": "https://img.pokemondb.net/sprites/trainers/diamond-pearl/volkner.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Aaron",
+      "image" : "https://img.pokemondb.net/sprites/trainers/diamond-pearl/aaron.png",
+      "role" : "Bug"
+    },
+    {
+      "name": "Bertha",
+      "image" : "https://img.pokemondb.net/sprites/trainers/diamond-pearl/bertha.png",
+      "role" : "Ground"
+    },
+    {
+      "name": "Flint",
+      "image" : "https://img.pokemondb.net/sprites/trainers/diamond-pearl/flint.png",
+      "role" : "Fire"
+    },
+    {
+      "name": "Lucian",
+      "image" : "https://img.pokemondb.net/sprites/trainers/diamond-pearl/lucian.png",
+      "role" : "Psychic"
+    },
+    {
+      "name": "Cynthia",
+      "image" : "https://img.pokemondb.net/sprites/trainers/diamond-pearl/cynthia.png",
+      "role" : "Mixed Types"
+    }
+  ]
+}

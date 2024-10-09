@@ -7,13 +7,13 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
 import br.com.pokemon_center.databinding.ActivityFavoritesBinding
-import br.com.pokemoncenter.commom.util.listeners.ActivityFavoritesListener
+import br.com.pokemoncenter.commom.util.listeners.PokemonNameListener
 import br.com.pokemoncenter.commom.util.ui.menuItemClick
 import br.com.pokemoncenter.commom.util.ui.setupNavigationView
 import br.com.pokemoncenter.ui.adapters.PokemonCardAdapter
 import br.com.pokemoncenter.ui.viewmodels.FavoritesViewModel
 
-class FavoritesActivity : AppCompatActivity(), ActivityFavoritesListener {
+class FavoritesActivity : AppCompatActivity(), PokemonNameListener {
 
     private lateinit var binding: ActivityFavoritesBinding
     private val viewModel: FavoritesViewModel by viewModels()
@@ -54,9 +54,9 @@ class FavoritesActivity : AppCompatActivity(), ActivityFavoritesListener {
         viewModel.favoritesList.removeObservers(this)
     }
 
-    override fun onItemClick(view: View, position: Int, pokemonName: CharSequence) {
+    override fun onItemClick(view: View, position: Int, mult: CharSequence) {
         val intent = Intent(this, PokemonDetailsActivity::class.java)
-        intent.putExtra("pokemon", pokemonName.toString().lowercase())
+        intent.putExtra("pokemon", mult.toString().lowercase())
         startActivity(intent)
     }
 }

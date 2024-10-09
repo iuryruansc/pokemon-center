@@ -1,0 +1,159 @@
+{
+  "general": {
+    "generationName": "Generation III",
+    "region": "Kanto",
+    "introducedPokemon": "0",
+    "startDexNumber": "1",
+    "endDexNumber": "386",
+    "games": "FireRed (Red Remake), LeafGreen (Green Remake)",
+    "releaseYear": "2004"
+  },
+  "features": [
+    "Includes Pokémon from Kanto and Johto regions.",
+    "Legendary Pokémon from Generations I and II in one game",
+    "Features the Sevii Islands, a new area not in the original games.",
+    "Incorporates Generation III mechanics like Abilities and Natures.",
+    "Rematch Availability: possibility of rematch the Elite Four multiple times.",
+    "Lore connections to Kanto and Johto."
+  ],
+  "starters": [
+    {
+      "name": "Bulbasaur",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "role": "Grass"
+    },
+    {
+      "name": "Charmander",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "role": "Fire"
+    },
+    {
+      "name": "Squirtle",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "role": "Water"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Articuno",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "role": "Ice/Flying"
+    },
+    {
+      "name": "Zapdos",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+      "role": "Electric/Flying"
+    },
+    {
+      "name": "Moltres",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+      "role": "Fire/Flying"
+    },
+    {
+      "name": "Mewtwo",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "role": "Psychic"
+    },
+    {
+      "name": "Mew",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+      "role": "Psychic"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Birch",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/7/75/Spr_RS_Birch.png"
+    },
+    {
+      "name": "Brendan",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrendan.png"
+    },
+    {
+      "name": "May",
+      "role": "Player Character/Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/6/63/VSMay.png"
+    },
+    {
+      "name": "Wally",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/7/7e/VSWally_2.png"
+    },
+    {
+      "name": "Steven Stone",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Roxanne (1st)",
+      "role": "Rock",
+      "image": "https://archives.bulbagarden.net/media/upload/9/90/VSRoxanne.png"
+    },
+    {
+      "name": "Brawly (2nd)",
+      "role": "Fighting",
+      "image": "https://archives.bulbagarden.net/media/upload/d/d1/VSBrawly.png"
+    },
+    {
+      "name": "Wattson (3rd)",
+      "role": "Electric",
+      "image": "https://archives.bulbagarden.net/media/upload/c/c2/VSWattson.png"
+    },
+    {
+      "name": "Flannery (4th)",
+      "role": "Fire",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f3/VSFlannery.png"
+    },
+    {
+      "name": "Norman (5th)",
+      "role": "Normal",
+      "image": "https://archives.bulbagarden.net/media/upload/a/a0/VSNorman.png"
+    },
+    {
+      "name": "Winona (6th)",
+      "role": "Flying",
+      "image": "https://archives.bulbagarden.net/media/upload/0/0a/VSWinona.png"
+    },
+    {
+      "name": "Tate and Liza (7th)",
+      "role": "Psychic",
+      "image": "https://archives.bulbagarden.net/media/upload/c/cb/VSLiza_%26_Tate.png"
+    },
+    {
+      "name": "Wallace (8th)",
+      "role": "Water",
+      "image": "https://archives.bulbagarden.net/media/upload/3/3d/VSWallace.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Sidney",
+      "image": "https://archives.bulbagarden.net/media/upload/4/40/VSSidney.png",
+      "role": "Dark"
+    },
+    {
+      "name": "Phoebe",
+      "image": "https://archives.bulbagarden.net/media/upload/0/01/VSPhoebe.png",
+      "role": "Ghost"
+    },
+    {
+      "name": "Glacia",
+      "image": "https://archives.bulbagarden.net/media/upload/6/61/VSGlacia.png",
+      "role": "Ice"
+    },
+    {
+      "name": "Drake",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f5/VSDrake.png",
+      "role": "Dragon"
+    },
+    {
+      "name": "Steven",
+      "image": "https://archives.bulbagarden.net/media/upload/8/87/VSSteven.png",
+      "role": "Steel"
+    }
+  ]
+}

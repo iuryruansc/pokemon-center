@@ -1,0 +1,73 @@
+{
+  "general": {
+    "generationName": "Generation VIII",
+    "region": "Galar (Isle of Armor & Crown Tundra)",
+    "introducedPokemon": "0",
+    "startDexNumber": "N/A",
+    "endDexNumber": "N/A",
+    "games": "Sword & Shield - Expansion Pass DLC",
+    "releaseYear": "2020"
+  },
+  "features": [
+    "Expansion Pass DLC for Pokémon Sword and Shield.",
+    "Isle of Armor: Focuses on exploration and training, featuring Kubfu and Urshifu.",
+    "Crown Tundra: Introduces new legendary Pokémon, including Calyrex, Glastrier, and Spectrier.",
+    "Dynamax Adventures: Cooperative multiplayer battles against Dynamax Pokémon in a dungeon-like setting (Crown Tundra).",
+    "Galarian Star Tournament: A post-game tournament where you can team up with various characters (Crown Tundra)."
+  ],
+  "starters": [
+  ],
+  "legendary": [
+    {
+      "name": "Kubfu",
+      "role": "Fighting",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png"
+    },
+    {
+      "name": "Urshifu",
+      "role": "Fighting/Dark",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png"
+    },
+    {
+      "name": "Calyrex",
+      "role": "Psychic/Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png"
+    },
+    {
+      "name": "Glastrier",
+      "role": "Ice",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png"
+    },
+    {
+      "name": "Spectrier",
+      "role": "Ghost",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png"
+    },
+    {
+      "name": "Regieleki",
+      "role": "Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png"
+    },
+    {
+      "name": "Regidrago",
+      "role": "Dragon",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Mustard",
+      "role": "Isle of Armor Dojo Master",
+      "image": "https://archives.bulbagarden.net/media/upload/thumb/3/37/Sword_Shield_Mustard.png/320px-Sword_Shield_Mustard.png"
+    },
+    {
+    "name": "Peony",
+    "role": "Expedition Chief",
+    "image": "https://archives.bulbagarden.net/media/upload/thumb/a/a6/Sword_Shield_Peony.png/320px-Sword_Shield_Peony.png"
+    }
+  ],
+  "gymLeaders": [
+  ],
+  "eliteFour": [
+  ]
+}

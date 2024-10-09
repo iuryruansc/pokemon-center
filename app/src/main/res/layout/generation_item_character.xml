@@ -20,7 +20,6 @@
         android:layout_width="100dp"
         android:layout_marginTop="5dp"
         android:layout_height="100dp"
-        android:src="@drawable/brock"
         android:contentDescription="@string/sprite_character"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/generation_info_name"

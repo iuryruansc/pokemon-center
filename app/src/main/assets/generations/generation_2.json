@@ -1,0 +1,166 @@
+{
+  "general": {
+    "generationName": "Generation II",
+    "region": "Johto",
+    "introducedPokemon": "100",
+    "startDexNumber": "152",
+    "endDexNumber": "251",
+    "games": "Gold, Silver and Crystal",
+    "releaseYear": "1999"
+  },
+  "features": [
+    "Introduced 100 new Pokémon.",
+    "First games to feature the Johto region.",
+    "Introduced new Pokémon types: Dark and Steel.",
+    "Added breeding and held items.",
+    "Introduced Shiny Pokémon.",
+    "Introduced the Special Attack and Special Defense stats, splitting the Special stat.",
+    "Added new moves and abilities.",
+    "Introduced a day-night cycle and real-time clock."
+  ],
+  "starters": [
+    {
+      "name": "Chikorita",
+      "role": "Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png"
+    },
+    {
+      "name": "Cyndaquil",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png"
+    },
+    {
+      "name": "Totodile",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png"
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Raikou",
+      "role": "Electric",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png"
+    },
+    {
+      "name": "Entei",
+      "role": "Fire",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png"
+    },
+    {
+      "name": "Suicune",
+      "role": "Water",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png"
+    },
+    {
+      "name": "Ho-Oh",
+      "role": "Fire/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png"
+    },
+    {
+      "name": "Lugia",
+      "role": "Psychic/Flying",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png"
+    },
+    {
+      "name": "Celebi",
+      "role": "Psychic/Grass",
+      "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png"
+    }
+  ],
+  "importantCharacters": [
+    {
+      "name": "Professor Elm",
+      "role": "Professor",
+      "image": "https://archives.bulbagarden.net/media/upload/a/ad/Elm_OD.png"
+    },
+    {
+      "name": "Ethan",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/2/29/Ethan_opening.png"
+    },
+    {
+      "name": "Kris (Crystal Only)",
+      "role": "Player Character",
+      "image": "https://archives.bulbagarden.net/media/upload/9/9e/Spr_C_Kris.png"
+    },
+    {
+      "name": "Silver",
+      "role": "Rival",
+      "image": "https://archives.bulbagarden.net/media/upload/b/b6/VSSilver.png"
+    },
+    {
+      "name": "Lance",
+      "role": "Champion",
+      "image": "https://archives.bulbagarden.net/media/upload/d/dc/VSLance_PE.png"
+    }
+  ],
+  "gymLeaders": [
+    {
+      "name": "Falker (1st)",
+      "role": "Fly",
+      "image": "https://archives.bulbagarden.net/media/upload/5/5a/VSFalkner.png"
+    },
+    {
+      "name": "Bugsy (2nd)",
+      "role": "Bug",
+      "image": "https://archives.bulbagarden.net/media/upload/2/2a/VSBugsy.png"
+    },
+    {
+      "name": "Whitney (3rd)",
+      "role": "Normal",
+      "image": "https://archives.bulbagarden.net/media/upload/2/27/VSWhitney.png"
+    },
+    {
+      "name": "Morty (4th)",
+      "role": "Ghost",
+      "image": "https://archives.bulbagarden.net/media/upload/0/04/VSMorty.png"
+    },
+    {
+      "name": "Chuck (5th)",
+      "role": "Fighting",
+      "image": "https://archives.bulbagarden.net/media/upload/a/af/VSChuck.png"
+    },
+    {
+      "name": "Jasmine (6th)",
+      "role": "Steel",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f2/VSJasmine.png"
+    },
+    {
+      "name": "Pryce (7th)",
+      "role": "Ice",
+      "image": "https://archives.bulbagarden.net/media/upload/4/4f/VSPryce.png"
+    },
+    {
+      "name": "Clair (8th)",
+      "role": "Dragon",
+      "image": "https://archives.bulbagarden.net/media/upload/f/fc/VSClair.png"
+    }
+  ],
+  "eliteFour": [
+    {
+      "name": "Will",
+      "image": "https://archives.bulbagarden.net/media/upload/0/07/VSWill.png",
+      "role": "Psychic"
+    },
+    {
+      "name": "Koga",
+      "image": "https://archives.bulbagarden.net/media/upload/b/b0/VSKoga.png",
+      "role": "Poison"
+    },
+    {
+      "name": "Bruno",
+      "image": "https://archives.bulbagarden.net/media/upload/b/b8/VSBruno.png",
+      "role": "Fighting"
+    },
+    {
+      "name": "Karen",
+      "image": "https://archives.bulbagarden.net/media/upload/f/f3/VSKaren.png",
+      "role": "Dark"
+    },
+    {
+      "name": "Lance",
+      "image": "https://archives.bulbagarden.net/media/upload/d/dc/VSLance_PE.png",
+      "role": "Dragon"
+    }
+  ]
+}
