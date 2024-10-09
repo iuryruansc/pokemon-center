@@ -22,7 +22,7 @@ This file lists the dependencies used in this project, managed using a version c
 | Retrofit Converter | 2.11.0        |
 | Coroutine Core     | 1.8.1         |
 | Coroutine Android  | 1.8.1         |
-| Fragment KTX       | 1.8.3         |
+| Fragment           | 1.8.4         |
 | Coil               | 2.7.0         |
 | Balloon            | 1.6.7         |
 | Room               | 2.6.1         |
