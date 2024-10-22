@@ -104,6 +104,5 @@ This Android application allows users to browse and view information about Pokem
 ## Contact
 * **Maintainer:** Iury Ruan
 * **Email:** iuryruansc@gmail.com
-* Feel free to reach out if you have any questions, encounter any issues, or have suggestions for the project.
 
 Feel free to reach out if you have any questions or suggestions!
