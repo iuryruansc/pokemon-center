@@ -86,10 +86,10 @@ This Android application allows users to browse and view information about Pokem
    ```bash
    git clone https://github.com/iuryruansc/pokemon-center.git
 
-3. **Open the project in your IDE:**
+2. **Open the project in your IDE:**
    <br>Android Studio is recommended.
 
-4. **Run the application:**
+3. **Run the application:**
    <br>Ensure your device or emulator is running Android 7.0 or higher.
    <br>Click the "Run" button in your IDE.
 
