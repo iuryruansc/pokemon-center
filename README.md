@@ -33,6 +33,10 @@ This Android application allows users to browse and view information about Pokem
 * If you want to open it in a new tab use CTRL+click (on Windows and Linux) or CMD+click (on MacOS)
 * [View Pokémon Center on Appetize.io](https://appetize.io/app/b_opjehbs46jcyxuacfdeoiig4fq)
 
+* **Note:** This app preview is hosted on Appetize.io, which has a monthly usage limit. If you
+  encounter any issues accessing the preview, please refer to the screenshots below for a visual
+  representation of the app.
+
 ## Screenshots
 
 | <img src="./app/src/main/assets/screenshots/project_mainview.jpeg" height="400" alt="initial interface screenshot"/> | <img src="./app/src/main/assets/screenshots/project_pokemon_details.jpeg" height="400" alt="pokemon details screenshot"/> | <img src="./app/src/main/assets/screenshots/project_gen_games.jpeg" height="400" alt="games by generation screenshot"/> |
